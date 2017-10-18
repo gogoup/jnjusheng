@@ -1,0 +1,106 @@
+.commonP-header{
+    padding:20px 0;
+    background:#ffffff;
+}
+.commonP-header-left{
+    float:left;
+}
+.commonP-header-right{
+    float:right;
+    margin-top:37px;
+    font-size:14px;
+}
+.commonP-header-left img,.commonP-header-left p{
+    float:left;
+}
+.commonPr-header-left img{
+    max-width:70%;
+}
+.commonP-header-left p{
+    font-size:20px;
+    margin:33px 0 0 10px;
+    padding-left:8px;
+    border-left:1px solid #e5e5e5;
+    color:#666666;
+}
+.commonP-content{
+    background:#f2f2f2;
+    padding:20px 0;
+}
+.commonP-con-left{
+    width:20%;
+    background:#ffffff;
+    padding-top: 5px;
+    float: left;
+}
+.commonP-con-left ul li{
+    line-height:42px;
+}
+.commonP-con-left > ul{
+
+}
+.commonP-con-left > ul > li{
+    padding:0 8%;
+}
+.commonP-con-left > ul > li ul{
+    padding-left:15%;
+}
+.commonP-con-left > ul > li > a{
+    display:block;
+    border-bottom:1px dashed #dddddd;
+}
+
+.commonP-con-left > ul > li img{
+    width:25px;
+    float: left;
+    margin-top:6px;
+}
+.commonP-con-left > ul > li > a > span{
+    float:left;
+    margin-left:6px;
+}
+.commonP-con-right{
+    width:79%;
+    margin-left:1%;
+    float: left;
+    background:#ffffff;
+}
+.commonP-con-right iframe{
+    width:100%;
+    min-height:890px;
+}
+
+/*入驻服务*/
+.commonP-iframe-header span{
+    line-height:48px;
+    font-size:20px;
+    font-weight:bold;
+}
+.commonP-iframe-header{
+    border-bottom:1px solid #e0e0e0;
+}
+.payment-content-module{
+    width:95%;
+    margin:14px 0 0 1%;
+    border:1px solid #e0e0e0;
+    padding:10px 0 10px 20px;
+}
+.payment-content-module h3{
+    line-height:40px;
+    font-size:18px;
+    font-weight:bold;
+}
+.payment-content-module-list ul li span{
+    line-height:28px;
+}
+.payment-content-module-list button{
+    background:#002772;
+    color:#ffffff;
+    border:none;
+    width:60px;
+    line-height:30px;
+    border-radius:3px;
+}
+.payment-content-module-list button[disabled]{
+    background:#2d5e97;
+}

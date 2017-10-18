@@ -1,0 +1,224 @@
+
+
+.register-content{
+    background:#f2f2f2;
+    padding:20px 0;
+}
+.register-con{
+    background:#ffffff;
+    padding-bottom:20px;
+}
+.register-con h3{
+    color:#ffffff;
+    font-size:20px;
+    background:#002772;
+    padding-left:25%;
+    line-height:70px;
+}
+.register-con-tab{
+    position:absolute;
+    z-index:1;
+    top: 147px;
+}
+.register-con-tab a{
+    color:#ffffff;
+    text-align: center;
+    line-height: 69px;
+    display:block;
+    float:left;
+    width:105px;
+    font-size:20px;
+
+}
+.register-con-tab-now{
+    background:#257EE5;
+    border-top:3px solid #ffb902;
+}
+.register-con-detail{
+    margin-top:50px;
+}
+.register-con-left{
+    width:70%;
+    float:left;
+    border-right:1px solid #ededed;
+    display:none;
+}
+.register-con-left form{
+    width:92%;
+    margin:0 auto;
+}
+.register-con-left form ul li{
+    float:left;
+    padding:8px 0;
+    display: block;
+    width:100%;
+}
+.register-con-left form ul li span i{
+    color:red;
+}
+.register-con-left form ul li>span{
+    text-align:right;
+    float:left;
+    display: block;
+    width:140px;
+    margin-top:8px;
+}
+.register-con-left form ul li>input{
+    float:left;
+    padding:8px 0 8px 8px;
+    width:60%;
+}
+.register-con-left form ul li select{
+    padding:8px 0;
+    text-align:center;
+}
+
+.register-con-left form ul .register-money span:nth-of-type(2){
+    display: inline;
+    width:auto;
+}
+
+.register-con-left form ul .register-phone1 input{
+    width:80px;
+}
+.register-con-left form ul .register-phone1 span:nth-of-type(2){
+    width:30px;
+    text-align: center;
+}
+.register-con-left form ul .register-address select{
+    float:left;
+    margin-left:5px;
+}
+.register-con-left form ul .register-address input{
+    width:80px;
+    margin-left:5px;
+}
+.register-con-left form ul .register-money input{
+    width:60px;
+}
+.register-con-left form ul li textarea{
+    resize: none;
+    width:400px;
+    height:160px;
+    outline: none;
+}
+.register-con-left form ul li button{
+    background:none;
+    border:none;
+    background:#002772;
+    color: #ffffff;
+    margin-left:140px;
+    padding:12px 34px;
+    font-size:18px;
+    border-radius:3px;
+}
+.register-con-left form ul .register-module{
+    width:100%;
+    border-bottom:1px solid #ededed;
+    margin-bottom:20px;
+}
+.register-con-left form ul .register-module span{
+    font-size:18px;
+    width:auto;
+    color:#002772;
+    font-weight:bold;
+}
+/*时间选择插件样式*/
+.calendar{
+    width:400px;
+    text-align:center;
+    background:#fff;
+}
+.calendar-header{
+    height:50px;
+    line-height: 50px;
+}
+.register-con-left form ul .calendar input{
+    width:60px;
+    height: 30px;
+    outline: none;
+    font-size: 18px;
+    border-radius:5px;
+    border-width:1px;
+    text-align:center;
+}
+.calendar .month{
+    width:30px;
+}
+.cale-left{
+    float:left;
+    width:50px;
+    cursor:pointer;
+}
+.cale-right{
+    float:right;
+    width:50px;
+    cursor:pointer;
+}
+.cale-que{
+    float:left;
+    width:50px;
+    cursor:pointer;
+}
+.cale-com{
+    float:right;
+    width:50px;
+    cursor:pointer;
+}
+.cale-nav{
+    height:30px;
+    line-height: 30px;
+    border-bottom:1px solid #999;
+}
+.cale-nav span{
+    box-sizing: border-box;
+    width:14.2857%;
+    float:left;
+    color:#aaa;
+}
+.calendar-ri span{
+    box-sizing: border-box;
+    width:14.2857%;
+    float:left;
+    height:36px;
+    line-height: 36px;
+    cursor:pointer;
+}
+.calendar-ri span.active{
+    border:1px solid #57DFF6;
+    border-radius:5px;
+}
+.calendar .amd{color:red;}
+.register-con-right{
+    float:right;
+    padding-top:200px;
+    width:29%;
+}
+.register-con-right p{
+    font-size:12px;
+    margin-left:20%;
+}
+.register-con-right a{
+    background:#002772;
+    width:40px;
+    text-align:center;
+    color:#ffffff;
+    font-size:14px;
+    line-height:20px;
+    display:inline-block;
+    border-radius:3px;
+}
+.register-con-left form ul .register-box input{
+    width:15px;
+    height:15px;
+    margin-left:140px;
+    float:left;
+}
+.register-con-left form ul .register-box p{
+    font-size:14px;
+    float:left;
+    margin-top:5px;
+}
+.register-con-left form ul .register-box a{
+    color:#002772;
+}
