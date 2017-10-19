@@ -15,6 +15,14 @@ class LoginController extends Controller {
 	    $user = D('User');
 	    //判断用户是否登录成功
 	    if($user->checkLogin($name,$password)){ 
+	        $time=date("Y-m-d",time()); 
+	        $ip = $_SERVER['REMOTE_ADDR'];
+	        $data=array(
+	            'user_id'=>session('uid'),
+	            'last_time'=>$time,
+	            'last_ip'=>$ip
+	        );
+	        $user->save($data);
 	        echo '1';
 	    }else{
 	        echo '0';

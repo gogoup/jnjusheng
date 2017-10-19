@@ -7,10 +7,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>注册页面</title>
     <link rel="stylesheet" href="__PUBLIC__/Home/css/common.css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/commonPerson.css">
     <link rel="stylesheet" href="__PUBLIC__/Home/css/register.css">
     <script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="__PUBLIC__/Home/js/common.js"></script>
+    <!--时间选择-->
     <script type="text/javascript" src="__PUBLIC__/Home/js/calendar.js"></script>
+    <!--省市区三级联动-->
     <script type="text/javascript" src="__PUBLIC__/Home/js/city.js"></script>
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -19,12 +22,12 @@
 </head>
 <body>
 <div class="wrapper">
-    <div class="register-header">
+    <div class="commonP-header">
         <div class="common-middle float-clear">
-            <div class="register-header-left float-clear">
+            <div class="commonP-header-left float-clear">
                 <img src="__PUBLIC__/Home/image/logo.png" alt=""><p>欢迎注册</p>
             </div>
-            <a class="register-header-right" href="index.html">返回首页</a>
+            <a class="commonP-header-right" href="{:U('Index/index')}">返回首页</a>
         </div>
     </div>
     <div class="register-content">
@@ -42,7 +45,10 @@
                                 <span>基本信息</span>
                             </li>
                             <li class=" float-clear">
-                                <span><i>*</i>用户名：</span><input type="text">
+                                <span><i>*</i>用户名：</span><input id="user" type="text" onblur="checkname()">
+                                <span class="user" style="width:22px;height:22px; background: url(__PUBLIC__/Home/image/erroricon.png) no-repeat;display:none;margin-left:8px;">
+                                <i class="user-font" style="font-size:14px;color: #ff0000;margin-left:27px;"></i>
+                                </span>
                             </li>
                             <li class=" float-clear">
                                 <span><i>*</i>密码：</span><input type="password">
@@ -175,7 +181,7 @@ line-height:31px;padding-left:10px;">请选择时间</div>
 
                 </div>
                 <div class="register-con-right">
-                    <p>我已注册，现在就<a href="#">登录</a></p>
+                    <p>我已注册，现在就<a href="{:U('Login/login')}">登录</a></p>
                 </div>
             </div>
         </div>
@@ -228,6 +234,30 @@ line-height:31px;padding-left:10px;">请选择时间</div>
         }
         })
     })
+    
+    
+    
+    function checkname(){
+        var objname = $('.user');
+        var value = $('#user').val();
+        if(value == ''){
+        	$('.user').show();
+            $('.user-font').html("用户名不能为空");
+            return false;
+        }else{
+            $.post("{:U('User/checkName')}", {name:value}, function(msg){
+                if (msg == 'false_aaa') {
+                    objname.html("抱歉，用户名格式不正确！！！");
+                    return false;
+                }else if (msg == 'false_e') {
+                    objname.html("用户名已存在！！！");
+                    return false;
+                }
+            })
+        }
+        objname.html("√");
+        return true;
+    }
 </script>
 </body>
 </html>
