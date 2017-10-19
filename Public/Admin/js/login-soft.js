@@ -47,9 +47,7 @@ var Login = function () {
 	                error.addClass('help-small no-left-padding').insertAfter(element.closest('.input-icon'));
 	            },
 
-	            submitHandler: function (form) {
-	                window.location.href = "index.html";
-	            }
+	            
 	        });
 
 	        $('.login-form input').keypress(function (e) {
@@ -97,9 +95,7 @@ var Login = function () {
 	                error.addClass('help-small no-left-padding').insertAfter(element.closest('.input-icon'));
 	            },
 
-	            submitHandler: function (form) {
-	                window.location.href = "index.html";
-	            }
+	            
 	        });
 
 	        $('.forget-form input').keypress(function (e) {
@@ -173,9 +169,7 @@ var Login = function () {
 	                }
 	            },
 
-	            submitHandler: function (form) {
-	                window.location.href = "index.html";
-	            }
+	           
 	        });
 
 	        jQuery('#register-btn').click(function () {
@@ -189,10 +183,10 @@ var Login = function () {
 	        });
 
 	        $.backstretch([
-		        "media/image/bg/1.jpg",
-		        "media/image/bg/2.jpg",
-		        "media/image/bg/3.jpg",
-		        "media/image/bg/4.jpg"
+		        "/Public/Admin/image/bg/1.jpg",
+		        "/Public/Admin/image/bg/2.jpg",
+		        "/Public/Admin/image/bg/3.jpg",
+		        "/Public/Admin/image/bg/4.jpg"
 		        ], {
 		          fade: 1000,
 		          duration: 8000

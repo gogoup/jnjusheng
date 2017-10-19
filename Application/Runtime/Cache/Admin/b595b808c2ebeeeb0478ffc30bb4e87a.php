@@ -252,7 +252,7 @@
                 <li class="dropdown user">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                         <img alt="" src="/Public/Admin/image/avatar1_small.jpg"/>
-                        <span class="username">Bob Nilson</span>
+                        <span class="username"><?php echo ($adm["adm_user"]); ?></span>
                         <i class="icon-angle-down"></i>
                     </a>
                     <ul class="dropdown-menu">
@@ -296,185 +296,33 @@
             </form>
             <!-- END RESPONSIVE QUICK SEARCH FORM -->
         </li>
-        <li class="start">
-            <a href="Y-publish-news.html">
-                <i class="icon-home"></i>
-                <span class="title">创业孵化平台</span>
-                <span class="selected"></span>
-            </a>
-        </li>
-        <li>
-            <a class="active" href="Y-publish-news.html">
-                <i class="icon-sitemap"></i>
-                <span class="title">信息发布</span>
-                <span class="arrow open"></span>
-            </a>
-            <ul class="sub-menu">
-                <li>
-                    <a href="Y-publish-news.html">
-                        新闻发布
-                    </a>
-                </li>
-                <li>
-                    <a href="Y-publish-activity.html">
-                        活动发布
-                    </a>
-                </li>
-                <li>
-                    <a href="Y-publish-platform.html">
-                        公开平台发布
-                    </a>
-                </li>
-            </ul>
-        </li>
-        <li class="active">
-            <a class="active" href="javascript:;">
-                <i class="icon-sitemap"></i>
-                <span class="title">内容管理</span>
-                <span class="arrow open"></span>
-            </a>
-            <ul class="sub-menu">
-                <li>
-                    <a href="javascript:;">
-                        新闻管理
-                        <span class="arrow"></span>
-                    </a>
-                    <ul class="sub-menu">
-                        <li><a href="#">通知公告</a></li>
-                        <li><a href="#">企业新闻</a></li>
-                        <li><a href="#">申报快讯</a></li>
-                        <li><a href="#">媒体报道</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="javascript:;">
-                        活动管理
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        公开平台管理
-                        <span class="arrow"></span>
-                    </a>
-                    <ul class="sub-menu">
-                        <li><a href="#">技术研发</a></li>
-                        <li><a href="#">生活服务</a></li>
-                        <li><a href="#">共享空间</a></li>
-                        <li><a href="#">政策法规</a></li>
-                        <li><a href="#">科技支撑</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </li>
-        <li class="">
-            <a href="javascript:;">
-                <i class="icon-table"></i>
-                <span class="title">信息审核</span>
-                <span class="arrow "></span>
-            </a>
-            <ul class="sub-menu">
-                <li>
-                    <a href="#">
-                        活动审核</a>
-                </li>
-                <li>
-                    <a href="#">
-                        个人信息审核</a>
-                </li>
-                <li>
-                    <a href="#">
-                        企业信息审核</a>
-                </li>
-            </ul>
-        </li>
-        <li class="">
-            <a href="javascript:;">
-                <i class="icon-briefcase"></i>
-                <span class="title">业务处理</span>
-                <span class="arrow "></span>
-            </a>
-            <ul class="sub-menu">
-                <li>
-                    <a href="page_timeline.html">
-                        <i class="icon-time"></i>
-                        入驻管理</a>
-                </li>
-                <li>
-                    <a href="page_coming_soon.html">
-                        <i class="icon-cogs"></i>
-                        物业管理</a>
-                </li>
-                <li>
-                    <a href="page_blog.html">
-                        <i class="icon-comments"></i>
-                        统计管理</a>
-                </li>
-                <li>
-                    <a href="page_blog_item.html">
-                        <i class="icon-font"></i>
-                        服务导航</a>
-                </li>
-                <li>
-                    <a href="page_news.html">
-                        <i class="icon-coffee"></i>
-                        创业导师</a>
-                </li>
-            </ul>
-        </li>
-        <li class="">
-            <a href="javascript:;">
-                <i class="icon-gift"></i>
-                <span class="title">用户管理</span>
-                <span class="arrow "></span>
-            </a>
-            <ul class="sub-menu">
-                <li>
-                    <a href="extra_profile.html">
-                        个人</a>
-                </li>
-                <li>
-                    <a href="extra_lock.html">
-                        企业</a>
-                </li>
-            </ul>
-
-        </li>
-        <li class="last">
-            <a class="active" href="javascript:;">
-                <i class="icon-sitemap"></i>
-                <span class="title">系统设置</span>
-                <span class="arrow "></span>
-            </a>
-            <ul class="sub-menu">
-                <li>
-                    <a href="javascript:;">
-                        分类管理
-                        <span class="arrow"></span>
-                    </a>
-                    <ul class="sub-menu">
-                        <li><a href="#">Smple Link 1</a></li>
-                        <li><a href="#">Sample Link 2</a></li>
-                        <li><a href="#">Sample Link 3</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="javascript:;">
-                        权限设置
-                        <span class="arrow"></span>
-                    </a>
-                    <ul class="sub-menu">
-                        <li><a href="#">Sample Link 1</a></li>
-                        <li><a href="#">Sample Link 1</a></li>
-                        <li><a href="#">Sample Link 1</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">
-                        个人设置
-                    </a>
-                </li>
-            </ul>
-        </li>
+        <?php if(is_array($leftmenu)): $i = 0; $__LIST__ = $leftmenu;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$left): $mod = ($i % 2 );++$i;?><li class="">
+                   <?php if($left['menu_type'] == 1): ?><a href="<?php echo ($left["menu_url"]); ?>">
+                           <i class="icon-home"></i>
+                           <span class="title"><?php echo ($left["menu_name"]); ?></span>
+                           <span class="selected"></span>
+                       </a>
+                   <?php else: ?>
+                       <a href="javascript:;">
+                           <i class="icon-briefcase"></i>
+                           <span class="title"><?php echo ($left["menu_name"]); ?></span>
+                           <span class="arrow "></span>
+                       </a>
+                       <ul class="sub-menu">
+                           <?php if(is_array($left['child'])): $i = 0; $__LIST__ = $left['child'];if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$left1): $mod = ($i % 2 );++$i; if($left1['menu_type'] == 1): ?><li>
+                                       <a href="<?php echo ($left1['menu_url']); ?>"><?php echo ($left1['menu_name']); ?></a>
+                                   </li>
+                               <?php else: ?>
+                                   <li>
+                                       <a href="#"><?php echo ($left1['menu_name']); ?>
+                                           <span class="arrow"></span>
+                                       </a>
+                                       <ul class="sub-menu">
+                                           <?php if(is_array($left1['child'])): foreach($left1['child'] as $key=>$left2): ?><li><a href="<?php echo ($left2["menu_url"]); ?>"><?php echo ($left2["menu_name"]); ?></a></li><?php endforeach; endif; ?>
+                                       </ul>
+                                   </li><?php endif; endforeach; endif; else: echo "" ;endif; ?>
+                       </ul><?php endif; ?>
+            </li><?php endforeach; endif; else: echo "" ;endif; ?>
     </ul>
     <!-- 导航菜单结束 -->
 </div>
