@@ -7,20 +7,13 @@
             <!-- BEGIN SIDEBAR TOGGLER BUTTON -->
         </li>
         <li>
-            <!-- BEGIN RESPONSIVE QUICK SEARCH FORM -->
-            <form class="sidebar-search">
-                <div class="input-box">
-                    <a href="javascript:;" class="remove"></a>
-                    <input type="text" placeholder="Search..."/>
-                    <input type="button" class="submit" value=" "/>
-                </div>
-            </form>
-            <!-- END RESPONSIVE QUICK SEARCH FORM -->
+            &nbsp;
         </li>
+
         <volist name="leftmenu" id="left">
             <li class="">
                    <if condition="$left['menu_type'] eq 1">
-                       <a href="{$left.menu_url}">
+                       <a href="/index.php/admin/{$left.menu_url}">
                            <i class="icon-home"></i>
                            <span class="title">{$left.menu_name}</span>
                            <span class="selected"></span>
@@ -35,7 +28,7 @@
                            <volist name="left['child']" id="left1">
                                <if condition="$left1['menu_type'] eq 1">
                                    <li>
-                                       <a href="{$left1['menu_url']}">{$left1['menu_name']}</a>
+                                       <a href="/index.php/admin/{$left1['menu_url']}">{$left1['menu_name']}</a>
                                    </li>
                                <else />
                                    <li>
@@ -44,7 +37,7 @@
                                        </a>
                                        <ul class="sub-menu">
                                            <foreach name="left1['child']" item="left2">
-                                                <li><a href="{$left2.menu_url}">{$left2.menu_name}</a></li>
+                                                <li><a href="/index.php/admin/{$left2.menu_url}">{$left2.menu_name}</a></li>
                                            </foreach>
                                        </ul>
                                    </li>
