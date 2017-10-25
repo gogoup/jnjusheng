@@ -1,0 +1,71 @@
+<if condition="CONTROLLER_NAME eq 'Index'">
+<script src="__PUBLIC__/Admin/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+ </if>
+<script src="__PUBLIC__/Admin/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+<!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="__PUBLIC__/Admin/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/Admin/js/bootstrap.min.js" type="text/javascript"></script>
+<!--[if lt IE 9]>
+<script src="__PUBLIC__/Admin/js/excanvas.min.js"></script>
+<script src="__PUBLIC__/Admin/js/respond.min.js"></script>
+<![endif]-->
+<script src="__PUBLIC__/Admin/js/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/Admin/js/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/Admin/js/jquery.cookie.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/Admin/js/jquery.uniform.min.js" type="text/javascript"></script>
+<!-- END CORE PLUGINS -->
+<!-- BEGIN PAGE LEVEL PLUGINS -->
+<script type="text/javascript" src="__PUBLIC__/Admin/js/ckeditor.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/Admin/js/bootstrap-fileupload.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/Admin/js/chosen.jquery.min.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/Admin/js/select2.min.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/Admin/js/wysihtml5-0.3.0.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/Admin/js/bootstrap-wysihtml5.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/Admin/js/jquery.tagsinput.min.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/Admin/js/jquery.toggle.buttons.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/Admin/js/bootstrap-datepicker.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/Admin/js/bootstrap-datetimepicker.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/Admin/js/clockface.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/Admin/js/date.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/Admin/js/daterangepicker.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/Admin/js/bootstrap-colorpicker.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/Admin/js/bootstrap-timepicker.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/Admin/js/jquery.inputmask.bundle.min.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/Admin/js/jquery.input-ip-address-control-1.0.min.js"></script>
+
+<script type="text/javascript" src="__PUBLIC__/Admin/js/jquery.multi-select.js"></script>
+
+<script src="__PUBLIC__/Admin/js/bootstrap-modal.js" type="text/javascript" ></script>
+
+<script src="__PUBLIC__/Admin/js/bootstrap-modalmanager.js" type="text/javascript" ></script>
+
+<!-- END PAGE LEVEL PLUGINS -->
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script src="__PUBLIC__/Admin/js/app.js" type="text/javascript"></script>
+<script src="__PUBLIC__/Admin/js/form-components.js"></script>
+<script src="__PUBLIC__/Admin/js/index.js" type="text/javascript"></script>
+<!-- END PAGE LEVEL SCRIPTS -->
+<script>
+    jQuery(document).ready(function () {
+        App.init(); // initlayout and core plugins
+
+
+        FormComponents.init();
+    });
+</script>

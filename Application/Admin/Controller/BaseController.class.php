@@ -26,6 +26,7 @@ class BaseController extends Controller
     public function top()
     {
         $this->assign('adm', $_SESSION['adm']);
+        
     }
 
     public function leftMenu()
