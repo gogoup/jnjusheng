@@ -110,12 +110,18 @@ button{
 }
 .header-middle-right .login{
     background: #002772;
-    color:#ffffff;
     text-align:center;
+    color:#ffffff;
+}
+.header-middle-right .login a{
+    color:#ffffff;
 }
 .header-middle-right .register{
     background:none;
     margin-left:20px;
+}
+.header-middle-right .register a{
+    color:#002772;
 }
 /*导航栏*/
 .header-bottom{
@@ -127,7 +133,7 @@ button{
 .header-nav li{
     float:left;
     display:block;
-    width:25%;
+    width:16.666667%;
     text-align:center;
 }
 .header-nav li>a{
@@ -139,7 +145,7 @@ button{
 .header-nav li>a span{
     line-height:52px;
 }
-/*导航栏下拉菜单*/
+/*!*导航栏下拉菜单*!
 .header-nav-slide{
     display:none;
 }
@@ -152,7 +158,7 @@ button{
     top:52px;
     padding:40px 30px;
 }
-/*导航栏下拉菜单*/
+!*导航栏下拉菜单*!
 .header-nav-slide-left,.header-nav-slide-right{
     float:left;
     width:50%;
@@ -172,7 +178,7 @@ button{
 }
 .header-nav-slide-right a:hover{
     color:#002772;
-}
+}*/
 /*底部样式*/
 .common-footer{
     background: #e2e2e2;
@@ -194,10 +200,11 @@ button{
     line-height:24px;
     font-size:14px;
 }
+
 /*返回顶部*/
 .common-fixed{
     position:fixed;
-    right:53px;
+    right:8%;
     bottom:225px;
     width:48px;
     z-index:10;
@@ -269,6 +276,55 @@ button{
     font-size:14px;
     line-height:20px;
 }
+/*一级标题样式*/
+.common-section-header{
+    border-left:5px #002772 solid;
+    padding-left:10px;
+}
+.common-section-header span{
+    font-size:20px;
+    line-height:26px;
+    float:left;
+}
+.common-section-header a {
+    float: right;
+    font-size: 14px;
+    color: #002772;
+    margin-top: 9px;
+}
+/*二级标题样式*/
+.common-section-header-min{
+    color:#ffffff;
+    background: #002772;
+    width:100%;
+    margin-top:16px;
+}
+.common-section-header-min span{
+    line-height:38px;
+    display:block;
+    margin-left:20px;
+}
+/*公共页码样式*/
+.page-num{
+    position: absolute;
+    bottom:10px;
+}
+.page-num a{
+    float: left;
+    color: #002772;
+    border:1px solid #e1e2e3;
+    padding:5px 10px;
+    margin-left:10px;
+    border-radius:1px;
+}
+.page-num span{
+    font-weight:bold;
+}
+/*内页公共样式*/
+.common-inner-content{
+    margin-top:20px;
+    padding-bottom:20px;
+}
 @media (min-width: 0) {
     .common-middle{
         width:96%;
@@ -276,7 +332,7 @@ button{
     }
     .common-middle-two{
         width:94%;
-        margin: auto;
+        margin:0 auto;
     }
 }
 @media (min-width:767px) {
@@ -286,16 +342,16 @@ button{
     }
     .common-middle-two{
         width:92%;
-        margin: auto;
+        margin:0 auto;
     }
 }
 @media (min-width: 1200px) {
     .common-middle{
         width:1200px;
-        margin: auto;
+        margin:0 auto;
     }
     .common-middle-two{
         width:1100px;
-        margin: auto;
+        margin:0 auto;
     }
 }

@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
     <link rel="stylesheet" href="__PUBLIC__/Home/css/common.css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/commonSection.css">
     <link rel="stylesheet" href="__PUBLIC__/Home/css/home.css">
     <script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="__PUBLIC__/Home/js/common.js"></script>
@@ -41,11 +42,8 @@
                     <ul class="float-clear">
                         <li>
                             <a href="#"><span>首&nbsp;&nbsp;页</span></a>
-
                         </li>
-                        <!-- 遍历顶级菜单的名字作为导航栏 -->
-                        <foreach name="list" item="vo" > 
-                        <li><a href="#"><span>{$vo.henu_name}</span></a>
+                        <li><a href="{:U('Information/infor_center')}"><span>资讯中心</span></a>
                             <!--<div class="header-nav-slide float-clear">
                                 <div class="header-nav-slide-left">
                                     <img src="image/nav-slide1.jpg" alt="">
@@ -57,8 +55,61 @@
                                 </div>
                             </div>-->
                         </li>
-                        </foreach>
-                        <!-- 遍历结束 -->
+                        <li><a href="business-service.html"><span>创业服务</span></a>
+                            <!--<div class="header-nav-slide float-clear">
+                                <div class="header-nav-slide-left">
+                                    <img src="image/nav-slide2.jpg" alt="">
+                                </div>
+                                <div class="header-nav-slide-right float-clear">
+                                    <a href="#">项目推荐</a>
+                                    <a href="#">风险评估</a>
+                                    <a href="#">创业指导</a>
+                                    <a href="#">跟踪扶持</a>
+                                </div>
+                            </div>-->
+                        </li>
+                        <li><a href="business-coach.html"><span>创业辅导</span></a>
+                            <!--<div class="header-nav-slide float-clear">
+                                <div class="header-nav-slide-left">
+                                    <img src="image/nav-slide3.jpg" alt="">
+                                </div>
+                                <div class="header-nav-slide-right">
+                                    <a href="#">创业课程</a>
+                                    <a href="#">专题讲座</a>
+                                    <a href="#">导师推荐</a>
+                                    <a href="#">会面预约</a>
+                                    <a href="#">创业教育</a>
+                                    <a href="#">直播辅导</a>
+                                    <a href="#">创业测试</a>
+                                </div>
+                            </div>-->
+                        </li>
+                        <li><a href="incubation-space.html"><span>孵化空间</span></a>
+                            <!--<div class="header-nav-slide float-clear">
+                                <div class="header-nav-slide-left">
+                                    <img src="image/nav-slide3.jpg" alt="">
+                                </div>
+                                <div class="header-nav-slide-right">
+                                    <a href="#">基本信息</a>
+                                    <a href="#">政策介绍</a>
+                                    <a href="#">入孵流程</a>
+                                    <a href="#">在线入孵</a>
+                                </div>
+                            </div>-->
+                        </li>
+                        <li><a href="business-center.html"><span>创业中心</span></a>
+                            <!--<div class="header-nav-slide float-clear">
+                                <div class="header-nav-slide-left">
+                                    <img src="image/nav-slide3.jpg" alt="">
+                                </div>
+                                <div class="header-nav-slide-right">
+                                    <a href="#">团队认证</a>
+                                    <a href="#">企业认证</a>
+                                    <a href="#">创客交流</a>
+                                    <a href="#">入驻服务</a>
+                                </div>
+                            </div>-->
+                        </li>
                     </ul>
                 </div>
         </div>
@@ -100,34 +151,34 @@
     </div>
     <!--资讯中心-->
     <div class="home-information common-middle">
-        <div class="common-section-header">
-            <span>资讯中心</span>
+        <div class="common-section-header float-clear">
+            <span>资讯中心</span><a href="service-center.html">更多资讯>></a>
         </div>
         <div class="home-info-content float-clear">
-            <div class="home-info-list">
+            <div class="home-info-list" id="home-info-list">
                 <ul>
-                    <li><span>通知公告</span></li>
-                    <li><span>企业新闻</span></li>
-                    <li><span>申报快讯</span></li>
-                    <li><span>媒体报道</span></li>
-                    <li><span>政策法规</span></li>
+                    <li><a href="#"><span>通知公告</span></a></li>
+                    <li><a href="#"><span>企业新闻</span></a></li>
+                    <li><a href="#"><span>申报快讯</span></a></li>
+                    <li><a href="#"><span>媒体报道</span></a></li>
+                    <li><a href="#"><span>政策法规</span></a></li>
                 </ul>
             </div>
-            <div class="home-info-detail">
+            <div class="home-info-detail" id="home-info-detail">
                 <ul>
                     <li>
                         <div class="home-info-matter float-clear">
-                            <div class="info-matter-left">
+                            <a class="info-matter-left" href="service-new-detail.html">
                                 <img src="__PUBLIC__/Home/image/jz1.png" alt="">
                                 <div class="info-matter-left-bot">
                                     <h4>奎文区歌德创业园举办金秋大型人才招聘会</h4>
                                     <p>9月23日上午，奎文区歌德创业园在万达广场举办歌德·智联2017金秋大型人才招聘会。本次招聘会由奎文区人社局主办，歌德创业园、奎文区工商联、北苑街办、东关街办、智联招聘、万达集团共同承办。</p>
                                 </div>
-                            </div>
+                            </a>
                             <div class="info-matter-right">
                                 <ul>
                                     <li>
-                                        <a href="#" class="float-clear">
+                                        <a href="service-new-detail.html" class="float-clear">
                                             <p>高新区创新创业工作再传捷报</p><span>2017-09-26</span>
                                         </a>
                                     </li>
@@ -371,25 +422,20 @@
     </div>
     <!--项目推荐-->
     <div class="common-middle home-project">
-        <div class="common-section-header">
-            <span>项目推荐</span>
+        <div class="common-section-header float-clear">
+            <span>项目推荐</span><a href="business-service.html">更多项目>></a>
         </div>
         <div class="home-project-content">
             <ul class="float-clear">
                 <li>
                     <div class="home-project-detail">
-                        <div class="home-project-detail-top float-clear">
-                            <div class="home-project-detail-img">
-                                <img src="__PUBLIC__/Home/image/projectLogo1.png" alt="">
-                            </div>
-                            <div class="home-project-detail-top-detail">
-                                <h4>生物质壁炉</h4>
-                                <span>联系人：</span><span>XXX</span>
-                            </div>
+                        <div class="home-project-detail-top">
+                            <img src="__PUBLIC__/Home/image/home-project1.png" alt="">
                         </div>
                         <div class="home-project-detail-bot">
-                            <p><span>经营模式：</span><span>自主经营</span></p>
-                            <p><span>项目类型：</span><span>融资</span></p>
+                            <h2>小帅影院</h2>
+                            <p><span>联系人：</span><span>XXX</span></p>
+                            <p><span>所属行业：</span><span>娱乐</span></p>
                             <button>了解更多</button>
                         </div>
                     </div>
@@ -397,17 +443,19 @@
                 <li>
                 <div class="home-project-detail">
                     <div class="home-project-detail-top float-clear">
-                        <div class="home-project-detail-img">
-                            <img src="__PUBLIC__/Home/image/projectLogo2.png" alt="">
+                        <!--<div class="home-project-detail-img">
+                            <img src="image/projectLogo2.png" alt="">
                         </div>
                         <div class="home-project-detail-top-detail">
                             <h4>新型空气净化器</h4>
                             <span>联系人：</span><span>XXX</span>
-                        </div>
+                        </div>-->
+                        <img src="__PUBLIC__/Home/image/home-project2.jpg" alt="">
                     </div>
                     <div class="home-project-detail-bot">
-                        <p><span>经营模式：</span><span>自主经营</span></p>
-                        <p><span>项目类型：</span><span>融资</span></p>
+                        <h2>端点科技</h2>
+                        <p><span>联系人：</span><span>XXX</span></p>
+                        <p><span>所属行业：</span><span>娱乐</span></p>
                         <button>了解更多</button>
                     </div>
                 </div>
@@ -415,17 +463,12 @@
                 <li>
                     <div class="home-project-detail">
                         <div class="home-project-detail-top float-clear">
-                            <div class="home-project-detail-img">
-                                <img src="__PUBLIC__/Home/image/projectLogo3.png" alt="">
-                            </div>
-                            <div class="home-project-detail-top-detail">
-                                <h4>手工皂生产项目</h4>
-                                <span>联系人：</span><span>XXX</span>
-                            </div>
+                            <img src="__PUBLIC__/Home/image/home-project3.png" alt="">
                         </div>
                         <div class="home-project-detail-bot">
-                            <p><span>经营模式：</span><span>自主经营</span></p>
-                            <p><span>项目类型：</span><span>融资</span></p>
+                            <h2>新能源</h2>
+                            <p><span>联系人：</span><span>XXX</span></p>
+                            <p><span>所属行业：</span><span>娱乐</span></p>
                             <button>了解更多</button>
                         </div>
                     </div>
@@ -433,17 +476,12 @@
                 <li>
                     <div class="home-project-detail">
                         <div class="home-project-detail-top float-clear">
-                            <div class="home-project-detail-img">
-                                <img src="__PUBLIC__/Home/image/projectLogo4.png" alt="">
-                            </div>
-                            <div class="home-project-detail-top-detail">
-                                <h4>乡村旅游项目招商</h4>
-                                <span>联系人：</span><span>XXX</span>
-                            </div>
+                            <img src="__PUBLIC__/Home/image/home-project4.png" alt="">
                         </div>
                         <div class="home-project-detail-bot">
-                            <p><span>经营模式：</span><span>自主经营</span></p>
-                            <p><span>项目类型：</span><span>融资</span></p>
+                            <h2>HOTOEM</h2>
+                            <p><span>联系人：</span><span>XXX</span></p>
+                            <p><span>所属行业：</span><span>娱乐</span></p>
                             <button>了解更多</button>
                         </div>
                     </div>
@@ -451,16 +489,10 @@
             </ul>
         </div>
     </div>
-    <!--创业大赛-->
-   <!-- <div class="home-service common-middle">
-        <div class="common-section-header">
-            <span>服务导航</span>
-        </div>
-    </div>-->
     <!--创业辅导-->
     <div class="home-teacher common-middle">
-        <div class="common-section-header">
-            <span>创业辅导</span>
+        <div class="common-section-header float-clear">
+            <span>创业辅导</span><a href="#">了解更多>></a>
         </div>
         <div class="home-teacher-content float-clear">
             <div class="home-teacher-con-left">
@@ -596,8 +628,8 @@
     </div>
     <!--创业孵化平台-->
     <div class="home-hatcher common-middle">
-        <div class="common-section-header">
-            <span>创业企业孵化空间</span>
+        <div class="common-section-header float-clear">
+            <span>孵化空间</span><a href="#">更多孵化空间>></a>
         </div>
         <div class="home-hatcher-content float-clear">
             <a class="home-hatcher-con-left" href="#">
@@ -615,8 +647,8 @@
     </div>
     <!--活动中心-->
     <div class="home-activity common-middle">
-        <div class="common-section-header">
-            <span>活动中心</span>
+        <div class="common-section-header float-clear">
+            <span>活动中心</span><a href="#">了解更多>></a>
         </div>
         <div class="home-teacher-content float-clear">
             <div class="home-teacher-con-left">
@@ -730,7 +762,7 @@
         $('#banner_tabs .flex-next').click(function() {
             bannerSlider.next()
         });
-    });
+    })
 </script>
 </body>
 </html>

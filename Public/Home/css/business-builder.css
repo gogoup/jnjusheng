@@ -1,0 +1,287 @@
+.business-builder-content,.business-builder-con{
+    margin-top:20px;
+}
+/*创业课程专题讲座样式*/
+.career-course-select{
+    border:1px solid #dddddd;
+    padding:10px 0;
+}
+.career-course-select p{
+    float:left;
+    font-weight:bold;
+    padding:5px 30px;
+}
+.career-course-select a{
+    float:left;
+    padding:5px 8px;
+    font-size:14px;
+}
+.career-course ul li{
+    margin-top:20px;
+    padding:10px;
+    box-shadow:0 4px 15px #dad9d9;
+}
+.career-course ul li img{
+    float:left;
+    width:30%;
+}
+.career-course-detail{
+    float:left;
+    width:68%;
+    margin-left:2%;
+}
+.career-course-detail h3{
+    font-weight:bold;
+    line-height:24px;
+    font-size:18px;
+}
+.career-course-detail span{
+    font-size:16px;
+}
+.career-course-detail p{
+    padding-top:8px;
+    line-height:20px;
+    font-size:14px;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:4;
+    overflow: hidden;
+}
+.business-con-right-tab .info-matter-right{
+    width:100%;
+}
+/*列表导师推荐样式*/
+.business-teacher-recommend ul li{
+    float:left;
+    width:22%;
+    margin:10px 0 0 1.2%;
+    border:1px solid #dddddd;
+}
+.business-teacher-recommend ul li a{
+    display:block;
+    position:relative;
+    padding-top:5px;
+}
+.business-teacher-recommend ul li img{
+    width:90%;
+    display: block;
+    margin:0  auto;
+}
+.business-teacher-recommend ul li p{
+    text-align:center;
+    line-height:24px;
+    font-weight:bold;
+    padding-top:5px;
+}
+.business-teacher-recommend ul li .business-teacher-shadow{
+    position:absolute;
+    bottom:0;
+    width:96%;
+    padding:0 2%;
+    background:rgba(0,0,0,.5);
+    height:100%;
+    display: none;
+}
+.business-teacher-shadow span{
+    color:#ffffff;
+    line-height:20px;
+    font-size:14px;
+    display:block;
+    position: absolute;
+    bottom:20px;
+    height:120px;
+    overflow:hidden;
+    width: 90%;
+    left:5%;
+
+}
+.business-teacher-recommend ul li:hover .business-teacher-shadow{
+    display:block;
+}
+/*列表直播辅导样式*/
+.business-live-tutoring ul li{
+    float:left;
+    width:30%;
+    margin:10px 0 0 1.2%;
+    border:1px solid #dddddd;
+}
+.business-live-tutoring ul li a{
+    display:block;
+    width:92%;
+    margin:8px auto 0 auto;
+    padding-bottom:10px;
+}
+.business-live-tutoring ul li img{
+    width:100%;
+}
+.business-live-tutoring ul li h3{
+    font-size:14px;
+    font-weight:bold;
+    line-height:22px;
+    padding:8px 0 4px 0;
+    border-bottom:1px dotted #dddddd;
+}
+.business-live-tutoring ul li p{
+    font-size:14px;
+    padding-top:8px;
+}
+/*创业项目详情页*/
+.business-course-top-left{
+    float:left;
+    width:45%;
+}
+.business-course-top-left img{
+    width:100%;
+    max-height:304px;
+}
+.business-course-top-right{
+    float:left;
+    width:53%;
+    margin-left:2%;
+}
+.business-course-top-right h2{
+    font-size:20px;
+    font-weight:bold;
+    line-height:24px;
+    padding:20px 0 10px 0;
+}
+.business-course-top-right p{
+    padding:5px 0;
+}
+.business-course-top-right p i{
+    background:url("../image/builder-lesson.png") no-repeat;
+    width:22px;
+    height:20px;
+    display:block;
+    float:left;
+}
+.business-course-top-right p span{
+    display:block;
+    float:left;
+    line-height:20px;
+    font-size:14px;
+    margin-left:3px;
+}
+.business-course-top-right > p > i{
+    margin-top:3px;
+}
+.business-course-top-right div{
+    margin-top:10px;
+}
+.business-course-top-right div p{
+    float:left;
+}
+.business-course-top-right div p span{
+    color:#000;
+    font-size:16px;
+}
+.business-course-top-right div p:nth-of-type(2){
+    margin-left:18px;
+}
+.business-course-top-right div p:first-of-type i{
+    background:url("../image/builder-hour.png") no-repeat;
+}
+.business-course-top-right div p:nth-of-type(2) i{
+    background: url("../image/builder-look.png") no-repeat;
+}
+.business-course-top-right button{
+    padding:12px 16px;
+    background:#ffb80f;
+    color:#fff;
+    font-size:18px;
+    border:none;
+    margin-top:40px;
+}
+/*创业课程下面tab切换*/
+.business-course-bot{
+    margin:20px 0;
+}
+.business-course-bot-left{
+    float:left;
+    width:70%;
+}
+.business-course-bot-left > ul{
+    height: 42px;
+    border-bottom:1px solid #dddddd;
+}
+.business-course-bot-left > ul > li{
+    float:left;
+    width:120px;
+    line-height:42px;
+    text-align:center;
+    border-left:1px solid #a3a3a3;
+    border-right:1px solid #a3a3a3;
+}
+.business-course-now{
+    border-top:3px solid #002772!important;
+    line-height:40px!important;
+    background:#ffffff;
+}
+.business-course-bot-area{
+   min-height:127px;
+}
+/*创业课程处课程概述样式*/
+.course-intro h4{
+    color:#fff;
+    width:100px;
+    line-height:40px;
+    text-align:center;
+    background:#ffb80f;
+    border-radius:3px;
+    margin:20px 0;
+}
+.course-intro p{
+    font-size:14px;
+    line-height:20px;
+}
+.business-course-bot-right{
+    display:block;
+    float:left;
+    width:28%;
+    margin:20px 0 0 2%;
+}
+.business-course-bot-right img{
+    float:left;
+    width:49%;
+}
+.business-course-bot-right-detail{
+    float:left;
+    width:49%;
+    margin-left:2%;
+}
+.business-course-bot-right-detail p{
+    font-size:18px;
+    line-height:34px;
+}
+.business-course-bot-right-detail span{
+    display:block;
+    height:180px;
+    font-size:14px;
+    line-height:20px;
+    overflow:hidden;
+}
+/*课程目录*/
+.business-course{
+    padding-top:20px;
+}
+.business-course ul li{
+    border-bottom:1px dashed #dddddd;
+}
+.business-course ul li span{
+    line-height:50px;
+    font-size:14px;
+    display:inline-block;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.business-course ul li span:nth-of-type(1){
+    width:20%;
+}
+.business-course ul li span:nth-of-type(2){
+    width:60%;
+}
+.business-course ul li span:nth-of-type(3){
+    width:20%;
+}
+

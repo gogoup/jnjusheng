@@ -1,0 +1,110 @@
+.service-activity-con{
+    margin-top:20px;
+}
+.service-activity-sub{
+    margin:20px 0;
+    min-height: 494px;
+}
+.service-activity-list{
+    display:block;
+    float:left;
+    width:23%;
+    margin-right:2%;
+    box-shadow:0 4px 15px #dad9d9;
+    padding-bottom:15px;
+}
+.service-activity-list img{
+    width:100%;
+}
+.service-act-detail{
+    width:90%;
+    font-size:14px;
+    margin:0 auto;
+}
+.service-act-detail h3{
+    text-align:center;
+    border-bottom: 1px solid #e5e5e5;
+    line-height:30px;
+    margin:5px 0 5px 0;
+}
+.service-act-detail p{
+    line-height:21px;
+}
+.service-act-state{
+    border-top:1px dotted #e5e5e5;
+    margin-top:5px;
+}
+.service-act-state span{
+    display:block;
+    margin-top:8px;
+    background: #ff9f9f;
+    width:80px;
+    line-height:26px;
+    color:#ffffff;
+    text-align:center;
+    font-size:12px;
+}
+.service-act-end{
+    background: #a3a3a3!important;
+}
+/*创业活动详情页*/
+.service-sub-top img{
+    width:45%;
+    float:left;
+    margin:0 1.6% 1.6% 1.6%;
+}
+.service-sub-detail{
+    width:51%;
+    margin-top:20px;
+    float:right;
+}
+.service-sub-detail h2{
+    color:#000000;
+    font-size:20px;
+    font-weight:bold;
+    line-height:30px;
+    padding-bottom:10px;
+}
+.service-sub-detail h4{
+    font-size:14px;
+    padding:10px 0;
+    border-bottom:1px solid #e5e5e5;
+}
+.service-sub-detail p{
+    font-size:12px;
+    line-height:25px;
+}
+.service-sub-detail p i{
+    background: url("../image/service-time.png");
+    display: block;
+    width: 20px;
+    height:20px;
+    float:left;
+    margin-top:10px;
+}
+.service-sub-detail p:nth-of-type(1) i{
+    background: url("../image/service-position.png");
+}
+.service-sub-detail p:nth-of-type(4) i{
+    background: url("../image/service-num.png");
+}
+.service-sub-detail p span{
+    display:block;
+    margin:10px 0 0 5px;
+    float:left;
+}
+.service-sub-detail button{
+    background:#ff9f9f;
+    color:#ffffff;
+    border:none;
+    padding:10px 15px;
+    font-size:16px;
+    border-radius:5px;
+    margin-top:20px;
+}
+.service-sub-bottom{
+    padding:20px 0;
+}
+.service-sub-bottom p{
+    line-height:28px;
+}

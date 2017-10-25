@@ -1,0 +1,1997 @@
+[ 2017-10-25T08:42:40+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T08:51:16+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T08:51:17+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T09:11:11+08:00 ] ::1 /index.php/Home/Register/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T09:11:19+08:00 ] ::1 /index.php/Home/Register/checkName.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sd_user` WHERE ( user_name = 'werty' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-25T09:12:01+08:00 ] ::1 /index.php/Home/Register/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\jnjusheng\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Use of undefined constant code - assumed 'code' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 139 行.
+NOTIC: [8] Use of undefined constant message - assumed 'message' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 140 行.
+NOTIC: [8] Use of undefined constant 上传成功 - assumed '上传成功' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 141 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-25T09:12:04+08:00 ] ::1 /index.php/Home/Register/upload.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] call_user_func() expects parameter 1 to be a valid callback, no array or string given D:\jnjusheng\ThinkPHP\Library\Think\Upload.class.php 第 170 行.
+NOTIC: [8] Use of undefined constant code - assumed 'code' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 139 行.
+NOTIC: [8] Use of undefined constant message - assumed 'message' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 140 行.
+NOTIC: [8] Use of undefined constant 上传成功 - assumed '上传成功' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 141 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-10-25T09:12:07+08:00 ] ::1 /index.php/Home/Register/reg_handle.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sd_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_user` WHERE ( user_name = 'werty' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `sd_user` (`user_name`,`user_pwd`,`user_state`,`user_role`) VALUES ('werty','5abd06d6f6ef0e022e11b8a41f57ebda','1','1') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_user_info` [ RunTime:0.0000s ]
+SQL: INSERT INTO `sd_user_info` (`salt`,`name`,`email`,`tel`,`sex`,`card_no`,`add`,`card1`,`card2`,`user_id`) VALUES ('e550602fd3c3b0c85f1608fc0ebf96c6','身份','2687676266@qq.com','13654487798','1','370181123698745233','河南省信阳市新县身份','./Upload/2017-10-25/59efe4e1c1c0f.png','./Upload/2017-10-25/59efe4e450f5f.png','47') [ RunTime:0.0312s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 98 行.
+NOTIC: [8] Use of undefined constant E08 - assumed 'E08' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 98 行.
+NOTIC: [8] Use of undefined constant message - assumed 'message' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 99 行.
+NOTIC: [8] Use of undefined constant 正确 - assumed '正确' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 100 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T09:12:07+08:00 ] ::1 /index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T09:14:15+08:00 ] ::1 /index.php/Home/Register/active/id/37/salt/e550602fd3c3b0c85f1608fc0ebf96c6/state/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T09:18:54+08:00 ] ::1 /index.php/Home/Register/active/id/37/salt/e550602fd3c3b0c85f1608fc0ebf96c6/state/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T09:20:39+08:00 ] ::1 /index.php/Home/Register/active/id/37/salt/e550602fd3c3b0c85f1608fc0ebf96c6/state/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T09:20:40+08:00 ] ::1 /index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T09:21:00+08:00 ] ::1 /index.php/Home/Register/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T09:21:06+08:00 ] ::1 /index.php/Home/Register/checkName.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_user` WHERE ( user_name = 'qwer' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-25T09:22:31+08:00 ] ::1 /index.php/Home/Register/reg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sd_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_user` WHERE ( user_name = 'qwer' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `sd_user` (`user_name`,`user_pwd`,`user_state`,`user_role`) VALUES ('qwer','5abd06d6f6ef0e022e11b8a41f57ebda','1','1') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_user_estp` [ RunTime:0.0040s ]
+SQL: INSERT INTO `sd_user_estp` (`salt`,`company`,`company_card`,`registered_fund`,`founding_time`,`nature_of_unit`,`legal_person`,`institutional`,`work_tel`,`department`,`contacts`,`contacts_tel`,`contents_email`,`company_intro`,`company_add`,`user_id`) VALUES ('4b3581d8b125edc767eec02e9ba579e3','十分丰富','fsfdfsdf-o','423434','2017-10-25','外企代表处','水电费','企业法人','02365877878','身份','是非得失','13456789054','2687676266@qq.com','方法水电费','江西宜春市铜鼓县','48') [ RunTime:0.0400s ]
+NOTIC: [8] Undefined index: email D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 262 行.
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 271 行.
+NOTIC: [8] Use of undefined constant E16 - assumed 'E16' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 271 行.
+NOTIC: [8] Use of undefined constant message - assumed 'message' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 272 行.
+NOTIC: [8] Use of undefined constant 注册失败 - assumed '注册失败' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 273 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-25T09:25:10+08:00 ] ::1 /index.php/Home/Register/reg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sd_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sd_user` WHERE ( user_name = 'qwer' ) LIMIT 1   [ RunTime:0.0000s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant E03 - assumed 'E03' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant message - assumed 'message' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 188 行.
+NOTIC: [8] Use of undefined constant 用户名已存在 - assumed '用户名已存在' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 189 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2017-10-25T09:25:18+08:00 ] ::1 /index.php/Home/Register/checkName.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `sd_user` WHERE ( user_name = 'qwerq' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T09:25:26+08:00 ] ::1 /index.php/Home/Register/reg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_user` WHERE ( user_name = 'qwerq' ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: INSERT INTO `sd_user` (`user_name`,`user_pwd`,`user_state`,`user_role`) VALUES ('qwerq','5abd06d6f6ef0e022e11b8a41f57ebda','1','1') [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `sd_user_estp` [ RunTime:0.0030s ]
+SQL: INSERT INTO `sd_user_estp` (`salt`,`company`,`company_card`,`registered_fund`,`founding_time`,`nature_of_unit`,`legal_person`,`institutional`,`work_tel`,`department`,`contacts`,`contacts_tel`,`contents_email`,`company_intro`,`company_add`,`user_id`) VALUES ('c2472e2ab8d27e650c597d579ae3de39','十分丰富','fsfdfsdf-o','423434','2017-10-25','外企代表处','水电费','企业法人','02365877878','身份','是非得失','13456789054','2687676266@qq.com','方法水电费','江西宜春市铜鼓县','49') [ RunTime:0.0360s ]
+NOTIC: [8] Undefined index: email D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 262 行.
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 271 行.
+NOTIC: [8] Use of undefined constant E16 - assumed 'E16' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 271 行.
+NOTIC: [8] Use of undefined constant message - assumed 'message' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 272 行.
+NOTIC: [8] Use of undefined constant 注册失败 - assumed '注册失败' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 273 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T09:26:23+08:00 ] ::1 /index.php/Home/Register/reg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sd_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_user` WHERE ( user_name = 'qwerq' ) LIMIT 1   [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant E03 - assumed 'E03' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 187 行.
+NOTIC: [8] Use of undefined constant message - assumed 'message' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 188 行.
+NOTIC: [8] Use of undefined constant 用户名已存在 - assumed '用户名已存在' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 189 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-25T09:26:27+08:00 ] ::1 /index.php/Home/Register/checkName.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_user` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_user` WHERE ( user_name = 'qwerqq' ) LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-25T09:26:35+08:00 ] ::1 /index.php/Home/Register/reg.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sd_user` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sd_user` WHERE ( user_name = 'qwerqq' ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: INSERT INTO `sd_user` (`user_name`,`user_pwd`,`user_state`,`user_role`) VALUES ('qwerqq','5abd06d6f6ef0e022e11b8a41f57ebda','1','1') [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `sd_user_estp` [ RunTime:0.0030s ]
+SQL: INSERT INTO `sd_user_estp` (`salt`,`company`,`company_card`,`registered_fund`,`founding_time`,`nature_of_unit`,`legal_person`,`institutional`,`work_tel`,`department`,`contacts`,`contacts_tel`,`contents_email`,`company_intro`,`company_add`,`user_id`) VALUES ('80b557e9047d3147b0f71c81611877e8','十分丰富','fsfdfsdf-o','423434','2017-10-25','外企代表处','水电费','企业法人','02365877878','身份','是非得失','13456789054','2687676266@qq.com','方法水电费','江西宜春市铜鼓县','50') [ RunTime:0.0310s ]
+NOTIC: [8] Use of undefined constant error_code - assumed 'error_code' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 265 行.
+NOTIC: [8] Use of undefined constant E15 - assumed 'E15' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 265 行.
+NOTIC: [8] Use of undefined constant message - assumed 'message' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 266 行.
+NOTIC: [8] Use of undefined constant 正确 - assumed '正确' D:\jnjusheng\Application\Home\Controller\RegisterController.class.php 第 267 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-25T09:26:35+08:00 ] ::1 /index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T09:27:01+08:00 ] ::1 /index.php/Home/Register/active/id/9/salt/80b557e9047d3147b0f71c81611877e8/state/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T09:27:02+08:00 ] ::1 /index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T09:57:42+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T09:57:51+08:00 ] ::1 /index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-25T09:57:56+08:00 ] ::1 /index.php/Home/Register/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:08:01+08:00 ] ::1 /index.php/Home/Register/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:08:05+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:08:10+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-25T10:08:10+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:08:11+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:08:11+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-25T10:08:11+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:09:38+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:11:04+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:11:11+08:00 ] ::1 /index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:11:14+08:00 ] ::1 /index.php/Home/Register/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:21:04+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:21:05+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:21:06+08:00 ] ::1 /index.php/Home/Information/css/commonSection.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:css
+
+[ 2017-10-25T10:21:06+08:00 ] ::1 /index.php/Home/Information/js/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:js
+
+[ 2017-10-25T10:21:06+08:00 ] ::1 /index.php/Home/Information/css/common.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:css
+
+[ 2017-10-25T10:21:06+08:00 ] ::1 /index.php/Home/Information/css/service.css
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:css
+
+[ 2017-10-25T10:21:06+08:00 ] ::1 /index.php/Home/Information/image/logo.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:21:06+08:00 ] ::1 /index.php/Home/Information/image/jz1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:21:06+08:00 ] ::1 /index.php/Home/Information/js/jquery-1.8.3.min.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:js
+
+[ 2017-10-25T10:21:06+08:00 ] ::1 /index.php/Home/Information/js/common.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:js
+
+[ 2017-10-25T10:21:06+08:00 ] ::1 /index.php/Home/Information/image/jz2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:21:06+08:00 ] ::1 /index.php/Home/Information/image/service-activity2.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:21:06+08:00 ] ::1 /index.php/Home/Information/image/service-activity4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:21:06+08:00 ] ::1 /index.php/Home/Information/image/service-activity1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:21:06+08:00 ] ::1 /index.php/Home/Information/image/jz3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:21:06+08:00 ] ::1 /index.php/Home/Information/image/logoMini.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:21:06+08:00 ] ::1 /index.php/Home/Information/image/danwei.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-25T10:21:06+08:00 ] ::1 /index.php/Home/Information/image/jz4.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:21:06+08:00 ] ::1 /index.php/Home/Information/image/jz1.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:21:06+08:00 ] ::1 /index.php/Home/Information/image/codeDetail.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:21:06+08:00 ] ::1 /index.php/Home/Information/image/service-activity3.png
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:23:26+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:33:14+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:33:24+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:33:25+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:34:12+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-25T10:35:20+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:35:22+08:00 ] ::1 /index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:35:55+08:00 ] ::1 /index.php/Home/Information/infor_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:37:34+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:38:03+08:00 ] ::1 /index.php/Home/Information/infor_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:38:42+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:39:03+08:00 ] ::1 /index.php/Home/Information/infor_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:40:56+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:42:10+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:44:37+08:00 ] ::1 /index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:45:09+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:45:10+08:00 ] ::1 /index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:45:13+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:45:27+08:00 ] ::1 /index.php/Home/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:45:34+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:45:35+08:00 ] ::1 /index.php/Home/Register/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:45:42+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:45:43+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:46:18+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:46:20+08:00 ] ::1 /index.php/Home/Index/$vo.henu_url.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:$vo.henu_url
+
+[ 2017-10-25T10:46:35+08:00 ] ::1 /index.php/Home/Index/$vo.henu_url.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:$vo.henu_url
+
+[ 2017-10-25T10:46:39+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:50:33+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:51:03+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-25T10:51:05+08:00 ] ::1 /index.php/Home/Information/infor_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:51:15+08:00 ] ::1 /index.php/Home/Information/business-service.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:business-service
+
+[ 2017-10-25T10:51:23+08:00 ] ::1 /index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:51:27+08:00 ] ::1 /index.php/Home/index.php/Home/Information/infor_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Index.php
+
+[ 2017-10-25T10:52:30+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:52:31+08:00 ] ::1 /index.php/Home/Information/infor_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:52:37+08:00 ] ::1 /index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:52:41+08:00 ] ::1 /index.php/Home/index.php/Home/Information/infor_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Index.php
+
+[ 2017-10-25T10:57:14+08:00 ] ::1 /index.php/Home/index.php/Home/Information/infor_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 无法加载控制器:Index.php
+
+[ 2017-10-25T10:57:17+08:00 ] ::1 /index.php/Home/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:57:27+08:00 ] ::1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:57:28+08:00 ] ::1 /index.php/Home/Information/infor_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:57:48+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:57:49+08:00 ] ::1 /index.php/Home/Information/infor_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T10:58:24+08:00 ] ::1 /index.php/Home/Information/infor_center
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T11:14:21+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-25T11:14:29+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T11:16:53+08:00 ] ::1 /index.php/Home/Information/service-new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:service-new
+
+[ 2017-10-25T11:59:30+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T12:01:13+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T12:01:14+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T12:01:15+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T12:03:26+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T12:48:02+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T12:52:48+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T12:54:32+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T12:55:50+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-25T12:56:00+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T12:56:00+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T12:57:28+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T12:57:53+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T12:58:07+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T12:59:10+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T13:14:55+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T13:15:39+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T13:21:19+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T13:21:51+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T13:21:52+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T13:47:40+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T13:59:12+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T13:59:14+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 模板不存在:./Application/Home/View/Information/new_notice.html
+
+[ 2017-10-25T13:59:38+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T14:00:35+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T14:01:20+08:00 ] ::1 /index.php/Home/Information/service-center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T14:01:28+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T14:01:54+08:00 ] ::1 /index.php/Home/Information/business-service.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:business-service
+
+[ 2017-10-25T14:02:39+08:00 ] ::1 /index.php/Home/Information/service-center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T14:02:51+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T14:06:59+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T14:09:05+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T14:11:01+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T14:13:27+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T14:15:57+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'show>1 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `sd_new_notice` WHERE ( show>1 ) 
+
+[ 2017-10-25T14:16:38+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'show=1 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `sd_new_notice` WHERE ( show=1 ) 
+
+[ 2017-10-25T14:17:11+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'show='1' )' at line 1
+ [ SQL语句 ] : SELECT * FROM `sd_new_notice` WHERE ( show='1' ) 
+
+[ 2017-10-25T14:34:32+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'show=1 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `sd_new_notice` WHERE ( show=1 ) 
+
+[ 2017-10-25T14:34:33+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 1064:You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'show=1 )' at line 1
+ [ SQL语句 ] : SELECT * FROM `sd_new_notice` WHERE ( show=1 ) 
+
+[ 2017-10-25T14:35:41+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T14:36:43+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T14:42:09+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 1054:Unknown column 'n_show' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `sd_new_notice` WHERE ( n_show>1 ) 
+
+[ 2017-10-25T14:42:21+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T14:42:47+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T14:55:23+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T15:21:04+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T15:41:03+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T15:41:04+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T15:41:12+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 10,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:41:13+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0130s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 20,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:41:14+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 30,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:41:15+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 40,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:41:15+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 50,10   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:41:16+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 60,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:41:19+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 50,10   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:41:20+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 40,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:41:20+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 30,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:41:21+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 20,10   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:41:21+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 10,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:41:21+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 0,10   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:41:26+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 10,10   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:41:26+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 20,10   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:41:26+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 30,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:41:26+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 40,10   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:41:27+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 50,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:41:27+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 60,10   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:42:55+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T15:43:41+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T15:44:24+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T15:46:28+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T15:46:42+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 10,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:46:51+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 20,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:46:51+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 30,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:46:52+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 40,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:46:52+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 50,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:46:52+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 60,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:51:13+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T15:51:21+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 10,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:51:24+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:54:41+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 10,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:54:42+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 20,10   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:54:43+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 30,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:54:44+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 20,10   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:54:45+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 10,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:54:45+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 0,10   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:54:47+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 10,10   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:54:48+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 20,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:54:48+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 30,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:54:49+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 20,10   [ RunTime:0.0010s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:54:49+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 10,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:54:50+08:00 ] ::1 /index.php/Home/Information/getContent.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `sd_new_notice` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `sd_new_notice` LIMIT 0,10   [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: user_list D:\jnjusheng\Application\Home\Controller\InformationController.class.php 第 31 行.
+ERR: 模板不存在:./Application/Home/View/Information/getContent.html
+
+[ 2017-10-25T15:56:16+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T15:56:54+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:03:25+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:05:18+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:05:19+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-25T16:05:20+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:12:48+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:14:00+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:14:16+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:14:37+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:15:14+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:18:50+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:18:52+08:00 ] ::1 /index.php/Home/Information/new_notice/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:18:56+08:00 ] ::1 /index.php/Home/Information/new_notice/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:18:59+08:00 ] ::1 /index.php/Home/Information/new_notice/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:19:04+08:00 ] ::1 /index.php/Home/Information/new_notice/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:19:16+08:00 ] ::1 /index.php/Home/Information/new_notice/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:19:30+08:00 ] ::1 /index.php/Home/Information/new_notice/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:19:33+08:00 ] ::1 /index.php/Home/Information/new_notice/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:19:35+08:00 ] ::1 /index.php/Home/Information/new_notice/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:19:37+08:00 ] ::1 /index.php/Home/Information/new_notice/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:19:38+08:00 ] ::1 /index.php/Home/Information/new_notice/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:19:40+08:00 ] ::1 /index.php/Home/Information/new_notice/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:20:17+08:00 ] ::1 /index.php/Home/Information/new_notice/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:20:21+08:00 ] ::1 /index.php/Home/Information/new_notice/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:20:26+08:00 ] ::1 /index.php/Home/Information/new_notice/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:20:28+08:00 ] ::1 /index.php/Home/Information/new_notice/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:20:56+08:00 ] ::1 /index.php/Home/Information/new_notice/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:20:59+08:00 ] ::1 /index.php/Home/Information/new_notice/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:21:02+08:00 ] ::1 /index.php/Home/Information/new_notice/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:21:04+08:00 ] ::1 /index.php/Home/Information/new_notice/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:21:07+08:00 ] ::1 /index.php/Home/Information/new_notice/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:21:36+08:00 ] ::1 /index.php/Home/Information/new_notice/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:21:38+08:00 ] ::1 /index.php/Home/Information/new_notice/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:21:40+08:00 ] ::1 /index.php/Home/Information/new_notice/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:21:42+08:00 ] ::1 /index.php/Home/Information/new_notice/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:21:44+08:00 ] ::1 /index.php/Home/Information/new_notice/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:22:37+08:00 ] ::1 /index.php/Home/Information/new_notice/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:22:44+08:00 ] ::1 /index.php/Home/Information/new_notice/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:22:46+08:00 ] ::1 /index.php/Home/Information/new_notice/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:22:49+08:00 ] ::1 /index.php/Home/Information/new_notice/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:22:52+08:00 ] ::1 /index.php/Home/Information/new_notice/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:22:56+08:00 ] ::1 /index.php/Home/Information/new_notice/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:22:59+08:00 ] ::1 /index.php/Home/Information/new_notice/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:29:36+08:00 ] ::1 /index.php/Home/Information/new_notice/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:33:55+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:33:59+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:34:01+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:38:36+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:39:21+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-25T16:39:59+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:40:01+08:00 ] ::1 /index.php/Home/Information/new_notice/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:40:03+08:00 ] ::1 /index.php/Home/Information/new_notice/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:40:42+08:00 ] ::1 /index.php/Home/Information/new_notice/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:40:48+08:00 ] ::1 /index.php/Home/Information/new_notice/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:41:10+08:00 ] ::1 /index.php/Home/Information/new_notice/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:41:11+08:00 ] ::1 /index.php/Home/Information/new_notice/p/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:41:14+08:00 ] ::1 /index.php/Home/Information/new_notice/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:41:17+08:00 ] ::1 /index.php/Home/Information/new_notice/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:43:21+08:00 ] ::1 /index.php/Home/Information/new_notice/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:43:26+08:00 ] ::1 /index.php/Home/Information/new_notice/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:50:30+08:00 ] ::1 /index.php/Home/Information/new_notice/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:50:32+08:00 ] ::1 /index.php/Home/Information/content/id/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:content
+
+[ 2017-10-25T16:50:42+08:00 ] ::1 /index.php/Home/Information/new_notice/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-25T16:50:43+08:00 ] ::1 /index.php/Home/Information/content/id/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:52:44+08:00 ] ::1 /index.php/Home/Information/content/id/10
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:55:26+08:00 ] ::1 /index.php/Home/Information/content/id/service-center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'service' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `sd_new_notice` WHERE ( id=service-center ) LIMIT 1  
+
+[ 2017-10-25T16:55:56+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:55:58+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:56:00+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:56:02+08:00 ] ::1 /index.php/Home/Information/content/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:59:05+08:00 ] ::1 /index.php/Home/Information/content/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:59:43+08:00 ] ::1 /index.php/Home/Information/content/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T16:59:43+08:00 ] 127.0.0.1 /index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:05:50+08:00 ] ::1 /index.php/Home/Information/content/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:12:00+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:12:03+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:12:04+08:00 ] ::1 /index.php/Home/Information/new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:new
+
+[ 2017-10-25T17:12:08+08:00 ] ::1 /index.php/Home/Information/new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:new
+
+[ 2017-10-25T17:12:21+08:00 ] ::1 /index.php/Home/Information/new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:new
+
+[ 2017-10-25T17:12:23+08:00 ] ::1 /index.php/Home/Information/new.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 非法操作:new
+
+[ 2017-10-25T17:12:34+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:12:36+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:12:37+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:12:39+08:00 ] ::1 /index.php/Home/Information/content/id/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:14:07+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:14:09+08:00 ] ::1 /index.php/Home/Information/content/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:16:12+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:16:32+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:16:34+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:16:35+08:00 ] ::1 /index.php/Home/Information/content/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:17:07+08:00 ] ::1 /index.php/Home/Information/content/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:17:40+08:00 ] ::1 /index.php/Home/Information/content/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:17:41+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:17:44+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:20:59+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:21:08+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:21:10+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:21:13+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:22:01+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:22:02+08:00 ] ::1 /index.php/Home/Information/new_notice.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:22:05+08:00 ] ::1 /index.php/Home/Information/content/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:23:05+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:23:07+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:23:08+08:00 ] ::1 /index.php/Home/Information/news.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:23:10+08:00 ] ::1 /index.php/Home/Information/service-center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:23:11+08:00 ] ::1 /index.php/Home/Information/news.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2017-10-25T17:33:05+08:00 ] ::1 /index.php/Home/Information/news.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'new_show' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `sd_new_media` WHERE ( new_show>1 ) LIMIT 0,8  
+
+[ 2017-10-25T17:33:13+08:00 ] ::1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:33:15+08:00 ] ::1 /index.php/Home/Information/infor_center.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:33:16+08:00 ] ::1 /index.php/Home/Information/news/state/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:33:18+08:00 ] ::1 /index.php/Home/Information/content/id/1.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2017-10-25T17:33:23+08:00 ] ::1 /index.php/Home/Information/news/state/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+ERR: 1054:Unknown column 'new_show' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM `sd_new_enterprise` WHERE ( new_show>1 ) LIMIT 0,8  
+

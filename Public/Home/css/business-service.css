@@ -1,0 +1,65 @@
+.business-content{
+    padding:20px 0;
+}
+.business-con{
+    margin-top:20px;
+}
+
+.business-con-right-tab .info-matter-right{
+    width:91%;
+}
+.business-con-right .home-project-content ul li{
+    margin:0 0 20px 1%;
+}
+.business-con-right .home-project-content ul li{
+    margin-left:0.5%;
+}
+/*项目推荐详情*/
+.business-project-left,.business-project-right{
+    float:left;
+}
+.business-project-left{
+    width:30%;
+}
+.business-project-left img{
+    width:100%;
+}
+.business-project-right{
+    width:68%;
+    margin-left:2%;
+}
+.business-project-right h2{
+    font-size:20px;
+    font-weight:bold;
+    line-height:28px;
+}
+.business-project-right p{
+    background:#e8e8e8;
+    line-height:24px;
+    border-radius:3px;
+    padding:10px;
+    margin:10px 0;
+}
+.business-project-right div{
+    padding-top:10px;
+}
+.business-project-right button{
+    background:#002772;
+    color:#ffffff;
+    border:none;
+    padding:8px 12px;
+    border-radius:3px;
+    margin-top:15px;
+}
+.business-project-con{
+    margin-top:20px;
+}
+.business-project-con .business-con{
+    margin-top:10px;
+}
+.business-project-con p{
+    line-height:22px;
+}
+.business-project-con img{
+    margin-top:10px;
+}
