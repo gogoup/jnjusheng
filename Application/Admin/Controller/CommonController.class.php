@@ -2,8 +2,10 @@
 namespace Admin\Controller;
 use Think\Controller;
 
+
 class CommonController extends Controller
 {
+
     function login()
     {
         layout(false);
@@ -25,6 +27,36 @@ class CommonController extends Controller
         }else{
             echo("<script>alert('检查您的用户名/密码。')</script>");
             $this->redirect("login");
+        }
+    }
+    public function upimg()
+    {
+        $file=$_FILES['theimg'];
+        if($file["error"])
+        {
+            echo $file["error"];
+        }else{
+            if(($file["type"]=="image/x-png" || $file["type"]=="image/gif" || $file["type"]=="image/pjpeg" || $file["type"]=="image/jpg" || $file["type"]=="image/png" || $file["type"]=="image/jpeg") && $file["size"]<1024000)
+            {
+                $temp = explode(".", $file["name"]);
+                $extension = end($temp);
+                $filename =time().".".$extension;
+                $jia=date("Ymd");
+                $path="./Public/umeditor/upload/".$jia;
+                if(!file_exists($path))
+                {
+                    if ( !mkdir( $path , 0777 , true ) ) {
+                        return false;
+                    }
+                }
+                if ( !move_uploaded_file( $file[ "tmp_name" ] , $path."/".$filename) ) {
+                    return false;
+                }
+                echo "<script>parent.$('#showimg').attr('src','/Public/umeditor/upload/".$jia."/".$filename."');</script>";
+            }else{
+                return false;
+            }
+
         }
     }
 

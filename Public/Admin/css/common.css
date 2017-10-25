@@ -1,0 +1,46 @@
+
+.r_float{
+    float: right;
+}
+.l_float{
+    float: left;
+}
+a{
+    color: #000;
+    text-decoration: none;
+}
+.y_block{
+    display: inline-block;
+}
+
+.y_controls{
+    margin-left: 180px;
+}
+
+/*-------------502错误页面  开始-----------------*/
+.y_error_out{
+    text-align: center;
+    margin-top: 100px;
+}
+.y_error_out button{
+    width: 100px;
+    height: 35px;
+    background: none;
+    color:#31363d ;
+    outline: none;
+    border: 1px solid #31363d;
+}
+.y_error_out button:hover{
+    background-color: #31363d;
+    border: none;
+    color: white;
+}
+/*-------------502错误页面  结束-----------------*/
+.control-label{
+    float: left;
+    width: 160px;
+    padding-top: 5px;
+    text-align: right;
+    margin-right: 20px;
+}
+
