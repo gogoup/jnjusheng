@@ -138,7 +138,7 @@
                 <div class="info-matter-right service-new-right">
                     <ul>
                         <?php if(is_array($list)): foreach($list as $key=>$val): ?><li>
-                            <a href="/index.php/Home/Information/content/id/<?php echo ($val["id"]); ?>.html" class="float-clear">
+                            <a href="/index.php/Home/Information/content/state/<?php echo ($state); ?>/id/<?php echo ($val["id"]); ?>.html" class="float-clear">
                                 <p><?php echo ($val["title"]); ?></p><span><?php echo ($val["create_time"]); ?></span>
                             </a>
                         </li><?php endforeach; endif; ?>
