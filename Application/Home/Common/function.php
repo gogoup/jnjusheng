@@ -1,6 +1,4 @@
 <?php
-namespace Home\Controller;
-use Home\Controller;
 //封装请求方法
   function request($url, $https = true, $method = 'get', $data = null)
   {
