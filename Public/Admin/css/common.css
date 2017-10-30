@@ -12,11 +12,6 @@ a{
 .y_block{
     display: inline-block;
 }
-
-.y_controls{
-    margin-left: 180px;
-}
-
 /*-------------502错误页面  开始-----------------*/
 .y_error_out{
     text-align: center;
@@ -42,5 +37,8 @@ a{
     padding-top: 5px;
     text-align: right;
     margin-right: 20px;
+}
+.y_controls{
+    margin-left: 180px;
 }
 

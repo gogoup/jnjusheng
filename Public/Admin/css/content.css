@@ -1,0 +1,71 @@
+#y_span1,#y_span2,#y_span3{
+    display: inline-block;
+    font-size: 14px;
+    /*font-weight: 600;*/
+}
+input[type="text"]:focus{
+    outline: none;
+    border-color: #CCC;
+    box-shadow: none;
+    /*box-shadow: inset 0 1px 1px rgba(0,0,0,0.075), 0 0 8px rgba(82,168,236,0.6);*/
+}
+.y_btn{
+    height: 35px;
+    margin-top: -10px;
+    width: 45px;
+    margin-left: -5px;
+    outline: none;
+    border: 1px solid #c9c9c9;
+}
+/*-------------------页数---开始-----------------*/
+.pages {
+    margin:50px auto 30px auto;
+    color: #221815;
+}
+.all_page{
+    margin-top: 5px;
+    margin-right: 20px;
+}
+.pagelist .thisclass {
+    background: #f0f2f5;
+    border: 0;
+    font-weight: bold;
+}
+.pagelist li {
+    float: left;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    margin-left: 5px;
+    font-size: 12px;
+    border-radius: 3px;
+    background: #fff;
+    list-style: none;
+}
+.pagelist li a{
+    color: #221815;
+}
+/*-------------------页数---结束----------------*/
+.y_tabTitle{
+    font-size: 16px;
+}
+.y_tabTitle li{
+    width: 100px;
+    /*background-color: #35aa47;*/
+    text-align: center;
+    /*color: white;*/
+}
+.y_color_green{
+    color: green;
+}
+.y_clolor_green:hover{
+    color: green;
+}
+.y_clolor_red:hover{
+    color: red;
+}
+.y_clolor_yellow:hover{
+    color: #ff760c;
+}
+.y_clolor_blue:hover{
+    color: #00a0e9;
+}

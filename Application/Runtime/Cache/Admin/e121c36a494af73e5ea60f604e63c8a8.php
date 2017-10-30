@@ -31,6 +31,8 @@
 
 <link rel="stylesheet" href="/Public/Admin/css/DT_bootstrap.css" />
 <link rel="stylesheet" href="/Public/Admin/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/Public/Admin/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/Public/Admin/css/content.css" />
 
 <?php if(CONTROLLER_NAME == 'Publish'): ?><!--引用textarea，设置文字字体样式-->
     <link rel="stylesheet" type="text/css" href="/Public/Admin/css/bootstrap-fileupload.css" />
