@@ -6,6 +6,10 @@ use Think\Controller;
 class CommonController extends Controller
 {
 
+    function index()
+    {
+        $this->check();
+    }
     function login()
     {
         layout(false);
@@ -42,7 +46,7 @@ class CommonController extends Controller
                 $extension = end($temp);
                 $filename =time().".".$extension;
                 $jia=date("Ymd");
-                $path="./Public/umeditor/upload/".$jia;
+                $path="./Public/upload/".$jia;
                 if(!file_exists($path))
                 {
                     if ( !mkdir( $path , 0777 , true ) ) {
@@ -52,12 +56,45 @@ class CommonController extends Controller
                 if ( !move_uploaded_file( $file[ "tmp_name" ] , $path."/".$filename) ) {
                     return false;
                 }
-                echo "<script>parent.$('#showimg').attr('src','/Public/umeditor/upload/".$jia."/".$filename."');</script>";
+                echo "<script>parent.$('#showimg').attr('src','/Public/upload/".$jia."/".$filename."');</script>";
             }else{
                 return false;
             }
 
         }
+    }
+
+    public function upfile()
+    {
+        $file=$_FILES['thefile'];
+        $theid=$_POST['theid'];
+        if($file["error"])
+        {
+            echo $file["error"];
+        }else{
+            $type=array('doc','docx');
+            $temp = explode(".", $file["name"]);
+            $extension = end($temp);
+            if(in_array($extension,$type))
+            {
+                $filename =time().".".$extension;
+                $jia=date("Ymd");
+                $path="./Public/upload/".$jia;
+                if(!file_exists($path))
+                {
+                    if ( !mkdir( $path , 0777 , true ) ) {
+                        return false;
+                    }
+                }
+                if ( !move_uploaded_file( $file[ "tmp_name" ] , $path."/".$filename) ) {
+                    return false;
+                }
+                echo "<script>parent.$('#".$theid."').attr('value','/Public/upload/".$jia."/".$filename."');parent.$('#msg').html(\"OK\");</script>";
+            }else{
+                echo "<script>parent.$('#msg').html(\"type of error\")</script>";
+            }
+        }
+
     }
 
 

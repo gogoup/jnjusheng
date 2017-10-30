@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
 
 <!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
 
@@ -22,31 +22,31 @@
 
     <!-- BEGIN GLOBAL MANDATORY STYLES -->
 
-    <link href="__PUBLIC__/Admin/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/Public/Admin/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
 
-    <link href="__PUBLIC__/Admin/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/Public/Admin/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
 
-    <link href="__PUBLIC__/Admin/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="/Public/Admin/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
 
-    <link href="__PUBLIC__/Admin/css/style-metro.css" rel="stylesheet" type="text/css"/>
+    <link href="/Public/Admin/css/style-metro.css" rel="stylesheet" type="text/css"/>
 
-    <link href="__PUBLIC__/Admin/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="/Public/Admin/css/style.css" rel="stylesheet" type="text/css"/>
 
-    <link href="__PUBLIC__/Admin/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+    <link href="/Public/Admin/css/style-responsive.css" rel="stylesheet" type="text/css"/>
 
-    <link href="__PUBLIC__/Admin/css/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+    <link href="/Public/Admin/css/default.css" rel="stylesheet" type="text/css" id="style_color"/>
 
-    <link href="__PUBLIC__/Admin/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+    <link href="/Public/Admin/css/uniform.default.css" rel="stylesheet" type="text/css"/>
 
     <!-- END GLOBAL MANDATORY STYLES -->
 
     <!-- BEGIN PAGE LEVEL STYLES -->
 
-    <link href="__PUBLIC__/Admin/css/login-soft.css" rel="stylesheet" type="text/css"/>
+    <link href="/Public/Admin/css/login-soft.css" rel="stylesheet" type="text/css"/>
 
     <!-- END PAGE LEVEL STYLES -->
 
-    <link rel="shortcut icon" href="__PUBLIC__/Admin/image/favicon.ico" />
+    <link rel="shortcut icon" href="/Public/Admin/image/favicon.ico" />
 
 </head>
 
@@ -160,47 +160,47 @@
 
 <!-- BEGIN CORE PLUGINS -->
 
-<script src="__PUBLIC__/Admin/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="/Public/Admin/js/jquery-1.10.1.min.js" type="text/javascript"></script>
 
-<script src="__PUBLIC__/Admin/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+<script src="/Public/Admin/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
 
 <!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
 
-<script src="__PUBLIC__/Admin/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<script src="/Public/Admin/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
 
-<script src="__PUBLIC__/Admin/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/Public/Admin/js/bootstrap.min.js" type="text/javascript"></script>
 
 <!--[if lt IE 9]>
 
-<script src="__PUBLIC__/Admin/js/excanvas.min.js"></script>
+<script src="/Public/Admin/js/excanvas.min.js"></script>
 
-<script src="__PUBLIC__/Admin/js/respond.min.js"></script>
+<script src="/Public/Admin/js/respond.min.js"></script>
 
 <![endif]-->
 
-<script src="__PUBLIC__/Admin/js/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="/Public/Admin/js/jquery.slimscroll.min.js" type="text/javascript"></script>
 
-<script src="__PUBLIC__/Admin/js/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="/Public/Admin/js/jquery.blockui.min.js" type="text/javascript"></script>
 
-<script src="__PUBLIC__/Admin/js/jquery.cookie.min.js" type="text/javascript"></script>
+<script src="/Public/Admin/js/jquery.cookie.min.js" type="text/javascript"></script>
 
-<script src="__PUBLIC__/Admin/js/jquery.uniform.min.js" type="text/javascript" ></script>
+<script src="/Public/Admin/js/jquery.uniform.min.js" type="text/javascript" ></script>
 
 <!-- END CORE PLUGINS -->
 
 <!-- BEGIN PAGE LEVEL PLUGINS -->
 
-<script src="__PUBLIC__/Admin/js/jquery.validate.min.js" type="text/javascript"></script>
+<script src="/Public/Admin/js/jquery.validate.min.js" type="text/javascript"></script>
 
-<script src="__PUBLIC__/Admin/js/jquery.backstretch.min.js" type="text/javascript"></script>
+<script src="/Public/Admin/js/jquery.backstretch.min.js" type="text/javascript"></script>
 
 <!-- END PAGE LEVEL PLUGINS -->
 
 <!-- BEGIN PAGE LEVEL SCRIPTS -->
 
-<script src="__PUBLIC__/Admin/js/app.js" type="text/javascript"></script>
+<script src="/Public/Admin/js/app.js" type="text/javascript"></script>
 
-<script src="__PUBLIC__/Admin/js/login-soft.js" type="text/javascript"></script>
+<script src="/Public/Admin/js/login-soft.js" type="text/javascript"></script>
 
 <!-- END PAGE LEVEL SCRIPTS -->
 

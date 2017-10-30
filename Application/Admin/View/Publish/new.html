@@ -52,7 +52,6 @@
                                                     <iframe id="form_hidden" name="form_hidden" style="display:none"></iframe>
                                                     <form id="formimg" action="{:U('Common/upimg')}" method="post" enctype="multipart/form-data" target="form_hidden">
                                                         <span class="btn btn-file">
-
                                                             <input type="file" class="default" name="theimg" onchange="upimg()"/><span>选择图片</span>
                                                         </span>
                                                     </form>
@@ -117,10 +116,7 @@
                                     {
                                         $("#formimg").submit();
                                     }
-                                    function callbackimg(path)
-                                    {
-                                        alert(path);
-                                    }
+
                                     function senddata()
                                     {
                                        var title=$("#title").val();

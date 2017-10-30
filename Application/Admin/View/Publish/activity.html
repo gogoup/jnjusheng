@@ -57,6 +57,15 @@
                                 <form action="#" class="form-horizontal">
                                     <br>
                                     <div class="control-group">
+                                        <label class="control-label">类型：</label>
+                                        <div class="controls">
+                                            <select class="large m-wrap" tabindex="1" name="type" id="thetype">
+                                                <option value="1">创业活动</option>
+                                                <option value="2">创业大赛</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
                                         <label class="control-label">标题：</label>
                                         <div class="controls">
                                             <input type="text" class="span6 m-wrap" id="title"/>
@@ -133,6 +142,19 @@
                                                 </script>
                                         </div>
                                     </div>
+                                    <div class="control-group">
+                                        <label class="control-label">操作：</label>
+                                        <div class="controls">
+                                            <label class="radio">
+                                                <input type="radio" name="state" value="1" checked  />
+                                                可报名
+                                            </label>
+                                            <label class="radio">
+                                                <input type="radio" name="state" value="2" />
+                                                仅展示
+                                            </label>
+                                        </div>
+                                    </div>
                                     <div class="form-actions">
                                         <button type="button" class="btn blue" onclick="addact()">发布</button>
                                         <button type="button" class="btn">取消</button>
@@ -167,6 +189,8 @@
         var join4=$("#test4").val();
         var img=$("#showimg").attr('src');
         var description=$("#description").val();
+        var state=$("input[name='state']:checked").val();
+        var thetype=$('#thetype').val();
         if(title=="")
         {
             alert('标题不能为空');
@@ -175,7 +199,7 @@
         {
             alert('请填写内容');
         }
-        var data={"table":"activity","1":{title:title,sponsor:zhuban,number:number,adderss:adderss,join_start:join1,join_end:join2,act_start:join3,act_end:join4,list_img:img,description:description,content:content}};
+        var data={"table":"activity","1":{title:title,sponsor:zhuban,number:number,adderss:adderss,join_start:join1,join_end:join2,act_start:join3,act_end:join4,list_img:img,description:description,content:content,type:thetype,state:state}};
         $.post("{:U('Publish/send')}",{data:data},function(msg){
             alert(msg);
         },'json')
