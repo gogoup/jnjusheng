@@ -1,7 +1,6 @@
 <?php
 namespace Home\Controller;
-use Think\Controller;
-class LoginController extends Controller {
+class LoginController extends BaseController {
     //展示登录页面
     public function login(){
         $this->display();      

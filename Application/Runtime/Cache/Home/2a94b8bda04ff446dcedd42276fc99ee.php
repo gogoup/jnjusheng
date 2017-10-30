@@ -1,4 +1,4 @@
-<!doctype html>
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,13 +6,13 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
-    <link rel="stylesheet" href="__PUBLIC__/Home/css/common.css">
-    <link rel="stylesheet" href="__PUBLIC__/Home/css/commonSection.css">
-    <link rel="stylesheet" href="__PUBLIC__/Home/css/home.css">
-    <script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="__PUBLIC__/Home/js/common.js"></script>
+    <link rel="stylesheet" href="/Public/Home/css/common.css">
+    <link rel="stylesheet" href="/Public/Home/css/commonSection.css">
+    <link rel="stylesheet" href="/Public/Home/css/home.css">
+    <script type="text/javascript" src="/Public/Home/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/Public/Home/js/common.js"></script>
     <!--轮播图插件-->
-    <script type="text/javascript" src="__PUBLIC__/Home/js/slider.js"></script>
+    <script type="text/javascript" src="/Public/Home/js/slider.js"></script>
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -29,11 +29,11 @@
         <div class="header-middle">
             <div class="common-middle-two float-clear">
                 <div class="header-middle-left">
-                    <img src="__PUBLIC__/Home/image/logo.png" alt="">
+                    <img src="/Public/Home/image/logo.png" alt="">
                 </div>
                 <div class="header-middle-right">
-                    <button class="login"><a href="{:U('Login/login')}">登录</a></button>
-                    <button class="register"><a href="{:U('Register/register')}" target="_blank">注册</a></button>
+                    <button class="login"><a href="<?php echo U('Login/login');?>">登录</a></button>
+                    <button class="register"><a href="<?php echo U('Register/register');?>" target="_blank">注册</a></button>
                 </div>
             </div>
         </div>
@@ -43,7 +43,7 @@
                         <li>
                             <a href="#"><span>首&nbsp;&nbsp;页</span></a>
                         </li>
-                        <li><a href="{:U('Information/information')}"><span>资讯中心</span></a>
+                        <li><a href="<?php echo U('Information/information');?>"><span>资讯中心</span></a>
                             <!--<div class="header-nav-slide float-clear">
                                 <div class="header-nav-slide-left">
                                     <img src="image/nav-slide1.jpg" alt="">
@@ -55,7 +55,7 @@
                                 </div>
                             </div>-->
                         </li>
-                        <li><a href="{:U('Business/business')}"><span>创业服务</span></a>
+                        <li><a href="<?php echo U('Business/business');?>"><span>创业服务</span></a>
                             <!--<div class="header-nav-slide float-clear">
                                 <div class="header-nav-slide-left">
                                     <img src="image/nav-slide2.jpg" alt="">
@@ -119,22 +119,22 @@
         <ul class="slides">
             <li>
                 <a title="" target="_blank" href="#">
-                    <img alt="" style="background: url(__PUBLIC__/Home/image/home-banner1.png) no-repeat center;" src="__PUBLIC__/Home/image/home-banner1.png">
+                    <img alt="" style="background: url(/Public/Home/image/home-banner1.png) no-repeat center;" src="/Public/Home/image/home-banner1.png">
                 </a>
             </li>
             <li>
                 <a title="" href="#">
-                    <img alt="" style="background: url(__PUBLIC__/Home/image/home-banner2.png) no-repeat center;" src="__PUBLIC__/Home/image/home-banner2.png">
+                    <img alt="" style="background: url(/Public/Home/image/home-banner2.png) no-repeat center;" src="/Public/Home/image/home-banner2.png">
                 </a>
             </li>
             <li>
                 <a title="" href="#">
-                    <img alt="" style="background: url(__PUBLIC__/Home/image/home-banner3.png) no-repeat center;" src="__PUBLIC__/Home/image/home-banner3.png">
+                    <img alt="" style="background: url(/Public/Home/image/home-banner3.png) no-repeat center;" src="/Public/Home/image/home-banner3.png">
                 </a>
             </li>
             <li>
                 <a title="" href="#">
-                    <img alt="" style="background: url(__PUBLIC__/Home/image/home-banner4.png) no-repeat center;" src="__PUBLIC__/Home/image/home-banner4.png">
+                    <img alt="" style="background: url(/Public/Home/image/home-banner4.png) no-repeat center;" src="/Public/Home/image/home-banner4.png">
                 </a>
             </li>
         </ul>
@@ -152,38 +152,36 @@
     <!--资讯中心-->
     <div class="home-information common-middle">
         <div class="common-section-header float-clear">
-            <span>资讯中心</span><a href="{:U('Information/information')}">更多资讯>></a>
+            <span>资讯中心</span><a href="<?php echo U('Information/information');?>">更多资讯>></a>
         </div>
         <div class="home-info-content float-clear">
             <div class="home-info-list" id="home-info-list">
                 <ul>
-                    <li><a href="{:U('Information/news?state=1')}"><span>通知公告</span></a></li>
-                    <li><a href="{:U('Information/news?state=2')}"><span>企业新闻</span></a></li>
-                    <li><a href="{:U('Information/news?state=3')}"><span>申报快讯</span></a></li>
-                    <li><a href="{:U('Information/news?state=4')}"><span>媒体报道</span></a></li>
-                    <li><a href="{:U('Information/news?state=4')}"><span>政策法规</span></a></li>
+                    <li><a href="<?php echo U('Information/news?state=1');?>"><span>通知公告</span></a></li>
+                    <li><a href="<?php echo U('Information/news?state=2');?>"><span>企业新闻</span></a></li>
+                    <li><a href="<?php echo U('Information/news?state=3');?>"><span>申报快讯</span></a></li>
+                    <li><a href="<?php echo U('Information/news?state=4');?>"><span>媒体报道</span></a></li>
+                    <li><a href="<?php echo U('Information/news?state=4');?>"><span>政策法规</span></a></li>
                 </ul>
             </div>
             <div class="home-info-detail" id="home-info-detail">
                 <ul>
                     <li>
                         <div class="home-info-matter float-clear">
-                            <a class="info-matter-left" href="{:U('Information/content',array('state'=>$notice_state,'id'=>$notice_content[id]))}">
-                                <img src="{$notice_content.listimg}" alt="">
+                            <a class="info-matter-left" href="<?php echo U('Information/content',array('state'=>$notice_state,'id'=>$notice_content[id]));?>">
+                                <img src="<?php echo ($notice_content["listimg"]); ?>" alt="">
                                 <div class="info-matter-left-bot">
-                                    <h4>{$notice_content.title}</h4>
-                                    <p>{$notice_content.description}</p>
+                                    <h4><?php echo ($notice_content["title"]); ?></h4>
+                                    <p><?php echo ($notice_content["description"]); ?></p>
                                 </div>
                             </a>
                             <div class="info-matter-right">
                                 <ul>                                    
-                                    <foreach name="notice_data" item="val"> 
-                                    <li>
-                                        <a href="{:U('Information/content',array('state'=>$notice_state,'id'=>$val['id']))}" class="float-clear">
-                                                    <p>{$val.title}</p><span>{$val.create_time}</span>
+                                    <?php if(is_array($notice_data)): foreach($notice_data as $key=>$val): ?><li>
+                                        <a href="<?php echo U('Information/content',array('state'=>$notice_state,'id'=>$val['id']));?>" class="float-clear">
+                                                    <p><?php echo ($val["title"]); ?></p><span><?php echo ($val["create_time"]); ?></span>
                                         </a>
-                                    </li>
-                                    </foreach>
+                                    </li><?php endforeach; endif; ?>
                                 </ul>
                             </div>
                         </div>
@@ -191,21 +189,19 @@
                     <li>
                         <div class="home-info-matter float-clear">
                             <div class="info-matter-left">
-                                <img src="{$enterprise_content.listimg}" alt="">
+                                <img src="<?php echo ($enterprise_content["listimg"]); ?>" alt="">
                                 <div class="info-matter-left-bot">
-                                    <h4>{$enterprise_content.title}</h4>
-                                    <p>{$enterprise_content.description}</p>
+                                    <h4><?php echo ($enterprise_content["title"]); ?></h4>
+                                    <p><?php echo ($enterprise_content["description"]); ?></p>
                                 </div>
                             </div>
                             <div class="info-matter-right">
                                 <ul>
-                                    <foreach name="enterprise_data" item="va">
-                                    <li>
-                                        <a href="{:U('Information/content',array('state'=>$enterprise_state,'id'=>$va['id']))}" class="float-clear">
-                                                    <p>{$va.title}</p><span>{$va.create_time}</span>
+                                    <?php if(is_array($enterprise_data)): foreach($enterprise_data as $key=>$va): ?><li>
+                                        <a href="<?php echo U('Information/content',array('state'=>$enterprise_state,'id'=>$va['id']));?>" class="float-clear">
+                                                    <p><?php echo ($va["title"]); ?></p><span><?php echo ($va["create_time"]); ?></span>
                                         </a>
-                                    </li>
-                                    </foreach>                                    
+                                    </li><?php endforeach; endif; ?>                                    
                                 </ul>
                             </div>
                         </div>
@@ -213,21 +209,19 @@
                     <li>
                         <div class="home-info-matter float-clear">
                             <div class="info-matter-left">
-                                <img src="{$falsh_content.listimg}" alt="">
+                                <img src="<?php echo ($falsh_content["listimg"]); ?>" alt="">
                                 <div class="info-matter-left-bot">
-                                    <h4>{$falsh_content.title}</h4>
-                                    <p>{$falsh_content.title}</p>
+                                    <h4><?php echo ($falsh_content["title"]); ?></h4>
+                                    <p><?php echo ($falsh_content["title"]); ?></p>
                                 </div>
                             </div>
                             <div class="info-matter-right">
                                 <ul>
-                                    <foreach name="falsh_data" item="value">
-                                    <li>
-                                        <a href="{:U('Information/content',array('state'=>$falsh_state,'id'=>$value['id']))}" class="float-clear">
-                                                    <p>{$value.title}</p><span>{$value.create_time}</span>
+                                    <?php if(is_array($falsh_data)): foreach($falsh_data as $key=>$value): ?><li>
+                                        <a href="<?php echo U('Information/content',array('state'=>$falsh_state,'id'=>$value['id']));?>" class="float-clear">
+                                                    <p><?php echo ($value["title"]); ?></p><span><?php echo ($value["create_time"]); ?></span>
                                         </a>
-                                    </li>
-                                    </foreach>                                    
+                                    </li><?php endforeach; endif; ?>                                    
                                 </ul>
                             </div>
                         </div>
@@ -235,21 +229,19 @@
                     <li>
                         <div class="home-info-matter float-clear">
                             <div class="info-matter-left">
-                                <img src="{$media_content.listimg}" alt="">
+                                <img src="<?php echo ($media_content["listimg"]); ?>" alt="">
                                 <div class="info-matter-left-bot">
-                                    <h4>{$media_content.title}</h4>
-                                    <p>{$media_content.title}</p>
+                                    <h4><?php echo ($media_content["title"]); ?></h4>
+                                    <p><?php echo ($media_content["title"]); ?></p>
                                 </div>
                             </div>
                             <div class="info-matter-right">
                                 <ul>
-                                    <foreach name="media_data" item="v">
-                                    <li>
-                                        <a href="{:U('Information/content',array('state'=>$media_state,'id'=>$v['id']))}" class="float-clear">
-                                                    <p>{$v.title}</p><span>{$v.create_time}</span>
+                                    <?php if(is_array($media_data)): foreach($media_data as $key=>$v): ?><li>
+                                        <a href="<?php echo U('Information/content',array('state'=>$media_state,'id'=>$v['id']));?>" class="float-clear">
+                                                    <p><?php echo ($v["title"]); ?></p><span><?php echo ($v["create_time"]); ?></span>
                                         </a>
-                                    </li>
-                                    </foreach>                                    
+                                    </li><?php endforeach; endif; ?>                                    
                                 </ul>
                             </div>
                         </div>
@@ -257,21 +249,19 @@
                     <li>
                         <div class="home-info-matter float-clear">
                             <div class="info-matter-left">
-                                <img src="{$policy_content.listimg}" alt="">
+                                <img src="<?php echo ($policy_content["listimg"]); ?>" alt="">
                                 <div class="info-matter-left-bot">
-                                    <h4>{$policy_content.title}</h4>
-                                    <p>{$policy_content.title}</p>
+                                    <h4><?php echo ($policy_content["title"]); ?></h4>
+                                    <p><?php echo ($policy_content["title"]); ?></p>
                                 </div>
                             </div>
                             <div class="info-matter-right">
                                 <ul>
-                                    <foreach name="policy_data" item="pol">
-                                    <li>
-                                        <a href="{:U('Information/substance',array('state'=>$policy_state,'id'=>$pol['id']))}" class="float-clear">
-                                                    <p>{$pol.title}</p><span>{$pol.createtime}</span>
+                                    <?php if(is_array($policy_data)): foreach($policy_data as $key=>$pol): ?><li>
+                                        <a href="<?php echo U('Information/substance',array('state'=>$policy_state,'id'=>$pol['id']));?>" class="float-clear">
+                                                    <p><?php echo ($pol["title"]); ?></p><span><?php echo ($pol["createtime"]); ?></span>
                                         </a>
-                                    </li>
-                                    </foreach>                            
+                                    </li><?php endforeach; endif; ?>                            
                                 </ul>
                             </div>
                         </div>
@@ -290,7 +280,7 @@
                 <li>
                     <div class="home-project-detail">
                         <div class="home-project-detail-top">
-                            <img src="__PUBLIC__/Home/image/home-project1.png" alt="">
+                            <img src="/Public/Home/image/home-project1.png" alt="">
                         </div>
                         <div class="home-project-detail-bot">
                             <h2>小帅影院</h2>
@@ -310,7 +300,7 @@
                             <h4>新型空气净化器</h4>
                             <span>联系人：</span><span>XXX</span>
                         </div>-->
-                        <img src="__PUBLIC__/Home/image/home-project2.jpg" alt="">
+                        <img src="/Public/Home/image/home-project2.jpg" alt="">
                     </div>
                     <div class="home-project-detail-bot">
                         <h2>端点科技</h2>
@@ -323,7 +313,7 @@
                 <li>
                     <div class="home-project-detail">
                         <div class="home-project-detail-top float-clear">
-                            <img src="__PUBLIC__/Home/image/home-project3.png" alt="">
+                            <img src="/Public/Home/image/home-project3.png" alt="">
                         </div>
                         <div class="home-project-detail-bot">
                             <h2>新能源</h2>
@@ -336,7 +326,7 @@
                 <li>
                     <div class="home-project-detail">
                         <div class="home-project-detail-top float-clear">
-                            <img src="__PUBLIC__/Home/image/home-project4.png" alt="">
+                            <img src="/Public/Home/image/home-project4.png" alt="">
                         </div>
                         <div class="home-project-detail-bot">
                             <h2>HOTOEM</h2>
@@ -364,7 +354,7 @@
                         <li>
                             <div class="home-teacher-lesson float-clear">
                                 <div class="home-teacher-lessonImg">
-                                    <img src="__PUBLIC__/Home/image/jz1.png" alt="">
+                                    <img src="/Public/Home/image/jz1.png" alt="">
                                 </div>
                                 <div class="home-teacher-lesson-detail">
                                     <h4>技术创新管理</h4>
@@ -375,7 +365,7 @@
                         <li>
                             <div class="home-teacher-lesson float-clear">
                                 <div class="home-teacher-lessonImg">
-                                    <img src="__PUBLIC__/Home/image/jz1.png" alt="">
+                                    <img src="/Public/Home/image/jz1.png" alt="">
                                 </div>
                                 <div class="home-teacher-lesson-detail">
                                     <h4>人力资源管理</h4>
@@ -386,7 +376,7 @@
                         <li>
                             <div class="home-teacher-lesson float-clear">
                                 <div class="home-teacher-lessonImg">
-                                    <img src="__PUBLIC__/Home/image/jz4.png" alt="">
+                                    <img src="/Public/Home/image/jz4.png" alt="">
                                 </div>
                                 <div class="home-teacher-lesson-detail">
                                     <h4>招商人才开发与管理</h4>
@@ -397,7 +387,7 @@
                         <li>
                             <div class="home-teacher-lesson float-clear">
                                 <div class="home-teacher-lessonImg">
-                                    <img src="__PUBLIC__/Home/image/jz3.png" alt="">
+                                    <img src="/Public/Home/image/jz3.png" alt="">
                                 </div>
                                 <div class="home-teacher-lesson-detail">
                                     <h4>技术创新管理</h4>
@@ -408,7 +398,7 @@
                         <li>
                             <div class="home-teacher-lesson float-clear">
                                 <div class="home-teacher-lessonImg">
-                                    <img src="__PUBLIC__/Home/image/jz4.png" alt="">
+                                    <img src="/Public/Home/image/jz4.png" alt="">
                                 </div>
                                 <div class="home-teacher-lesson-detail">
                                     <h4>经济安全研究</h4>
@@ -419,7 +409,7 @@
                         <li>
                             <div class="home-teacher-lesson float-clear">
                                 <div class="home-teacher-lessonImg">
-                                    <img src="__PUBLIC__/Home/image/jz1.png" alt="">
+                                    <img src="/Public/Home/image/jz1.png" alt="">
                                 </div>
                                 <div class="home-teacher-lesson-detail">
                                     <h4>创业投资管理</h4>
@@ -439,7 +429,7 @@
                         <li>
                             <div class="home-teacher-detail float-clear">
                                 <div class="home-teacher-detail-img">
-                                    <img src="__PUBLIC__/Home/image/teacher.png" alt="">
+                                    <img src="/Public/Home/image/teacher.png" alt="">
                                 </div>
                                 <div class="home-teacher-detail-con">
                                     <p><span>姓名：</span><span>XXX</span></p>
@@ -450,7 +440,7 @@
                         <li>
                         <div class="home-teacher-detail float-clear">
                             <div class="home-teacher-detail-img">
-                                <img src="__PUBLIC__/Home/image/teacher.png" alt="">
+                                <img src="/Public/Home/image/teacher.png" alt="">
                             </div>
                             <div class="home-teacher-detail-con">
                                 <p><span>姓名：</span><span>XXX</span></p>
@@ -461,7 +451,7 @@
                         <li>
                             <div class="home-teacher-detail float-clear">
                                 <div class="home-teacher-detail-img">
-                                    <img src="__PUBLIC__/Home/image/teacher.png" alt="">
+                                    <img src="/Public/Home/image/teacher.png" alt="">
                                 </div>
                                 <div class="home-teacher-detail-con">
                                     <p><span>姓名：</span><span>XXX</span></p>
@@ -472,7 +462,7 @@
                         <li>
                             <div class="home-teacher-detail float-clear">
                                 <div class="home-teacher-detail-img">
-                                    <img src="__PUBLIC__/Home/image/teacher.png" alt="">
+                                    <img src="/Public/Home/image/teacher.png" alt="">
                                 </div>
                                 <div class="home-teacher-detail-con">
                                     <p><span>姓名：</span><span>XXX</span></p>
@@ -493,7 +483,7 @@
         </div>
         <div class="home-hatcher-content float-clear">
             <a class="home-hatcher-con-left" href="#">
-                <img src="__PUBLIC__/Home/image/home-hatcher.png" alt="">
+                <img src="/Public/Home/image/home-hatcher.png" alt="">
             </a>
             <div class="home-hatcher-con-right">
                 <h3>山东中凯兴业贸易广场创业孵化示范园区</h3>
@@ -516,7 +506,7 @@
                     <span>创业大赛</span>
                 </div>
                 <a class="home-activity-con-left-detail" href="#">
-                    <img src="__PUBLIC__/Home/image/home-activity.jpg" alt="">
+                    <img src="/Public/Home/image/home-activity.jpg" alt="">
                 </a>
             </div>
             <div class="home-teacher-con-right">
@@ -570,7 +560,7 @@
             <li>
                 <span></span>
                 <div class="fixed-position float-clear">
-                    <img src="__PUBLIC__/Home/image/codeDetail.jpg" alt="">
+                    <img src="/Public/Home/image/codeDetail.jpg" alt="">
                     <div class="fixed-right">
                         <h3>关注我们</h3>
                         <p>山东理工职业学院创业<br>孵化平台公众号</p>
@@ -580,7 +570,7 @@
             <li>
                 <span></span>
                 <div class="fixed-position float-clear">
-                    <img src="__PUBLIC__/Home/image/logoMini.png" alt="">
+                    <img src="/Public/Home/image/logoMini.png" alt="">
                     <div class="fixed-right">
                         <h3>联系客服</h3>
                         <p>0536-xxxxxxxx</p>
@@ -595,7 +585,7 @@
     <div class="common-footer">
         <div class="common-middle float-clear">
             <div class="footer-left">
-                <img src="__PUBLIC__/Home/image/danwei.png" alt="">
+                <img src="/Public/Home/image/danwei.png" alt="">
             </div>
             <div class="footer-middle">
                 <p>版权所有：山东理工职业学院 鲁ICP备12031654 号 鲁公网安备37089902000008号</p>

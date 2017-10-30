@@ -31,7 +31,7 @@
   function sendMail($subject, $msghtml, $sendAddress)
   {
     //引入发送类phpmailer.php
-    require './PHPMailer/class.phpmailer.php';
+    require './Public/PHPMailer/class.phpmailer.php';
     //实列化对象
     $mail = new PHPMailer();
     /*服务器相关信息*/

@@ -318,7 +318,12 @@ button{
     border-radius:1px;
 }
 .page-num span{
-    font-weight:bold;
+    float: left;
+    color: #002772;
+    border:1px solid #e1e2e3;
+    padding:5px 10px;
+    margin-left:10px;
+    border-radius:1px;
 }
 /*内页公共样式*/
 .common-inner-content{
