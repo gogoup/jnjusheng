@@ -1,7 +1,6 @@
 <?php
 namespace Home\Controller;
-use Think\Controller;
-class RegisterController extends Controller {
+class RegisterController extends BaseController {
     //展示登录页面
     public function register(){
         $this->display();      
@@ -117,7 +116,7 @@ class RegisterController extends Controller {
         $config = array(
             'maxSize' => 5000000,
             'exts' => array('jpg','png','gif'),
-            'rootPath' => './Upload/'
+            'rootPath' => './Public/Upload/'
         );
         $upload = new \Think\Upload($config);
         $info = $upload->upload();

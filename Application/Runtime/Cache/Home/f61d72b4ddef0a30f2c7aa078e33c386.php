@@ -1,4 +1,4 @@
-<!doctype html>
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,17 +6,17 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>注册页面</title>
-    <link rel="stylesheet" href="__PUBLIC__/Home/css/common.css">
-    <link rel="stylesheet" href="__PUBLIC__/Home/css/commonPerson.css">
-    <link rel="stylesheet" href="__PUBLIC__/Home/css/register.css">
-    <script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="__PUBLIC__/Home/js/common.js"></script>
+    <link rel="stylesheet" href="/Public/Home/css/common.css">
+    <link rel="stylesheet" href="/Public/Home/css/commonPerson.css">
+    <link rel="stylesheet" href="/Public/Home/css/register.css">
+    <script type="text/javascript" src="/Public/Home/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="/Public/Home/js/common.js"></script>
     <!--时间选择-->
-    <script type="text/javascript" src="__PUBLIC__/Home/js/calendar.js"></script>
+    <script type="text/javascript" src="/Public/Home/js/calendar.js"></script>
     <!--省市区三级联动-->
-    <script type="text/javascript" src="__PUBLIC__/Home/js/city.js"></script>
-    <script src="__PUBLIC__/layui/layui.js" type="text/javascript"></script>
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/layui/css/layui.css">
+    <script type="text/javascript" src="/Public/Home/js/city.js"></script>
+    <script src="/Public/layui/layui.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="/Public/layui/css/layui.css">
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -27,9 +27,9 @@
     <div class="commonP-header">
         <div class="common-middle float-clear">
             <div class="commonP-header-left float-clear">
-                <img src="__PUBLIC__/Home/image/logo.png" alt=""><p>欢迎注册</p>
+                <img src="/Public/Home/image/logo.png" alt=""><p>欢迎注册</p>
             </div>
-            <a class="commonP-header-right" href="{:U('Index/index')}">返回首页</a>
+            <a class="commonP-header-right" href="<?php echo U('Index/index');?>">返回首页</a>
         </div>
     </div>
     <div class="register-content">
@@ -48,26 +48,26 @@
                             </li>
                             <li class=" float-clear">
                                 <span><i>*</i>用户名：</span><input placeholder="用户名只能包含大小写字母、数字" name="username" id="user1" type="text">
-                                <span class="user1-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(__PUBLIC__/Home/image/error.png) no-repeat"></span>
-                                <span class="user1-success" style="display:none;margin-left:8px;height:16px;background:url(__PUBLIC__/Home/image/success.png) no-repeat"></span>
+                                <span class="user1-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(/Public/Home/image/error.png) no-repeat"></span>
+                                <span class="user1-success" style="display:none;margin-left:8px;height:16px;background:url(/Public/Home/image/success.png) no-repeat"></span>
                             </li>
                             <li class=" float-clear">
                                 <span><i>*</i>密码：</span><input placeholder="只能包含大小写字母、数字和下划线" name="password" id="pwd1" type="password"">
-                            	<span class="pwd1-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(__PUBLIC__/Home/image/error.png) no-repeat"></span>
-                                <span class="pwd1-success" style="display:none;margin-left:8px;height:16px;background:url(__PUBLIC__/Home/image/success.png) no-repeat"></span>
+                            	<span class="pwd1-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(/Public/Home/image/error.png) no-repeat"></span>
+                                <span class="pwd1-success" style="display:none;margin-left:8px;height:16px;background:url(/Public/Home/image/success.png) no-repeat"></span>
                             </li>
                             <li class=" float-clear">
                                 <span><i>*</i>确认密码：</span><input placeholder="只能包含大小写字母、数字和下划线" name="repwd" id="repwd1" type="password">
-                            	<span class="repwd1-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(__PUBLIC__/Home/image/error.png) no-repeat"></span>
-                                <span class="repwd1-success" style="display:none;margin-left:8px;height:16px;background:url(__PUBLIC__/Home/image/success.png) no-repeat"></span>
+                            	<span class="repwd1-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(/Public/Home/image/error.png) no-repeat"></span>
+                                <span class="repwd1-success" style="display:none;margin-left:8px;height:16px;background:url(/Public/Home/image/success.png) no-repeat"></span>
                             </li>
                             <li class="register-module">
                                 <span>详细信息</span>
                             </li>
                             <li class="float-clear">
                                 <span><i>*</i>姓名：</span><input placeholder="请输入真实姓名" name="name" id="name1" type="text">
-                                <span class="name1-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(__PUBLIC__/Home/image/error.png) no-repeat"></span>
-                                <span class="name1-success" style="display:none;margin-left:8px;height:16px;background:url(__PUBLIC__/Home/image/success.png) no-repeat"></span>
+                                <span class="name1-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(/Public/Home/image/error.png) no-repeat"></span>
+                                <span class="name1-success" style="display:none;margin-left:8px;height:16px;background:url(/Public/Home/image/success.png) no-repeat"></span>
                             </li>
                             <li class="float-clear">
                                 <span><i>*</i>性别：</span>
@@ -76,19 +76,19 @@
                             </li>
                             <li class="float-clear">
                                 <span><i>*</i>邮箱：</span><input placeholder="请输入邮箱" name="mail" id="email1" type="email">
-                                <span class="email1-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(__PUBLIC__/Home/image/error.png) no-repeat"></span>
-                                <span class="email1-success" style="display:none;margin-left:8px;height:16px;background:url(__PUBLIC__/Home/image/success.png) no-repeat"></span>
+                                <span class="email1-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(/Public/Home/image/error.png) no-repeat"></span>
+                                <span class="email1-success" style="display:none;margin-left:8px;height:16px;background:url(/Public/Home/image/success.png) no-repeat"></span>
                             </li>
 
                             <li class=" float-clear">
                                 <span><i>*</i>联系方式：</span><input placeholder="请输入手机号" name="tel" id="tel1" type="text">
-                                <span class="tel1-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(__PUBLIC__/Home/image/error.png) no-repeat"></span>
-                                <span class="tel1-success" style="display:none;margin-left:8px;height:16px;background:url(__PUBLIC__/Home/image/success.png) no-repeat"></span>
+                                <span class="tel1-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(/Public/Home/image/error.png) no-repeat"></span>
+                                <span class="tel1-success" style="display:none;margin-left:8px;height:16px;background:url(/Public/Home/image/success.png) no-repeat"></span>
                             </li>
                             <li class="float-clear">
                                 <span><i>*</i>身份证号：</span><input placeholder="请输入身份证号" name="card" id="card" type="text">
-                                <span class="card-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(__PUBLIC__/Home/image/error.png) no-repeat"></span>
-                                <span class="card-success" style="display:none;margin-left:8px;height:16px;background:url(__PUBLIC__/Home/image/success.png) no-repeat"></span>
+                                <span class="card-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(/Public/Home/image/error.png) no-repeat"></span>
+                                <span class="card-success" style="display:none;margin-left:8px;height:16px;background:url(/Public/Home/image/success.png) no-repeat"></span>
                             </li>
                             <li class="float-clear register-address">
                                 <span><i>*</i>地址：</span>
@@ -96,8 +96,8 @@
                                 <select id="s_city" name="s_city" ></select> 
                                 <select id="s_county" name="s_county"></select>
                                 <input id="addr" name="addr" type="text">
-                                <span class="addr-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(__PUBLIC__/Home/image/error.png) no-repeat"></span>
-                                <span class="addr-success" style="display:none;margin-left:8px;height:16px;background:url(__PUBLIC__/Home/image/success.png) no-repeat"></span>
+                                <span class="addr-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(/Public/Home/image/error.png) no-repeat"></span>
+                                <span class="addr-success" style="display:none;margin-left:8px;height:16px;background:url(/Public/Home/image/success.png) no-repeat"></span>
                             </li>
                             <li>
                             	<span><i>*</i>身份证正面：</span>
@@ -134,43 +134,43 @@
                             </li>
                            <li class=" float-clear">
                                 <span><i>*</i>用户名：</span><input placeholder="用户名只能包含大小写字母、数字" name="username" id="user2" type="text">
-                                <span class="user2-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(__PUBLIC__/Home/image/error.png) no-repeat"></span>
-                                <span class="user2-success" style="display:none;margin-left:8px;height:16px;background:url(__PUBLIC__/Home/image/success.png) no-repeat"></span>
+                                <span class="user2-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(/Public/Home/image/error.png) no-repeat"></span>
+                                <span class="user2-success" style="display:none;margin-left:8px;height:16px;background:url(/Public/Home/image/success.png) no-repeat"></span>
                             </li>
                             <li class=" float-clear">
-                                <span><i>*</i>密码：</span><input placeholder="只能包含大小写字母、数字和下划线" name="password" id="pwd2" type="password">                            	<span class="pwd2-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(__PUBLIC__/Home/image/error.png) no-repeat"></span>
-                                <span class="pwd2-success" style="display:none;margin-left:8px;height:16px;background:url(__PUBLIC__/Home/image/success.png) no-repeat"></span>
+                                <span><i>*</i>密码：</span><input placeholder="只能包含大小写字母、数字和下划线" name="password" id="pwd2" type="password">                            	<span class="pwd2-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(/Public/Home/image/error.png) no-repeat"></span>
+                                <span class="pwd2-success" style="display:none;margin-left:8px;height:16px;background:url(/Public/Home/image/success.png) no-repeat"></span>
                             </li>
                             <li class=" float-clear">
                                 <span><i>*</i>确认密码：</span><input placeholder="只能包含大小写字母、数字和下划线" name="repwd" id="repwd2" type="password">
-                            	<span class="repwd2-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(__PUBLIC__/Home/image/error.png) no-repeat"></span>
-                                <span class="repwd2-success" style="display:none;margin-left:8px;height:16px;background:url(__PUBLIC__/Home/image/success.png) no-repeat"></span>
+                            	<span class="repwd2-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(/Public/Home/image/error.png) no-repeat"></span>
+                                <span class="repwd2-success" style="display:none;margin-left:8px;height:16px;background:url(/Public/Home/image/success.png) no-repeat"></span>
                             </li>
                             <li class="register-module">
                                 <span>单位信息</span>
                             </li>
                             <li class=" float-clear">
                                 <span><i>*</i>单位全称：</span><input id="company" name="company" placeholder="请输入单位名称" type="text">
-                            	<span class="company-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(__PUBLIC__/Home/image/error.png) no-repeat"></span>
-                                <span class="company-success" style="display:none;margin-left:8px;height:16px;background:url(__PUBLIC__/Home/image/success.png) no-repeat"></span>
+                            	<span class="company-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(/Public/Home/image/error.png) no-repeat"></span>
+                                <span class="company-success" style="display:none;margin-left:8px;height:16px;background:url(/Public/Home/image/success.png) no-repeat"></span>
                             </li>
                             <li class=" float-clear">
                                 <span><i>*</i>组织机构代码：</span><input id="company_card" name="company_card" placeholder="请输入组织机构代码" type="text">
-                            	<span class="company_card-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(__PUBLIC__/Home/image/error.png) no-repeat"></span>
-                                <span class="company_card-success" style="display:none;margin-left:8px;height:16px;background:url(__PUBLIC__/Home/image/success.png) no-repeat"></span>
+                            	<span class="company_card-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(/Public/Home/image/error.png) no-repeat"></span>
+                                <span class="company_card-success" style="display:none;margin-left:8px;height:16px;background:url(/Public/Home/image/success.png) no-repeat"></span>
                             </li>
                             <li class=" float-clear">
                             	<span><i>*</i>法人代表：</span><input placeholder="请输入法人代表" name="lp" id="name2" type="text">
-                                <span class="name2-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(__PUBLIC__/Home/image/error.png) no-repeat"></span>
-                                <span class="name2-success" style="display:none;margin-left:8px;height:16px;background:url(__PUBLIC__/Home/image/success.png) no-repeat"></span>
+                                <span class="name2-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(/Public/Home/image/error.png) no-repeat"></span>
+                                <span class="name2-success" style="display:none;margin-left:8px;height:16px;background:url(/Public/Home/image/success.png) no-repeat"></span>
                             </li>
                             <li class=" float-clear">
                                 <span><i>*</i>公司成立日期：</span><div  id='date' style="width:200px;height:31px;float: left;border:1px solid #a9a9a9;line-height:31px;padding-left:10px;">请选择时间</div>
                             </li>
                             <li class=" float-clear register-money">
                                 <span><i>*</i>注册资金：</span><input id="fund" name="fund" placeholder="请输入注册资金" type="text"><span>&nbsp;万人民币</span>
-                            	<span class="fund-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(__PUBLIC__/Home/image/error.png) no-repeat"></span>
-                                <span class="fund-success" style="display:none;margin-left:8px;height:16px;background:url(__PUBLIC__/Home/image/success.png) no-repeat"></span>
+                            	<span class="fund-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(/Public/Home/image/error.png) no-repeat"></span>
+                                <span class="fund-success" style="display:none;margin-left:8px;height:16px;background:url(/Public/Home/image/success.png) no-repeat"></span>
                             </li>
                             <li class=" float-clear">
                                 <span><i>*</i>单位性质：</span>
@@ -199,28 +199,28 @@
                             </li>
                             <li class="register-phone1 float-clear">
                                 <span><i>*</i>办公电话：</span><input id="tl" name="work_tel" placeholder="请输入办公电话" type="text"><span>&nbsp;&nbsp;</span>
-                            	<span class="tl-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(__PUBLIC__/Home/image/error.png) no-repeat"></span>
-                                <span class="tl-success" style="display:none;margin-left:8px;height:16px;background:url(__PUBLIC__/Home/image/success.png) no-repeat"></span>
+                            	<span class="tl-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(/Public/Home/image/error.png) no-repeat"></span>
+                                <span class="tl-success" style="display:none;margin-left:8px;height:16px;background:url(/Public/Home/image/success.png) no-repeat"></span>
                             </li>
                             <li class=" float-clear">
                                 <span><i>*</i>联系部门：</span><input id="department" name="department" placeholder="请输入联系部门" type="text">
-                            	<span class="department-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(__PUBLIC__/Home/image/error.png) no-repeat"></span>
-                                <span class="department-success" style="display:none;margin-left:8px;height:16px;background:url(__PUBLIC__/Home/image/success.png) no-repeat"></span>
+                            	<span class="department-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(/Public/Home/image/error.png) no-repeat"></span>
+                                <span class="department-success" style="display:none;margin-left:8px;height:16px;background:url(/Public/Home/image/success.png) no-repeat"></span>
                             </li>
                             <li class=" float-clear">
                            		<span><i>*</i>联系人：</span><input placeholder="请输入联系人" name="contacts" id="name3" type="text">
-                                <span class="name3-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(__PUBLIC__/Home/image/error.png) no-repeat"></span>
-                                <span class="name3-success" style="display:none;margin-left:8px;height:16px;background:url(__PUBLIC__/Home/image/success.png) no-repeat"></span>
+                                <span class="name3-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(/Public/Home/image/error.png) no-repeat"></span>
+                                <span class="name3-success" style="display:none;margin-left:8px;height:16px;background:url(/Public/Home/image/success.png) no-repeat"></span>
                             </li>
                             <li class="float-clear">
                             	<span><i>*</i>手机：</span><input placeholder="请输入手机号" name="contacts_tel" id="tel2" type="text">
-                                <span class="tel2-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(__PUBLIC__/Home/image/error.png) no-repeat"></span>
-                                <span class="tel2-success" style="display:none;margin-left:8px;height:16px;background:url(__PUBLIC__/Home/image/success.png) no-repeat"></span>
+                                <span class="tel2-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(/Public/Home/image/error.png) no-repeat"></span>
+                                <span class="tel2-success" style="display:none;margin-left:8px;height:16px;background:url(/Public/Home/image/success.png) no-repeat"></span>
                             </li>
                             <li class=" float-clear">
                             	<span><i>*</i>联系人邮箱：</span><input placeholder="请输入邮箱" name="contents_email" id="email2" type="email">
-                                <span class="email2-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(__PUBLIC__/Home/image/error.png) no-repeat"></span>
-                                <span class="email2-success" style="display:none;margin-left:8px;height:16px;background:url(__PUBLIC__/Home/image/success.png) no-repeat"></span>
+                                <span class="email2-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(/Public/Home/image/error.png) no-repeat"></span>
+                                <span class="email2-success" style="display:none;margin-left:8px;height:16px;background:url(/Public/Home/image/success.png) no-repeat"></span>
                             </li>
                             <li class=" float-clear">
                                 <span><i>*</i>办公地址：</span>
@@ -238,8 +238,8 @@
                             </li>
                             <li class=" float-clear">
                                 <span><i>*</i>公司简介：</span><div style="float:left;"><textarea placeholder="请输入公司简介" name="company_intro" id="intro" cols="30" rows="10"></textarea></div>
-                            	<span class="intro-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(__PUBLIC__/Home/image/error.png) no-repeat"></span>
-                                <span class="intro-success" style="display:none;margin-left:8px;height:16px;background:url(__PUBLIC__/Home/image/success.png) no-repeat"></span>
+                            	<span class="intro-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(/Public/Home/image/error.png) no-repeat"></span>
+                                <span class="intro-success" style="display:none;margin-left:8px;height:16px;background:url(/Public/Home/image/success.png) no-repeat"></span>
                             </li>
                             <li class="">
                                 <button class="reg" type="button">提&nbsp;&nbsp;交</button>
@@ -252,7 +252,7 @@
 
                 </div>
                 <div class="register-con-right">
-                    <p>我已注册，现在就<a href="{:U('Login/login')}">登录</a></p>
+                    <p>我已注册，现在就<a href="<?php echo U('Login/login');?>">登录</a></p>
                 </div>
             </div>
         </div>
@@ -260,7 +260,7 @@
     <div class="common-footer">
         <div class="common-middle float-clear">
             <div class="footer-left">
-                <img src="__PUBLIC__/Home/image/danwei.png" alt="">
+                <img src="/Public/Home/image/danwei.png" alt="">
             </div>
             <div class="footer-middle">
                 <p>版权所有：山东理工职业学院 鲁ICP备12031654 号 鲁公网安备37089902000008号</p>
@@ -293,8 +293,8 @@
 
 </script>
 
-<script type="text/javascript" src="__PUBLIC__/Home/js/area.js"></script>
-<script type="text/javascript" src="__PUBLIC__/Home/js/select.js"></script>
+<script type="text/javascript" src="/Public/Home/js/area.js"></script>
+<script type="text/javascript" src="/Public/Home/js/select.js"></script>
 <script>
     $('#date').on('click',function(){
         new Calendar({id:'#date',class:'amd',callback:function(y,m,d){
@@ -321,7 +321,7 @@ $('#user1').blur(function(){
     	$('.user1-success').hide();
     	return false;
     }else{
-    	$.post("{:U('Register/checkName')}",{name:value},function(msg){
+    	$.post("<?php echo U('Register/checkName');?>",{name:value},function(msg){
 			if(msg == 'false'){
    				$('.user1-error').html("用户名已存在");
    		        $('.user1-error').show();
@@ -458,7 +458,7 @@ $('.register').on('click',function(){
         		});  
             return false;
         }else {
-            $.post("{:U('Register/reg_handle')}", $('#register_form').serialize(), function (data) {
+            $.post("<?php echo U('Register/reg_handle');?>", $('#register_form').serialize(), function (data) {
                 console.log(data);
                 if (data.error_code!='E08') {
                 	layui.use('layer', function(){
@@ -467,7 +467,7 @@ $('.register').on('click',function(){
               		});
                     return false;
                 }else{
-                    window.location.href = "{:U('Login/login')}";
+                    window.location.href = "<?php echo U('Login/login');?>";
                 }
             },'json');
         }
@@ -490,7 +490,7 @@ $('#user2').blur(function(){
     	$('.user2-success').hide();
     	return false;
     }else{
-    	$.post("{:U('Register/checkName')}",{name:value},function(msg){
+    	$.post("<?php echo U('Register/checkName');?>",{name:value},function(msg){
 			if(msg == 'false'){
    				$('.user2-error').html("用户名已存在");
    		        $('.user2-error').show();
@@ -705,7 +705,7 @@ $('.reg').on('click',function(){
     		});  
         return false;
     }else {
-        $.post("{:U('Register/reg')}", $('#reg_form').serialize()+"&"+"time="+funding_time, function (data) {
+        $.post("<?php echo U('Register/reg');?>", $('#reg_form').serialize()+"&"+"time="+funding_time, function (data) {
             console.log(data);
             if (data.error_code!='E15') {
             	layui.use('layer', function(){
@@ -714,7 +714,7 @@ $('.reg').on('click',function(){
           		});
                 return false;
             }else{
-                window.location.href = "{:U('Login/login')}";
+                window.location.href = "<?php echo U('Login/login');?>";
             }
         },'json');
     }
@@ -729,7 +729,7 @@ layui.use('upload', function(){
   //普通图片上传
   var uploadInst = upload.render({
     elem: '#test1'
-    ,url: '{:U('upload')}'
+    ,url: '<?php echo U('upload');?>'
     ,data: {id:1}
     ,before: function(obj){
       //预读本地文件示例，不支持ie8
@@ -763,7 +763,7 @@ layui.use('upload', function(){
   //普通图片上传
   var uploadInst = upload.render({
     elem: '#test2'
-    ,url: '{:U('upload')}'
+    ,url: '<?php echo U('upload');?>'
     ,data: {id:2}
     ,before: function(obj){
       //预读本地文件示例，不支持ie8

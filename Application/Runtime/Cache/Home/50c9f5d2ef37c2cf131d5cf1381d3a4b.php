@@ -1,4 +1,4 @@
-<!doctype html>
+<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,9 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>登录页</title>
-    <script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
-    <script src="__PUBLIC__/layui/layui.js" type="text/javascript"></script>
-	<link rel="stylesheet" type="text/css" href="__PUBLIC__/layui/css/layui.css">
+    <script type="text/javascript" src="/Public/Home/js/jquery-1.8.3.min.js"></script>
+    <script src="/Public/layui/layui.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="/Public/layui/css/layui.css">
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -90,7 +90,7 @@
     </div>
     <div class="common-login-bottom">
         <a href="#">忘记密码</a>
-        <a href="{:U('Register/register')}">注册账号</a>
+        <a href="<?php echo U('Register/register');?>">注册账号</a>
     </div>
 </div>
 </body>
@@ -110,7 +110,7 @@ $('#button').click(function(){
 		var pwd=$('#pwd').val();
 		//将表单的值传送到后台控制器进行处理
 		$.ajax({
-			'url':"{:U('Login/checkLogin')}",
+			'url':"<?php echo U('Login/checkLogin');?>",
 			'type':'post',
 			'data':{'user':username,'pwd':pwd},
 			'dataType':'text',
@@ -125,11 +125,10 @@ $('#button').click(function(){
 					$('#pwd').val('');
 				}else{
 					//成功登录则跳转到指定页面
-					location.href="{:U('Index/index')}";
+					location.href="<?php echo U('Index/index');?>";
 				}
 			}
 		});
 	}
 });
 </script>
-
