@@ -31,7 +31,7 @@ input[type="text"]:focus{
     border: 0;
     font-weight: bold;
 }
-.pagelist li {
+.pagelist a {
     float: left;
     border: 1px solid #ddd;
     padding: 5px 10px;
