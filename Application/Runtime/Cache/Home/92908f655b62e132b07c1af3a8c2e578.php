@@ -29,8 +29,8 @@
                     <img src="/Public/Home/image/logo.png" alt="">
                 </div>
                 <div class="header-middle-right">
-                    <button class="login"><a href="person/register.html">登录</a></button>
-                    <button class="register"><a href="person/register.html" target="_blank">注册</a></button>
+                    <button class="login"><a href="<?php echo U('Login/login');?>">登录</a></button>
+                    <button class="register"><a href="<?php echo U('Register/register');?>" target="_blank">注册</a></button>
                 </div>
             </div>
         </div>
@@ -138,65 +138,19 @@
                     <div class="business-con-right-tab">
                         <div class="home-project-content">
                             <ul class="float-clear">
-                                <li>
+                            	<?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$val): $mod = ($i % 2 );++$i;?><li>
                                     <div class="home-project-detail">
                                         <div class="home-project-detail-top">
-                                            <img src="/Public/Home/image/home-project1.png" alt="">
+                                            <img src="<?php echo ($val["listimg"]); ?>" alt="">
                                         </div>
                                         <div class="home-project-detail-bot">
-                                            <h2>小帅影院</h2>
-                                            <p><span>联系人：</span><span>XXX</span></p>
-                                            <p><span>所属行业：</span><span>娱乐</span></p>
+                                            <h2><?php echo ($val["title"]); ?></h2>
+                                            <p><span>联系人：</span><span><?php echo ($val["people"]); ?></span></p>
+                                            <p><span>所属行业：</span><span><?php echo ($val["type_name"]); ?></span></p>
                                             <button>了解更多</button>
                                         </div>
                                     </div>
-                                </li>
-                                <li>
-                                    <div class="home-project-detail">
-                                        <div class="home-project-detail-top float-clear">
-                                            <!--<div class="home-project-detail-img">
-                                                <img src="image/projectLogo2.png" alt="">
-                                            </div>
-                                            <div class="home-project-detail-top-detail">
-                                                <h4>新型空气净化器</h4>
-                                                <span>联系人：</span><span>XXX</span>
-                                            </div>-->
-                                            <img src="/Public/Home/image/home-project2.jpg" alt="">
-                                        </div>
-                                        <div class="home-project-detail-bot">
-                                            <h2>端点科技</h2>
-                                            <p><span>联系人：</span><span>XXX</span></p>
-                                            <p><span>所属行业：</span><span>娱乐</span></p>
-                                            <button>了解更多</button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="home-project-detail">
-                                        <div class="home-project-detail-top float-clear">
-                                            <img src="/Public/Home/image/home-project3.png" alt="">
-                                        </div>
-                                        <div class="home-project-detail-bot">
-                                            <h2>新能源</h2>
-                                            <p><span>联系人：</span><span>XXX</span></p>
-                                            <p><span>所属行业：</span><span>娱乐</span></p>
-                                            <button>了解更多</button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="home-project-detail">
-                                        <div class="home-project-detail-top float-clear">
-                                            <img src="/Public/Home/image/home-project4.png" alt="">
-                                        </div>
-                                        <div class="home-project-detail-bot">
-                                            <h2>HOTOEM</h2>
-                                            <p><span>联系人：</span><span>XXX</span></p>
-                                            <p><span>所属行业：</span><span>娱乐</span></p>
-                                            <button>了解更多</button>
-                                        </div>
-                                    </div>
-                                </li>
+                                </li><?php endforeach; endif; else: echo "" ;endif; ?>
                             </ul>
                         </div>
                     </div>
@@ -327,13 +281,7 @@
                         </div>
                     </div>
                     <div class="page-num float-clear">
-                        <a href="#" class="first">|<</a>
-                        <a href="#" class="prev"><<</a>
-                        <a href="#" class="num">1</a>
-                        <a href="#" class="num">2</a>
-                        <a href="#" class="num">3</a>
-                        <a href="#" class="next">>></a>
-                        <a href="#" class="last">>|</a>
+                        <?php echo ($str); ?>
                     </div>
                 </div>
             </div>

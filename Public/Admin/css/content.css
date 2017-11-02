@@ -41,6 +41,16 @@ input[type="text"]:focus{
     background: #fff;
     list-style: none;
 }
+.pagelist span {
+    float: left;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    margin-left: 5px;
+    font-size: 12px;
+    border-radius: 3px;
+    background: #fff;
+    list-style: none;
+}
 .pagelist li a{
     color: #221815;
 }

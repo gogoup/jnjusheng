@@ -116,7 +116,8 @@ class RegisterController extends BaseController {
         $config = array(
             'maxSize' => 5000000,
             'exts' => array('jpg','png','gif'),
-            'rootPath' => './Public/Upload/'
+            'rootPath' => './Public/Upload/',
+            'subName'  =>  array('date', 'Ymd'),
         );
         $upload = new \Think\Upload($config);
         $info = $upload->upload();
@@ -128,11 +129,13 @@ class RegisterController extends BaseController {
                 );
             echo json_encode($arr);
         }else{
-            $filepath = $upload->rootPath . $info['file']['savepath'] . $info['file']['savename'];
+            $filepath = ltrim($upload->rootPath,'.') . $info['file']['savepath'] . $info['file']['savename'];
             if($id==1){
                 session('card1',$filepath);
-            }else{
+            }else if($id==2){
                 session('card2',$filepath);
+            }else{
+                session('license',$filepath);
             }
             $arr = Array(
                 code=>0,
@@ -153,6 +156,7 @@ class RegisterController extends BaseController {
         $repwd = I('post.repwd');
         $user1['user_state']=1;
         $user1['user_role']=1;
+        $user_estp1['license']=session('license');
         $user_estp1['company']=I('post.company');
         $user_estp1['company_card']=I('post.company_card');
         $user_estp1['registered_fund']=I('post.fund');

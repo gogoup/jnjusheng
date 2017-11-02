@@ -159,6 +159,15 @@
                             	<span class="company_card-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(__PUBLIC__/Home/image/error.png) no-repeat"></span>
                                 <span class="company_card-success" style="display:none;margin-left:8px;height:16px;background:url(__PUBLIC__/Home/image/success.png) no-repeat"></span>
                             </li>
+                            <li>
+                            	<span><i>*</i>营业执照：</span>
+                            	
+                            	<button type="button" class="layui-btn" id="test3">上传图片</button>
+  								<div class="layui-upload-list">
+    							<img class="layui-upload-img" id="demo3">
+   								<p id="demoText3"></p>
+  								</div> 
+							</li>
                             <li class=" float-clear">
                             	<span><i>*</i>法人代表：</span><input placeholder="请输入法人代表" name="lp" id="name2" type="text">
                                 <span class="name2-error" style="display:none;padding-left:18px;margin-left:8px;height:16px;font-size:12px;line-height:16px;color:#ff0000;background:url(__PUBLIC__/Home/image/error.png) no-repeat"></span>
@@ -789,7 +798,41 @@ layui.use('upload', function(){
       });
     }
   });
-})
+});
+layui.use('upload', function(){
+	  var $ = layui.jquery
+	  ,upload = layui.upload;
+	  
+	  //普通图片上传
+	  var uploadInst = upload.render({
+	    elem: '#test3'
+	    ,url: '{:U('upload')}'
+	    ,data: {id:3}
+	    ,before: function(obj){
+	      //预读本地文件示例，不支持ie8
+	      obj.preview(function(index, file, result){
+	        $('#demo3').attr('src', result); //图片链接（base64）
+	      });
+	    }
+	    ,done: function(res){
+	      //如果上传失败
+	      if(res.code > 0){
+	        return layer.msg(res.message);
+	      }else{
+	    	return layer.msg(res.message);
+	      }
+	      //上传成功
+	    }
+	    ,error: function(){
+	      //演示失败状态，并实现重传
+	      var demoText = $('#demoText3');
+	      demoText.html('<span style="color: #FF5722;">上传失败</span> <a class="layui-btn layui-btn-mini demo-reload">重试</a>');
+	      demoText.find('.demo-reload').on('click', function(){
+	        uploadInst.upload();
+	      });
+	    }
+	  });
+	})
 </script>
 </body>
 </html>
