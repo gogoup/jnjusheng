@@ -1,0 +1,181 @@
+
+/*--------------活动审核  弹框开始---------------*/
+.y_alert_out{
+    box-shadow: 1px 1px 19px #afb0b0;
+    padding-bottom: 30px;
+}
+.y_activity_top{
+    background-color: #35aa47;
+    height: 40px;
+    margin-bottom: 30px;
+    /* text-align: center; */
+    font-size: 16px;
+    color: white;
+    line-height: 40px;
+    font-weight: 600;
+}
+.y_activity_ul{
+    margin: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.y_activity_ul li{
+    list-style: none;
+    border-bottom: 1px solid rgba(220, 220, 220, 0.48);
+    margin-bottom: 10px;
+}
+.y_activity_ul .last{
+    border-bottom: none;
+}
+.y_activity_left{
+    text-align: right;
+    font-weight: 600;
+}
+.y_activity_title{
+    font-size: 20px;
+}
+.y_activity_bottom{
+    margin-top: 20px;
+}
+.y_activity_bottom .btn_yes{
+    width: 80px;
+    height: 35px;
+    background-color: green;
+    margin-right: 20px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    line-height: 35px;
+}
+.y_activity_bottom .btn_no{
+    width: 80px;
+    height: 35px;
+    background-color: orangered;
+    margin-right: 20px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    line-height: 35px;
+}
+.y_activity_bottom .btn_yes:hover{
+    background-color: #003d00;
+}
+.y_activity_bottom .btn_no:hover{
+    background-color: #b93200;
+}
+/*----------------个人信息审核------------------*/
+.card_front,.card_verso{
+    display: none;
+    position: absolute;
+    left: 40%;
+    top: 20%;
+}
+.card_front_word:hover{
+    cursor: pointer;
+}
+.card_front_word:hover .card_front{
+    display: block;
+}
+.card_verso_word:hover{
+    cursor: pointer;
+}
+.card_verso_word:hover .card_verso{
+    display: block;
+}
+/*---------------------咨询服务弹窗---聊天记录----------------------*/
+.y_consulting_top{
+    padding: 20px;
+    background-color: rgba(175, 176, 176, 0.2);
+}
+.y_consulting_top .head_pic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50% !important;
+    overflow: hidden;
+}
+.y_consulting_top .head_name{
+    font-size: 22px;
+    line-height: 50px;
+    margin-left: 60px;
+}
+.y_consulting_body{
+    padding: 20px;
+}
+.y_consulting_body .head_pic ,.y_consulting_body .head_pic1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50% !important;
+    overflow: hidden;
+}
+.customer{
+    margin-bottom: 20px;
+    margin-left: 0;
+}
+.admin{
+    margin-bottom: 20px;
+    margin-left: 60px;
+}
+.customer_word{
+    max-width: 600px;
+    border: 1px solid rgb(175, 176, 176);
+    border-radius: 5px !important;
+    padding: 5px;
+    margin-left: 20px;
+}
+.admin_word{
+    max-width: 600px;
+    background-color:rgba(175, 176, 176, 0.2);
+    border-radius: 5px !important;
+    padding: 5px;
+    margin-right: 20px;
+}
+.y_consulting_bottom{
+    border-top: 1px solid grey;
+}
+/*---------------------------------------*/
+.y_btn_new{
+    margin-left: 20px;
+    width: 100px;
+    height: 35px;
+    background-color: #00a500;
+    border: none;
+    color: white;
+    margin-top: -10px;
+}
+/*------------------导师详情页  开始--------------------*/
+.Y_profile_edit_out{
+    position: relative;
+}
+.Y_profile_edit{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: white;
+    background-color: gray;
+}
+/*------------------导师详情页  结束--------------------*/
+
+@media screen and (max-width:767px) {
+    .y_activity_left{
+        text-align:left;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -160,15 +160,7 @@
         </div>
         <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
         <!-- BEGIN PAGE CONTAINER-->
-        <link href="/Public/umeditor/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
-<script type="text/javascript" src="/Public/umeditor/third-party/jquery.min.js"></script>
-<script type="text/javascript" src="/Public/umeditor/third-party/template.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="/Public/umeditor/umeditor.config.js"></script>
-<script type="text/javascript" charset="utf-8" src="/Public/umeditor/umeditor.min.js"></script>
-<script type="text/javascript" src="/Public/umeditor/lang/zh-cn/zh-cn.js"></script>
-<script type="text/javascript" charset="utf-8" src="/Public/layer/layDate/laydate.js"></script>
-
-<div class="container-fluid">
+        <div class="container-fluid">
     <!-- 主要内容头部 开始-->
     <div class="row-fluid">
         <div class="span12">
@@ -222,7 +214,6 @@
                 欢迎登陆
                 <small>创业云孵化平台</small>
             </h3>
-            <!-- END PAGE TITLE & BREADCRUMB-->
         </div>
     </div>
     <!-- 主要内容头部 结束-->
@@ -231,146 +222,115 @@
         <!-- 主要内容 开始 -->
         <div class="row-fluid">
             <div class="span12">
-                <!-- BEGIN SAMPLE FORM PORTLET-->
-                <div class="portlet box yellow">
-                    <div class="portlet-title">
-                        <div class="caption">项目发布</div>
-                        <div class="tools">
-                            <a href="javascript:;" class="reload"></a>
-                        </div>
-                    </div>
-                    <div class="portlet-body form">
-                        <!-- BEGIN FORM-->
-
-                        <br>
-                        <div class="control-group">
-                            <label class=" control-label">项目名称：</label>
-                            <div class="controls">
-                                <input type="text" class="span6 m-wrap" id="title" />
+                <!-- BEGIN PAGE CONTENT-->
+                <div class="row-fluid ">
+                    <div class="span12">
+                        <!-- BEGIN TAB PORTLET-->
+                        <div class="portlet box blue tabbable">
+                            <div class="portlet-title">
+                                <div class="caption"><i class="icon-reorder"></i>入驻管理</div>
                             </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label">分类：</label>
-                            <div class="controls">
-                                <input type="text" class="span6 m-wrap"  id="type"/>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label">地区：</label>
-                            <div class="controls">
-                                <input type="text" class="span6 m-wrap" id="adderss" />
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label">联系人：</label>
-                            <div class="controls">
-                                <input type="text" class="span6 m-wrap" id="person"/>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label">邮箱：</label>
-                            <div class="controls">
-                                <input type="text" class="span6 m-wrap" id="email"/>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label">计划书：</label>
-                            <div class="controls">
-
-                                <input type="hidden" id="thefile" value="">
-                                <iframe id="form_hidden2" name="form_hidden2" style="display:none"></iframe>
-                                <form id="formfile" action="<?php echo U('Common/upfile');?>" method="post" enctype="multipart/form-data" target="form_hidden2">
-                                    <span class="btn btn-file">
-                                        <input type="text" name="theid" value="thefile">
-                                        <input type="file" name="thefile" class="default" onchange="upfile()"/><span>选择文件</span>
-                                    </span>  <l style="font-size: small">仅支持 doc、docx格式文件</l><span id="msg" style="margin-left: 10%; color: red"></span>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label">上传图片：</label>
-                            <div class="controls y_controls">
-                                <div class="fileupload fileupload-new" data-provides="fileupload">
-                                    <img src="" alt=""  id="showimg" name="img" style="width: 150px"/>
-                                    <div>
-                                        <iframe id="form_hidden" name="form_hidden" style="display:none"></iframe>
-                                        <form id="formimg" action="<?php echo U('Common/upimg');?>" method="post" enctype="multipart/form-data" target="form_hidden">
-													<span class="btn btn-file">
-                                                             <input type="file" name="theimg" class="default" onchange="upimg()" /><span>选择图片</span>
-                                                    </span>
-                                        </form>
+                            <div class="portlet-body">
+                                <div class="tabbable portlet-tabs">
+                                    <ul class="nav nav-tabs">
+                                        <li class="active" style="height: 50px"></li>
+                                    </ul>
+                                    <div class="tab-content">
+                                        <div class="tab-pane active" id="portlet_tab1">
+                                            <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                                            <div class="portlet">
+                                                <div class="portlet-body">
+                                                    <div class="clearfix"></div>
+                                                    <div class="span6" style="margin-left:2px">
+                                                        <span id="y_span1">搜索：</span><input style="height: 25px;" type="text">
+                                                        <button class="y_btn">确认</button>
+                                                    </div>
+                                                    <table class="table table-striped table-hover table-bordered" id="sample_editable_1">
+                                                        <thead>
+                                                        <tr>
+                                                            <th>用户编号</th>
+                                                            <th>公司名称</th>
+                                                            <th>法人代表</th>
+                                                            <th>联系电话</th>
+                                                            <th>联系邮箱</th>
+                                                            <th>入驻地址</th>
+                                                            <th>操作</th>
+                                                        </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?><tr class="">
+                                                                    <td><a href=""><?php echo ($list["id"]); ?></a></td>
+                                                                    <td><?php echo ($list["company"]); ?></td>
+                                                                    <td><?php echo ($list["legal_person"]); ?></td>
+                                                                    <td><?php echo ($list["contacts_tel"]); ?></td>
+                                                                    <td><?php echo ($list["contents_email"]); ?></td>
+                                                                    <td><?php echo ($list["office"]); ?></td>
+                                                                    <td>
+                                                                        <span class="seeinfo" value="<?php echo ($list["id"]); ?>">详情</span>
+                                                                        <span class="editenter" value="<?php echo ($list["id"]); ?>">编辑</span>
+                                                                    </td>
+                                                                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                                                        </tbody>
+                                                    </table>
+                                                    <div>
+                                                        <div class="pages">
+                                                            <ul class="r_float pagelist">
+                                                                    <?php echo ($page); ?>
+                                                                <div style="clear: both"></div>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- END EXAMPLE TABLE PORTLET-->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="control-group">
-                            <label class="control-label">摘要：</label>
-                            <div class="controls">
-                                <textarea class="span6 m-wrap" id="description" rows="3"></textarea>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label">详细介绍：</label>
-                            <div class="controls y_controls">
-                                <script type="text/plain" id="myEditor" style="width:100%;height:240px;" name="content"></script>
-                                <script type="text/javascript">
-                                    //实例化编辑器
-                                    var um = UM.getEditor('myEditor');
-                                    um.addListener('focus',function(){
-                                        $('#focush2').html('')
-                                    });
-                                </script>
-                            </div>
-                        </div>
-                        <div class="form-actions">
-                            <button type="button" class="btn yellow" onclick="senddata()">发布</button>
-                            <button type="button" class="btn">取消</button>
-                        </div>
-
-                        <!-- END FORM-->
+                        <!-- END TAB PORTLET-->
                     </div>
                 </div>
-                <!-- END SAMPLE FORM PORTLET-->
+                <!-- END PAGE CONTENT-->
             </div>
         </div>
         <!-- 主要内容 结束 -->
         <div class="clearfix"></div>
     </div>
 </div>
-<script>
-    //上传图片
-    function upimg()
-    {
-        $("#formimg").submit();
-    }
-    //上传文件
-    function upfile()
-    {
-        $("#formfile").submit();
-    }
-    //提交数据
-    function senddata()
-    {
-        var title=$("#title").val();
-        var type=$("#type").val();
-        var person=$("#person").val();
-        var email=$("#email").val();
-        var adderss=$("#adderss").val();
-        var thefile=$("#thefile").val();
-        var listimg=$("#showimg").attr('src');
-        var description=$("#description").val();
-        var content=UM.getEditor('myEditor').getContent();
-        var data={table:"Project",1:{'title':title,type_id:type,adderss:adderss,people:person,email:email,planfile:thefile,listimg:listimg,description:description,content:content}};
-        $.post("<?php echo U('Publish/send');?>",{data:data},function(msg){
-            if(msg)
-            {
-                alert("操作成功");
-                location.replace(location)
-            }else{
-                alert("操作发生错误");
-            }
-        },'json')
-    }
+<script src="/Public/Admin/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="/Public/layer/layer.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function(){
+        $(".seeinfo").click(function(){
+            var id=$(this).attr('value');
+            console.log(id);
+            layer.open({
+                type: 2,
+                title: '入驻公司信息',
+                shadeClose: true,
+                shade: 0.8,
+                area: ['60%', '90%'],
+                content: 'checkcom.html?id='+id //iframe的url
+            });
+        });
+        $(".editenter").click(function(){
+            var id=$(this).attr('value');
+            console.log(id);
+            var editen= layer.open({
+                type: 2,
+                title: '企业入驻信息',
+                shadeClose: true,
+                shade: 0.8,
+                area: ['40%', '60%'],
+                content: 'editenter.html?id='+id //iframe的url
+            });
+        });
+
+
+
+
+    })
 </script>
         <!-- END PAGE CONTAINER-->
     </div>

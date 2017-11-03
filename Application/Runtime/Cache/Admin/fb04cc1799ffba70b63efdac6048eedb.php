@@ -166,8 +166,8 @@
         <div class="span12">
             <!-- BEGIN PAGE TITLE & BREADCRUMB-->
             <h3 class="page-title">
-                欢迎登陆
-                <small>创业云孵化平台</small>
+                活动审核
+                <small></small>
             </h3>
         </div>
     </div>
@@ -205,7 +205,7 @@
                                             <ul class="nav nav-tabs y_tabTitle">
                                                 <li class="active"><a href="#tab_1_1" data-toggle="tab">全部</a></li>
                                                 <li><a href="#tab_1_2" data-toggle="tab">待审核</a></li>
-                                                <li><a href="#tab_1_3" data-toggle="tab">已审核</a></li>
+                                                <li><a href="#tab_1_3" data-toggle="tab">驳回审核</a></li>
                                             </ul>
                                             <div class="tab-content">
                                                 <div class="tab-pane active" id="tab_1_1">
@@ -215,114 +215,19 @@
                                                             <table class="table table-striped table-hover table-bordered">
                                                                 <thead>
                                                                 <tr>
+                                                                    <th>活动ID</th>
                                                                     <th>标题</th>
                                                                     <th>摘要</th>
-                                                                    <th>来源</th>
                                                                     <th>状态</th>
-                                                                    <th>操作</th>
                                                                 </tr>
                                                                 </thead>
                                                                 <tbody>
-                                                                <tr class="">
-                                                                    <td><a href="">关于孵化平台的一些小常识！</a></td>
-                                                                    <td>管理员管理通知公告，进行通知公告的发布、删除、修改等操作，模块清晰，对新闻进行明确的分类。
-                                                                        管理员管理企业新闻，进行企业新闻的发布、删除、修改等操作，模块清晰。</td>
-                                                                    <td>一阵风</td>
-                                                                    <td>已审核通过</td>
-                                                                    <td>
-                                                                        <a class="y_clolor_green" href="javascript:;" style="display: inline-block">审核</a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td><a href="">三百六十行，行行出状元！</a></td>
-                                                                    <td>管理员管理通知公告，进行通知公告的发布、删除、修改等操作，模块清晰，对新闻进行明确的分类。
-                                                                        管理员管理企业新闻，进行企业新闻的发布、删除、修改等操作，模块清晰。</td>
-                                                                    <td>一阵风</td>
-                                                                    <td>审核不通过</td>
-                                                                    <td>
-                                                                        <a class="y_clolor_green" href="javascript:;" style="display: inline-block">审核</a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td><a href="">你若不走，便是后退，把握时机，成就下一个自己。</a></td>
-                                                                    <td>管理员管理通知公告，进行通知公告的发布、删除、修改等操作，模块清晰，对新闻进行明确的分类。
-                                                                        管理员管理企业新闻，进行企业新闻的发布、删除、修改等操作，模块清晰。</td>
-                                                                    <td>一阵风</td>
-                                                                    <td>已审核通过</td>
-                                                                    <td>
-                                                                        <a class="y_clolor_green" href="javascript:;" style="display: inline-block">审核</a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td><a href="">关于孵化平台的一些小常识！</a></td>
-                                                                    <td>管理员管理通知公告，进行通知公告的发布、删除、修改等操作，模块清晰，对新闻进行明确的分类。
-                                                                        管理员管理企业新闻，进行企业新闻的发布、删除、修改等操作，模块清晰。</td>
-                                                                    <td>一阵风</td>
-                                                                    <td>未审核</td>
-                                                                    <td>
-                                                                        <a class="y_clolor_green" href="javascript:;" style="display: inline-block">审核</a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td><a href="">关于孵化平台的一些小常识！</a></td>
-                                                                    <td>管理员管理通知公告，进行通知公告的发布、删除、修改等操作，模块清晰，对新闻进行明确的分类。
-                                                                        管理员管理企业新闻，进行企业新闻的发布、删除、修改等操作，模块清晰。</td>
-                                                                    <td>一阵风</td>
-                                                                    <td>已审核通过</td>
-                                                                    <td>
-                                                                        <a class="y_clolor_green" href="javascript:;" style="display: inline-block">审核</a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td><a href="">关于孵化平台的一些小常识！</a></td>
-                                                                    <td>管理员管理通知公告，进行通知公告的发布、删除、修改等操作，模块清晰，对新闻进行明确的分类。
-                                                                        管理员管理企业新闻，进行企业新闻的发布、删除、修改等操作，模块清晰。</td>
-                                                                    <td>一阵风</td>
-                                                                    <td>已审核通过</td>
-                                                                    <td>
-                                                                        <a class="y_clolor_green" href="javascript:;" style="display: inline-block">审核</a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td><a href="">三百六十行，行行出状元！</a></td>
-                                                                    <td>管理员管理通知公告，进行通知公告的发布、删除、修改等操作，模块清晰，对新闻进行明确的分类。
-                                                                        管理员管理企业新闻，进行企业新闻的发布、删除、修改等操作，模块清晰。</td>
-                                                                    <td>一阵风</td>
-                                                                    <td>审核不通过</td>
-                                                                    <td>
-                                                                        <a class="y_clolor_green" href="javascript:;" style="display: inline-block">审核</a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td><a href="">你若不走，便是后退，把握时机，成就下一个自己。</a></td>
-                                                                    <td>管理员管理通知公告，进行通知公告的发布、删除、修改等操作，模块清晰，对新闻进行明确的分类。
-                                                                        管理员管理企业新闻，进行企业新闻的发布、删除、修改等操作，模块清晰。</td>
-                                                                    <td>一阵风</td>
-                                                                    <td>已审核通过</td>
-                                                                    <td>
-                                                                        <a class="y_clolor_green" href="javascript:;" style="display: inline-block">审核</a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td><a href="">关于孵化平台的一些小常识！</a></td>
-                                                                    <td>管理员管理通知公告，进行通知公告的发布、删除、修改等操作，模块清晰，对新闻进行明确的分类。
-                                                                        管理员管理企业新闻，进行企业新闻的发布、删除、修改等操作，模块清晰。</td>
-                                                                    <td>一阵风</td>
-                                                                    <td>未审核</td>
-                                                                    <td>
-                                                                        <a class="y_clolor_green" href="javascript:;" style="display: inline-block">审核</a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td><a href="">关于孵化平台的一些小常识！</a></td>
-                                                                    <td>管理员管理通知公告，进行通知公告的发布、删除、修改等操作，模块清晰，对新闻进行明确的分类。
-                                                                        管理员管理企业新闻，进行企业新闻的发布、删除、修改等操作，模块清晰。</td>
-                                                                    <td>一阵风</td>
-                                                                    <td>已审核通过</td>
-                                                                    <td>
-                                                                        <a class="y_clolor_green" href="javascript:;" style="display: inline-block">审核</a>
-                                                                    </td>
-                                                                </tr>
+                                                                <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?><tr class="">
+                                                                            <td><?php echo ($list["id"]); ?></td>
+                                                                            <td class="checkact" value="<?php echo ($list["id"]); ?>"><?php echo ($list["title"]); ?></td>
+                                                                            <td><?php echo ($list["description"]); ?></td>
+                                                                            <td><?php echo ($list["state"]); ?></td>
+                                                                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                                                                 </tbody>
                                                             </table>
                                                             <div>
@@ -331,16 +236,7 @@
                                                                         <p>当前为第<span>1</span>页/共<span>11</span>页</p>
                                                                     </div>
                                                                     <ul class="r_float pagelist">
-                                                                        <li><a>首页</a></li>
-                                                                        <li><a href="">上一页</a></li>
-                                                                        <li  class="thisclass"><a href="">1</a></li>
-                                                                        <li><a href="">2</a></li>
-                                                                        <li><a href="">3</a></li>
-                                                                        <li><a href="">4</a></li>
-                                                                        <li><a href="">5</a></li>
-                                                                        <li><a href="">下一页</a></li>
-                                                                        <li><a href="">末页</a></li>
-                                                                        <div style="clear: both"></div>
+                                                                        <?php echo ($page); ?>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -354,85 +250,23 @@
                                                             <table class="table table-striped table-hover table-bordered">
                                                                 <thead>
                                                                 <tr>
+                                                                    <th>活动ID</th>
                                                                     <th>标题</th>
                                                                     <th>摘要</th>
-                                                                    <th>来源</th>
                                                                     <th>状态</th>
                                                                     <th>操作</th>
                                                                 </tr>
                                                                 </thead>
                                                                 <tbody>
-                                                                <tr class="">
-                                                                    <td><a href="">关于孵化平台的一些小常识！</a></td>
-                                                                    <td>管理员管理通知公告，进行通知公告的发布、删除、修改等操作，模块清晰，对新闻进行明确的分类。
-                                                                        管理员管理企业新闻，进行企业新闻的发布、删除、修改等操作，模块清晰。</td>
-                                                                    <td>一阵风</td>
-                                                                    <td>未审核</td>
-                                                                    <td>
-                                                                        <a class="y_clolor_green" href="javascript:;" style="display: inline-block">审核</a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td><a href="">三百六十行，行行出状元！</a></td>
-                                                                    <td>管理员管理通知公告，进行通知公告的发布、删除、修改等操作，模块清晰，对新闻进行明确的分类。
-                                                                        管理员管理企业新闻，进行企业新闻的发布、删除、修改等操作，模块清晰。</td>
-                                                                    <td>一阵风</td>
-                                                                    <td>未审核</td>
-                                                                    <td>
-                                                                        <a class="y_clolor_green" href="javascript:;" style="display: inline-block">审核</a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td><a href="">你若不走，便是后退，把握时机，成就下一个自己。</a></td>
-                                                                    <td>管理员管理通知公告，进行通知公告的发布、删除、修改等操作，模块清晰，对新闻进行明确的分类。
-                                                                        管理员管理企业新闻，进行企业新闻的发布、删除、修改等操作，模块清晰。</td>
-                                                                    <td>一阵风</td>
-                                                                    <td>未审核</td>
-                                                                    <td>
-                                                                        <a class="y_clolor_green" href="javascript:;" style="display: inline-block">审核</a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td><a href="">关于孵化平台的一些小常识！</a></td>
-                                                                    <td>管理员管理通知公告，进行通知公告的发布、删除、修改等操作，模块清晰，对新闻进行明确的分类。
-                                                                        管理员管理企业新闻，进行企业新闻的发布、删除、修改等操作，模块清晰。</td>
-                                                                    <td>一阵风</td>
-                                                                    <td>未审核</td>
-                                                                    <td>
-                                                                        <a class="y_clolor_green" href="javascript:;" style="display: inline-block">审核</a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td><a href="">关于孵化平台的一些小常识！</a></td>
-                                                                    <td>管理员管理通知公告，进行通知公告的发布、删除、修改等操作，模块清晰，对新闻进行明确的分类。
-                                                                        管理员管理企业新闻，进行企业新闻的发布、删除、修改等操作，模块清晰。</td>
-                                                                    <td>一阵风</td>
-                                                                    <td>未审核</td>
-                                                                    <td>
-                                                                        <a class="y_clolor_green" href="javascript:;" style="display: inline-block">审核</a>
-                                                                    </td>
-                                                                </tr>
+                                                                    <?php if(is_array($list1)): $i = 0; $__LIST__ = $list1;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list1): $mod = ($i % 2 );++$i;?><tr class="">
+                                                                            <td><?php echo ($list1["id"]); ?></td>
+                                                                            <td class="checkact" value="<?php echo ($list["id"]); ?>"><?php echo ($list1["title"]); ?></td>
+                                                                            <td><?php echo ($list1["description"]); ?></td>
+                                                                            <td><?php echo ($list["state"]); ?></td>
+                                                                            <td class="operation" value="<?php echo ($list1["id"]); ?>">审核</td>
+                                                                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                                                                 </tbody>
                                                             </table>
-                                                            <div>
-                                                                <div class="pages">
-                                                                    <div class="l_float all_page">
-                                                                        <p>当前为第<span>1</span>页/共<span>11</span>页</p>
-                                                                    </div>
-                                                                    <ul class="r_float pagelist">
-                                                                        <li><a>首页</a></li>
-                                                                        <li><a href="">上一页</a></li>
-                                                                        <li  class="thisclass"><a href="">1</a></li>
-                                                                        <li><a href="">2</a></li>
-                                                                        <li><a href="">3</a></li>
-                                                                        <li><a href="">4</a></li>
-                                                                        <li><a href="">5</a></li>
-                                                                        <li><a href="">下一页</a></li>
-                                                                        <li><a href="">末页</a></li>
-                                                                        <div style="clear: both"></div>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -443,85 +277,27 @@
                                                             <table class="table table-striped table-hover table-bordered">
                                                                 <thead>
                                                                 <tr>
+                                                                    <th>活动ID</th>
                                                                     <th>标题</th>
                                                                     <th>摘要</th>
-                                                                    <th>来源</th>
                                                                     <th>状态</th>
                                                                     <th>操作</th>
                                                                 </tr>
                                                                 </thead>
                                                                 <tbody>
-                                                                <tr class="">
-                                                                    <td><a href="">关于孵化平台的一些小常识！</a></td>
-                                                                    <td>管理员管理通知公告，进行通知公告的发布、删除、修改等操作，模块清晰，对新闻进行明确的分类。
-                                                                        管理员管理企业新闻，进行企业新闻的发布、删除、修改等操作，模块清晰。</td>
-                                                                    <td>一阵风</td>
-                                                                    <td>已审核通过</td>
+                                                                <?php if(is_array($list2)): $i = 0; $__LIST__ = $list2;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list2): $mod = ($i % 2 );++$i;?><tr class="">
+                                                                    <td><?php echo ($list2["id"]); ?></td>
+                                                                    <td class="checkact" value="<?php echo ($list2["id"]); ?>"><?php echo ($list2["title"][""]); ?></td>
+                                                                    <td><?php echo ($list2["description"]); ?></td>
+                                                                    <td><?php echo ($list2["state"]); ?></td>
                                                                     <td>
-                                                                        <a class="y_clolor_green" href="javascript:;" style="display: inline-block">审核</a>
+                                                                        <span class="delact" value="<?php echo ($list2["id"]); ?>">删除</span>
                                                                     </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td><a href="">三百六十行，行行出状元！</a></td>
-                                                                    <td>管理员管理通知公告，进行通知公告的发布、删除、修改等操作，模块清晰，对新闻进行明确的分类。
-                                                                        管理员管理企业新闻，进行企业新闻的发布、删除、修改等操作，模块清晰。</td>
-                                                                    <td>一阵风</td>
-                                                                    <td>审核不通过</td>
-                                                                    <td>
-                                                                        <a class="y_clolor_green" href="javascript:;" style="display: inline-block">审核</a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td><a href="">你若不走，便是后退，把握时机，成就下一个自己。</a></td>
-                                                                    <td>管理员管理通知公告，进行通知公告的发布、删除、修改等操作，模块清晰，对新闻进行明确的分类。
-                                                                        管理员管理企业新闻，进行企业新闻的发布、删除、修改等操作，模块清晰。</td>
-                                                                    <td>一阵风</td>
-                                                                    <td>已审核通过</td>
-                                                                    <td>
-                                                                        <a class="y_clolor_green" href="javascript:;" style="display: inline-block">审核</a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td><a href="">关于孵化平台的一些小常识！</a></td>
-                                                                    <td>管理员管理通知公告，进行通知公告的发布、删除、修改等操作，模块清晰，对新闻进行明确的分类。
-                                                                        管理员管理企业新闻，进行企业新闻的发布、删除、修改等操作，模块清晰。</td>
-                                                                    <td>一阵风</td>
-                                                                    <td>已审核通过</td>
-                                                                    <td>
-                                                                        <a class="y_clolor_green" href="javascript:;" style="display: inline-block">审核</a>
-                                                                    </td>
-                                                                </tr>
-                                                                <tr class="">
-                                                                    <td><a href="">关于孵化平台的一些小常识！</a></td>
-                                                                    <td>管理员管理通知公告，进行通知公告的发布、删除、修改等操作，模块清晰，对新闻进行明确的分类。
-                                                                        管理员管理企业新闻，进行企业新闻的发布、删除、修改等操作，模块清晰。</td>
-                                                                    <td>一阵风</td>
-                                                                    <td>已审核通过</td>
-                                                                    <td>
-                                                                        <a class="y_clolor_green" href="javascript:;" style="display: inline-block">审核</a>
-                                                                    </td>
-                                                                </tr>
+                                                                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+
                                                                 </tbody>
                                                             </table>
-                                                            <div>
-                                                                <div class="pages">
-                                                                    <div class="l_float all_page">
-                                                                        <p>当前为第<span>1</span>页/共<span>1</span>页</p>
-                                                                    </div>
-                                                                    <ul class="r_float pagelist">
-                                                                        <li><a>首页</a></li>
-                                                                        <li><a href="">上一页</a></li>
-                                                                        <li  class="thisclass"><a href="">1</a></li>
-                                                                        <li><a href="">2</a></li>
-                                                                        <li><a href="">3</a></li>
-                                                                        <li><a href="">4</a></li>
-                                                                        <li><a href="">5</a></li>
-                                                                        <li><a href="">下一页</a></li>
-                                                                        <li><a href="">末页</a></li>
-                                                                        <div style="clear: both"></div>
-                                                                    </ul>
-                                                                </div>
-                                                            </div>
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -543,6 +319,68 @@
         <div class="clearfix"></div>
     </div>
 </div>
+<script src="/Public/Admin/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="/Public/layer/layer.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function(){
+        $(".checkact").click(function () {
+            var actid=$(this).attr('value');
+            console.log(actid);
+           layer.open({
+               type: 2,
+               title: 'layer mobile页',
+               shadeClose: true,
+               shade: 0.8,
+               area: ['60%', '90%'],
+               content: 'checkact.html?id='+actid
+           });
+        });
+
+        $(".operation").click(function() {
+            var actid=$(this).attr('value');
+            console.log($(actid));
+            layer.confirm('审核通过该活动？', {
+                        btn: ['是的','不通过'] //按钮
+                    }, function () {
+                $.post("editactstate",{actid:actid},function(msg){
+                    if(msg)
+                    {
+                        layer.msg('YES');
+                        window.location.reload();
+                    }else{
+                        layer.msg("NO");
+                    }
+                },"json")
+                    },function() {
+                $.post("edit1actstate", {actid: actid}, function (msg) {
+                    if (msg) {
+                        layer.msg('YES');
+                        window.location.reload();
+                    } else {
+                        layer.msg("NO");
+                    }
+                }, "json")
+            })
+        });
+
+        $(".delact").click(function(){
+            var actid=$(this).attr('value');
+            layer.confirm("是否删除该活动？",{bth:['YES','NO']},function(){
+                $.post("delactivity",{actid:actid},function(msg){
+                    if(msg)
+                    {
+                        layer.msg('YES');
+                        window.location.reload();
+                    }else{
+                        layer.msg("NO");
+                    }
+                },'json')
+            })
+        })
+
+
+    });
+</script>
         <!-- END PAGE CONTAINER-->
     </div>
     <!-- END PAGE -->

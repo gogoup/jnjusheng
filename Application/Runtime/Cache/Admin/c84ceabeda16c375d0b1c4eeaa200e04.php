@@ -31,6 +31,8 @@
 
 <link rel="stylesheet" href="/Public/Admin/css/DT_bootstrap.css" />
 <link rel="stylesheet" href="/Public/Admin/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/Public/Admin/css/common.css" />
+<link rel="stylesheet" type="text/css" href="/Public/Admin/css/content.css" />
 
 <?php if(CONTROLLER_NAME == 'Publish'): ?><!--引用textarea，设置文字字体样式-->
     <link rel="stylesheet" type="text/css" href="/Public/Admin/css/bootstrap-fileupload.css" />
@@ -214,7 +216,7 @@
                             </div>
                             <div class="portlet-body form">
                                 <!-- BEGIN FORM-->
-                                <form action="#" class="form-horizontal">
+
                                     <br>
                                     <div class="control-group">
                                         <label class="control-label">类型：</label>
@@ -268,16 +270,15 @@
                                     </div>
                                     <div class="control-group">
                                         <label class="control-label">插入图片：</label>
-                                        <div class="controls">
+                                        <div class="controls y_controls">
                                             <div class="fileupload fileupload-new" data-provides="fileupload">
-                                                    <img src="" alt="" id="showimg" />
-                                                <div class="fileupload-preview fileupload-exists thumbnail" style="max-width: 200px; max-height: 150px; line-height: 20px;"></div>
+                                                <img src="" alt=""  id="showimg" name="img" style="width: 150px"/>
                                                 <div>
                                                     <iframe id="form_hidden" name="form_hidden" style="display:none"></iframe>
                                                     <form id="formimg" action="<?php echo U('Common/upimg');?>" method="post" enctype="multipart/form-data" target="form_hidden">
-                                                        <span class="btn btn-file">
-                                                        <input type="file" class="default" onchange="upimg()"/><span>选择图片</span>
-                                                        </span>
+													<span class="btn btn-file">
+                                                             <input type="file" name="theimg" class="default" onchange="upimg()" /><span>选择图片</span>
+                                                    </span>
                                                     </form>
                                                 </div>
                                             </div>
@@ -319,7 +320,7 @@
                                         <button type="button" class="btn blue" onclick="addact()">发布</button>
                                         <button type="button" class="btn">取消</button>
                                     </div>
-                                </form>
+
                                 <!-- END FORM-->
                             </div>
                         </div>
@@ -334,7 +335,7 @@
 <script>
     function upimg()
     {
-        $("#formimg").submit();
+        $('#formimg').submit();
     }
     function addact()
     {
@@ -351,17 +352,25 @@
         var description=$("#description").val();
         var state=$("input[name='state']:checked").val();
         var thetype=$('#thetype').val();
+        alert(img);
         if(title=="")
         {
             alert('标题不能为空');
+            return false;
         }
         if(content=="")
         {
             alert('请填写内容');
+            return false;
         }
         var data={"table":"activity","1":{title:title,sponsor:zhuban,number:number,adderss:adderss,join_start:join1,join_end:join2,act_start:join3,act_end:join4,list_img:img,description:description,content:content,type:thetype,state:state}};
         $.post("<?php echo U('Publish/send');?>",{data:data},function(msg){
-            alert(msg);
+            if(msg){
+                alert("YES");
+            }else{
+                alert("NO");
+            }
+            location.replace(location)
         },'json')
     }
 </script>
@@ -386,7 +395,7 @@
 </div>
 <!-- END FOOTER -->
 <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
-<?php if(CONTROLLER_NAME == 'Index'): ?><script src="/Public/Admin/js/jquery-1.10.1.min.js" type="text/javascript"></script><?php endif; ?>
+<?php if((CONTROLLER_NAME == 'Index') OR (CONTROLLER_NAME == 'Audit') ): ?><script src="/Public/Admin/js/jquery-1.10.1.min.js" type="text/javascript"></script><?php endif; ?>
 <script src="/Public/Admin/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
 <!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
 <script src="/Public/Admin/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>

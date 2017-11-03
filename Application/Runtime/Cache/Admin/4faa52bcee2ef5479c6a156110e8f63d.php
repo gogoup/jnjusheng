@@ -160,68 +160,35 @@
         </div>
         <!-- END SAMPLE PORTLET CONFIGURATION MODAL FORM-->
         <!-- BEGIN PAGE CONTAINER-->
-        <link href="/Public/umeditor/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
-<script type="text/javascript" src="/Public/umeditor/third-party/jquery.min.js"></script>
-<script type="text/javascript" src="/Public/umeditor/third-party/template.min.js"></script>
-<script type="text/javascript" charset="utf-8" src="/Public/umeditor/umeditor.config.js"></script>
-<script type="text/javascript" charset="utf-8" src="/Public/umeditor/umeditor.min.js"></script>
-<script type="text/javascript" src="/Public/umeditor/lang/zh-cn/zh-cn.js"></script>
-<script type="text/javascript" charset="utf-8" src="/Public/layer/layDate/laydate.js"></script>
-
+        <link rel="stylesheet" href="/Public/Admin/css1/common.css">
+<link rel="stylesheet" href="/Public/Admin/css1/content.css">
+<link rel="stylesheet" href="/Public/Admin/css1/audit.css">
 <div class="container-fluid">
     <!-- 主要内容头部 开始-->
     <div class="row-fluid">
         <div class="span12">
-            <!-- 皮肤设置部分 开始 -->
-            <div class="color-panel hidden-phone">
-                <div class="color-mode-icons icon-color"></div>
-                <div class="color-mode-icons icon-color-close"></div>
-                <div class="color-mode">
-                    <p>设置 皮肤</p>
-                    <ul class="inline">
-                        <li class="color-black current color-default" data-style="default"></li>
-                        <li class="color-blue" data-style="blue"></li>
-                        <li class="color-brown" data-style="brown"></li>
-                        <li class="color-purple" data-style="purple"></li>
-                        <li class="color-grey" data-style="grey"></li>
-                        <li class="color-white color-light" data-style="light"></li>
-                    </ul>
-                    <label>
-                        <span>布局</span>
-                        <select class="layout-option m-wrap small">
-                            <option value="fluid" selected>流体</option>
-                            <option value="boxed">盒子</option>
-                        </select>
-                    </label>
-                    <label>
-                        <span>头部</span>
-                        <select class="header-option m-wrap small">
-                            <option value="fixed" selected>固定</option>
-                            <option value="default">默认</option>
-                        </select>
-                    </label>
-                    <label>
-                        <span>侧边栏</span>
-                        <select class="sidebar-option m-wrap small">
-                            <option value="fixed">固定</option>
-                            <option value="default" selected>默认</option>
-                        </select>
-                    </label>
-                    <label>
-                        <span>底部</span>
-                        <select class="footer-option m-wrap small">
-                            <option value="fixed">固定</option>
-                            <option value="default" selected>默认</option>
-                        </select>
-                    </label>
-                </div>
-            </div>
-            <!-- 皮肤设置部分 结束 -->
             <!-- BEGIN PAGE TITLE & BREADCRUMB-->
             <h3 class="page-title">
-                欢迎登陆
-                <small>创业云孵化平台</small>
+                个人信息审核
+                <small></small>
             </h3>
+            <!--<ul class="breadcrumb">
+                &lt;!&ndash;<li>
+                    <i class="icon-home"></i>
+                    <a href="Y-publish-news.html">首页</a>
+                    <i class="icon-angle-right"></i>
+                </li>
+                <li><a href="#">内容管理</a>
+                    <i class="icon-angle-right"></i>
+                </li>
+                <li>
+                    <a href="#">新闻管理</a>
+                    <i class="icon-angle-right"></i>
+                </li>
+                <li>
+                    <a href="Y-content-news-/Public/Admin.html">申报快讯</a>
+                </li>&ndash;&gt;
+            </ul>-->
             <!-- END PAGE TITLE & BREADCRUMB-->
         </div>
     </div>
@@ -231,147 +198,99 @@
         <!-- 主要内容 开始 -->
         <div class="row-fluid">
             <div class="span12">
-                <!-- BEGIN SAMPLE FORM PORTLET-->
-                <div class="portlet box yellow">
-                    <div class="portlet-title">
-                        <div class="caption">项目发布</div>
-                        <div class="tools">
-                            <a href="javascript:;" class="reload"></a>
-                        </div>
-                    </div>
-                    <div class="portlet-body form">
-                        <!-- BEGIN FORM-->
+                <!-- tab 切换表 开始-->
+                <div class="row-fluid ">
+                    <div class="span12">
+                        <!-- BEGIN INLINE TABS PORTLET-->
+                        <div class="portlet box green">
+                            <!--    表头 开始   -->
+                            <div class="portlet-title">
+                                <div class="caption"><i class="icon-reorder"></i>个人信息审核</div>
+                                <div class="tools">
+                                    <a href="javascript:;" class="collapse"></a>
+                                    <a href="#portlet-config" data-toggle="modal" class="config"></a>
+                                </div>
+                            </div>
+                            <!--    表头 结束   -->
+                            <div class="portlet-body">
+                                <div class="row-fluid">
+                                    <div class="span12">
+                                        <!--BEGIN TABS-->
+                                        <div class="tabbable tabbable-custom">
+                                            <ul class="nav nav-tabs y_tabTitle">
+                                                <li class="active"><a href="#tab_1_1">全部</a></li>
+                                                <li><a href="person1.html" >待审核</a></li>
+                                                <li><a href="person2.html">审核失败</a></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div class="tab-pane active">
+                                                    <div class="portlet">
+                                                        <div class="portlet-body">
+                                                            <div class="clearfix"></div>
+                                                            <table class="table table-striped table-hover table-bordered">
+                                                                <thead>
+                                                                <tr>
+                                                                    <th>用户编号</th>
+                                                                    <th>用户名</th>
+                                                                    <th>姓名</th>
+                                                                    <th>性别</th>
+                                                                    <th>身份证号</th>
+                                                                    <th>地址</th>
+                                                                    <th>邮箱</th>
+                                                                    <th>电话</th>
+                                                                    <th>身份证正面</th>
+                                                                    <th>身份证反面</th>
+                                                                </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                    <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?><tr class="">
+                                                                            <td><?php echo ($list["user_id"]); ?></td>
+                                                                            <td><?php echo ($list["user_name"]); ?></td>
+                                                                            <td><?php echo ($list["name"]); ?></td>
+                                                                            <td><?php echo ($list["sex"]); ?></td>
+                                                                            <td><?php echo ($list["card_no"]); ?></td>
+                                                                            <td><?php echo ($list["add"]); ?></td>
+                                                                            <td><?php echo ($list["email"]); ?></td>
+                                                                            <td><?php echo ($list["tel"]); ?></td>
+                                                                            <td class="card_front_word">正面.jpg
+                                                                                <div class="card_front"><img src="<?php echo ($list["card1"]); ?>" alt="" width="400px"></div>
+                                                                            </td>
 
-                        <br>
-                        <div class="control-group">
-                            <label class=" control-label">项目名称：</label>
-                            <div class="controls">
-                                <input type="text" class="span6 m-wrap" id="title" />
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label">分类：</label>
-                            <div class="controls">
-                                <input type="text" class="span6 m-wrap"  id="type"/>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label">地区：</label>
-                            <div class="controls">
-                                <input type="text" class="span6 m-wrap" id="adderss" />
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label">联系人：</label>
-                            <div class="controls">
-                                <input type="text" class="span6 m-wrap" id="person"/>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label">邮箱：</label>
-                            <div class="controls">
-                                <input type="text" class="span6 m-wrap" id="email"/>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label">计划书：</label>
-                            <div class="controls">
+                                                                            <td class="card_verso_word">背面.jpg
+                                                                                <div class="card_verso"><img src="<?php echo ($list["card2"]); ?>" alt="" width="400px"></div>
+                                                                            </td>
+                                                                        </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                                                                </tbody>
+                                                            </table>
+                                                            <div>
+                                                                <div class="pages">
 
-                                <input type="hidden" id="thefile" value="">
-                                <iframe id="form_hidden2" name="form_hidden2" style="display:none"></iframe>
-                                <form id="formfile" action="<?php echo U('Common/upfile');?>" method="post" enctype="multipart/form-data" target="form_hidden2">
-                                    <span class="btn btn-file">
-                                        <input type="text" name="theid" value="thefile">
-                                        <input type="file" name="thefile" class="default" onchange="upfile()"/><span>选择文件</span>
-                                    </span>  <l style="font-size: small">仅支持 doc、docx格式文件</l><span id="msg" style="margin-left: 10%; color: red"></span>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label">上传图片：</label>
-                            <div class="controls y_controls">
-                                <div class="fileupload fileupload-new" data-provides="fileupload">
-                                    <img src="" alt=""  id="showimg" name="img" style="width: 150px"/>
-                                    <div>
-                                        <iframe id="form_hidden" name="form_hidden" style="display:none"></iframe>
-                                        <form id="formimg" action="<?php echo U('Common/upimg');?>" method="post" enctype="multipart/form-data" target="form_hidden">
-													<span class="btn btn-file">
-                                                             <input type="file" name="theimg" class="default" onchange="upimg()" /><span>选择图片</span>
-                                                    </span>
-                                        </form>
+                                                                    <ul class="r_float pagelist">
+                                                                      <?php echo ($page); ?>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <!--END TABS-->
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="control-group">
-                            <label class="control-label">摘要：</label>
-                            <div class="controls">
-                                <textarea class="span6 m-wrap" id="description" rows="3"></textarea>
-                            </div>
-                        </div>
-                        <div class="control-group">
-                            <label class="control-label">详细介绍：</label>
-                            <div class="controls y_controls">
-                                <script type="text/plain" id="myEditor" style="width:100%;height:240px;" name="content"></script>
-                                <script type="text/javascript">
-                                    //实例化编辑器
-                                    var um = UM.getEditor('myEditor');
-                                    um.addListener('focus',function(){
-                                        $('#focush2').html('')
-                                    });
-                                </script>
-                            </div>
-                        </div>
-                        <div class="form-actions">
-                            <button type="button" class="btn yellow" onclick="senddata()">发布</button>
-                            <button type="button" class="btn">取消</button>
-                        </div>
-
-                        <!-- END FORM-->
+                        <!-- END INLINE TABS PORTLET-->
                     </div>
                 </div>
-                <!-- END SAMPLE FORM PORTLET-->
+                <!-- tab 切换表 结束-->
             </div>
         </div>
         <!-- 主要内容 结束 -->
         <div class="clearfix"></div>
     </div>
 </div>
-<script>
-    //上传图片
-    function upimg()
-    {
-        $("#formimg").submit();
-    }
-    //上传文件
-    function upfile()
-    {
-        $("#formfile").submit();
-    }
-    //提交数据
-    function senddata()
-    {
-        var title=$("#title").val();
-        var type=$("#type").val();
-        var person=$("#person").val();
-        var email=$("#email").val();
-        var adderss=$("#adderss").val();
-        var thefile=$("#thefile").val();
-        var listimg=$("#showimg").attr('src');
-        var description=$("#description").val();
-        var content=UM.getEditor('myEditor').getContent();
-        var data={table:"Project",1:{'title':title,type_id:type,adderss:adderss,people:person,email:email,planfile:thefile,listimg:listimg,description:description,content:content}};
-        $.post("<?php echo U('Publish/send');?>",{data:data},function(msg){
-            if(msg)
-            {
-                alert("操作成功");
-                location.replace(location)
-            }else{
-                alert("操作发生错误");
-            }
-        },'json')
-    }
-</script>
         <!-- END PAGE CONTAINER-->
     </div>
     <!-- END PAGE -->
