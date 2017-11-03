@@ -57,10 +57,9 @@
     color:red;
 }
 .register-con-left form ul li>span{
-    /*text-align:right;*/
     float:left;
     display: block;
-    width:144px;
+    width:140px;
     margin-top:8px;
 }
 .register-con-left form ul li>input{
@@ -79,7 +78,7 @@
 }
 
 .register-con-left form ul .register-phone1 input{
-    width:110px;
+    width:80px;
 }
 .register-con-left form ul .register-phone1 span:nth-of-type(2){
     width:30px;
@@ -94,7 +93,7 @@
     margin-left:5px;
 }
 .register-con-left form ul .register-money input{
-    width:100px;
+    width:60px;
 }
 .register-con-left form ul li textarea{
     resize: none;
@@ -221,21 +220,4 @@
 }
 .register-con-left form ul .register-box a{
     color:#002772;
-}
-.user{
-	display:block;
-	width:131px;
-	padding-left:18px;
-	margin-left:8px;
-	height:16px;
-	font-size:12px;
-	line-height:16px;
-	color:#ff0000;
-	background:url(__PUBLIC__/Home/image/error.png) no-repeat;
-}
-#test1{
-	margin-left:0px;
-}
-#test2{
-	margin-left:0px;
 }

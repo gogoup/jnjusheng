@@ -7,14 +7,23 @@ $(document).ready(function(){
     register();
     left_tab();
     lesson_tab();
-})
-/*导航栏下拉菜单*/
-function navSlide(){
-    $(".header-nav ul li a").mouseenter(function(){
-        $(this).parent().find(".header-nav-slide").slideDown();
+    m_nav();
+    $("#meet-show").click(function(){
+        $(".business-teacher-alert").css("display","block");
     });
-    $(".header-nav ul li").mouseleave(function(){
-        $(this).parent().find(".header-nav-slide").slideUp();
+    $("#meet-close").click(function(){
+        $(".business-teacher-alert").css("display","none");
+    })
+    // business_test()
+})
+/*手机端导航栏下拉菜单*/
+function m_nav(){
+    $(document).click(function(){
+        $('.header-m-nav-pull').slideUp();
+    });
+    $(".header-m-nav p").click(function (event){
+        $('.header-m-nav-pull').slideToggle();
+        event.stopPropagation();
     })
 }
 /*资讯服务*/
@@ -70,3 +79,18 @@ function lesson_tab(){
         $($(".business-course-bot-area")[i]).css("display","block");
     })
 }
+/*
+function business_test(){
+    $(".business-test-ans input").each(function(){
+        var check=$(".business-test-ans input").is(":checked");
+        alert(check);
+        if(check){
+            alert(2);
+            $(this).click(function () {
+                alert(check)
+                $(this).attr("checked","false");
+            })
+        }
+    })
+
+}*/

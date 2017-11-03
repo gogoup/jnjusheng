@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
-    <meta http-equiv="X-UA-COMPATIBLE" content="ie=edge">
-    <title>创业服务</title>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>孵化空间</title>
     <link rel="stylesheet" href="__PUBLIC__/Home/css/common.css">
     <link rel="stylesheet" href="__PUBLIC__/Home/css/commonSection.css">
-    <link rel="stylesheet" href="__PUBLIC__/Home/css/business-service.css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/hatcher.css">
     <script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="__PUBLIC__/Home/js/common.js"></script>
     <!--[if lt IE 9]>
@@ -26,11 +26,11 @@
         <div class="header-middle">
             <div class="common-middle-two float-clear">
                 <div class="header-middle-left">
-                    <img src="__PUBLIC__/Home/image/logo.png" alt="">
+                    <img src="image/logo.png" alt="">
                 </div>
                 <div class="header-middle-right">
-                    <button class="login"><a href="{:U('Login/login')}">登录</a></button>
-                    <button class="register"><a href="{:U('Register/register')}" target="_blank">注册</a></button>
+                    <button class="login"><a href="person/register.html">登录</a></button>
+                    <button class="register"><a href="person/register.html" target="_blank">注册</a></button>
                 </div>
             </div>
         </div>
@@ -40,7 +40,7 @@
                     <li>
                         <a href="/"><span>首&nbsp;&nbsp;页</span></a>
                     </li>
-                    <li><a href="{:U('Information/information')}"><span>资讯中心</span></a>
+                    <li><a href="service-center.html"><span>资讯中心</span></a>
                         <!--<div class="header-nav-slide float-clear">
                             <div class="header-nav-slide-left">
                                 <img src="image/nav-slide1.jpg" alt="">
@@ -52,7 +52,7 @@
                             </div>
                         </div>-->
                     </li>
-                    <li><a href="{:U('Business/business')}"><span>创业服务</span></a>
+                    <li><a href="business-service.html"><span>创业服务</span></a>
                         <!--<div class="header-nav-slide float-clear">
                             <div class="header-nav-slide-left">
                                 <img src="image/nav-slide2.jpg" alt="">
@@ -65,7 +65,7 @@
                             </div>
                         </div>-->
                     </li>
-                    <li><a href="business-coach.html"><span>创业辅导</span></a>
+                    <li><a href="business-builder.html"><span>创业辅导</span></a>
                         <!--<div class="header-nav-slide float-clear">
                             <div class="header-nav-slide-left">
                                 <img src="image/nav-slide3.jpg" alt="">
@@ -81,7 +81,7 @@
                             </div>
                         </div>-->
                     </li>
-                    <li><a href="incubation-space.html"><span>孵化空间</span></a>
+                    <li><a href="hatcher.html"><span>孵化空间</span></a>
                         <!--<div class="header-nav-slide float-clear">
                             <div class="header-nav-slide-left">
                                 <img src="image/nav-slide3.jpg" alt="">
@@ -111,48 +111,49 @@
             </div>
         </div>
     </div>
-    <div class="business-content">
+    <div class="hatcher">
         <div class="common-middle">
             <div class="common-section-header float-clear">
-                <span>创业服务</span>
+                <span>孵化空间</span>
             </div>
-            <div class="business-con float-clear">
+            <div class="hatcher-content float-clear">
                 <div class="business-con-left">
                     <ul>
+                    <li style="display:none;"><a></a></li>
                         <li>
-                            <a href="{:U('Business/business')}">项目推荐</a>
+                            <a href="{:U('Hatcher/hatcher')}">基本信息</a>
                         </li>
                         <li>
-                            <a href="{:U('Business/business2')}">创业指导</a>
+                            <a href="{:U('Hatcher/hatcher2')}" class="business-con-now">政策介绍</a>
                         </li>
                         <li>
-                            <a href="{:U('Business/business3')}">跟踪扶持</a>
+                            <a href="{:U('Hatcher/hatcher3')}">入孵流程</a>
                         </li>
                     </ul>
                 </div>
                 <div class="business-con-right">
-                    <!--项目推荐-->
+                    
+                    <!--政策介绍-->
                     <div class="business-con-right-tab">
-                        <div class="home-project-content">
-                            <ul class="float-clear">
-                            	<volist name="project_list" id="val">
-                                <li>
-                                    <div class="home-project-detail">
-                                        <div class="home-project-detail-top">
-                                            <img src="{$val.listimg}" alt="">
-                                        </div>
-                                        <div class="home-project-detail-bot">
-                                            <h2>{$val.title}</h2>
-                                            <p><span>联系人：</span><span>{$val.people}</span></p>
-                                            <p><span>所属行业：</span><span>{$val.type_name}</span></p>
-                                            <button><a href="{:U('Business/project?id='.$val[id])}">了解更多</a></button>
-                                        </div>
-                                    </div>
-                                </li>
-                                </volist>
-                            </ul>
+                        <div class="hatcher-policy">
+                            <div class="info-matter-right">
+                                <ul>
+                                <volist name="list" id="val">
+                                    <li>
+                                        <a href="{:U('Hatcher/policy?id='.$val[id])}" class="float-clear">
+                                            <p>{$val.title}</p><span>{$val.createtime}</span>
+                                        </a>
+                                    </li>
+                                    </volist>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+                    <!--入孵流程-->
+                    <div class="business-con-right-tab">
+                        <div class="hatcher-flow"></div>
+                    </div>
+                    <!--页码-->
                     <div class="page-num float-clear">
                         {$str}
                     </div>

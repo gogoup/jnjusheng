@@ -155,7 +155,7 @@ class RegisterController extends BaseController {
         $user1['user_pwd']=md5(I('post.password'));
         $repwd = I('post.repwd');
         $user1['user_state']=1;
-        $user1['user_role']=1;
+        $user1['user_role']=2;
         $user_estp1['license']=session('license');
         $user_estp1['company']=I('post.company');
         $user_estp1['company_card']=I('post.company_card');

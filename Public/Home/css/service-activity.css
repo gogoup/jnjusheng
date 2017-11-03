@@ -4,11 +4,12 @@
 .service-activity-sub{
     margin:20px 0;
     min-height: 494px;
+    position:relative;
+    padding-bottom: 80px;
 }
 .service-activity-list{
     display:block;
     float:left;
-    width:23%;
     margin-right:2%;
     box-shadow:0 4px 15px #dad9d9;
     padding-bottom:15px;
@@ -107,4 +108,17 @@
 }
 .service-sub-bottom p{
     line-height:28px;
+}
+@media (min-width:0){
+    .service-activity-list {
+        width: 48%;
+    }
+}
+@media (min-width:767px){
+    .service-activity-list {
+        width: 23%;
+    }
+}
+@media (min-width:1200px){
+
 }
