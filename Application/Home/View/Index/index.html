@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!doctype html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,13 +6,13 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
-    <link rel="stylesheet" href="/Public/Home/css/common.css">
-    <link rel="stylesheet" href="/Public/Home/css/commonSection.css">
-    <link rel="stylesheet" href="/Public/Home/css/home.css">
-    <script type="text/javascript" src="/Public/Home/js/jquery-1.8.3.min.js"></script>
-    <script type="text/javascript" src="/Public/Home/js/common.js"></script>
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/common.css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/commonSection.css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/home.css">
+    <script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/js/common.js"></script>
     <!--轮播图插件-->
-    <script type="text/javascript" src="/Public/Home/js/slider.js"></script>
+    <script type="text/javascript" src="__PUBLIC__/Home/js/slider.js"></script>
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -22,45 +22,28 @@
 <div class="wrapper">
     <div class="common-header">
         <div class="header-top ">
-            <div class="common-middle float-clear">
+            <div class="common-middle">
                 <span>山东理工职业学院创业平台欢迎您!</span>
-                <p class="header-top-name"><span>欢迎登录，</span><span>tb2546</span></p>
-                <p class="header-top-login"><a href="login.html">登录</a><span>/</span><a href="">注册</a></p>
             </div>
         </div>
         <div class="header-middle">
             <div class="common-middle-two float-clear">
                 <div class="header-middle-left">
-                    <img src="/Public/Home/image/logo.png" alt="">
+                    <img src="__PUBLIC__/Home/image/logo.png" alt="">
                 </div>
                 <div class="header-middle-right">
-                    <button class="login"><a href="#">登录</a></button>
-                    <button class="register"><a href="person/register.html" target="_blank">注册</a></button>
-                </div>
-                <div class="header-m-nav">
-                    <p>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </p>
-                    <div class="header-m-nav-pull">
-                        <a href="index.html">首页</a>
-                        <a href="service-center.html">资讯中心</a>
-                        <a href="business-service.html">创业服务</a>
-                        <a href="business-builder.html">创业辅导</a>
-                        <a href="hatcher.html">孵化空间</a>
-                        <a href="customer.html">创客中心</a>
-                    </div>
+                    <button class="login"><a href="{:U('Login/login')}">登录</a></button>
+                    <button class="register"><a href="{:U('Register/register')}" target="_blank">注册</a></button>
                 </div>
             </div>
         </div>
         <div class="header-bottom">
-            <div class="header-nav common-middle">
+                <div class="header-nav common-middle">
                     <ul class="float-clear">
                         <li>
-                            <a href="index.html"><span>首&nbsp;&nbsp;页</span></a>
+                            <a href="#"><span>首&nbsp;&nbsp;页</span></a>
                         </li>
-                        <li><a href="service-center.html"><span>资讯中心</span></a>
+                        <li><a href="{:U('Information/information')}"><span>资讯中心</span></a>
                             <!--<div class="header-nav-slide float-clear">
                                 <div class="header-nav-slide-left">
                                     <img src="image/nav-slide1.jpg" alt="">
@@ -72,7 +55,7 @@
                                 </div>
                             </div>-->
                         </li>
-                        <li><a href="business-service.html"><span>创业服务</span></a>
+                        <li><a href="{:U('Business/business')}"><span>创业服务</span></a>
                             <!--<div class="header-nav-slide float-clear">
                                 <div class="header-nav-slide-left">
                                     <img src="image/nav-slide2.jpg" alt="">
@@ -85,7 +68,7 @@
                                 </div>
                             </div>-->
                         </li>
-                        <li><a href="business-builder.html"><span>创业辅导</span></a>
+                        <li><a href="business-coach.html"><span>创业辅导</span></a>
                             <!--<div class="header-nav-slide float-clear">
                                 <div class="header-nav-slide-left">
                                     <img src="image/nav-slide3.jpg" alt="">
@@ -101,7 +84,7 @@
                                 </div>
                             </div>-->
                         </li>
-                        <li><a href="hatcher.html"><span>孵化空间</span></a>
+                        <li><a href="incubation-space.html"><span>孵化空间</span></a>
                             <!--<div class="header-nav-slide float-clear">
                                 <div class="header-nav-slide-left">
                                     <img src="image/nav-slide3.jpg" alt="">
@@ -114,7 +97,7 @@
                                 </div>
                             </div>-->
                         </li>
-                        <li><a href="customer.html"><span>创客中心</span></a>
+                        <li><a href="business-center.html"><span>创业中心</span></a>
                             <!--<div class="header-nav-slide float-clear">
                                 <div class="header-nav-slide-left">
                                     <img src="image/nav-slide3.jpg" alt="">
@@ -129,7 +112,6 @@
                         </li>
                     </ul>
                 </div>
-
         </div>
     </div>
     <!--轮播图-->
@@ -137,22 +119,22 @@
         <ul class="slides">
             <li>
                 <a title="" target="_blank" href="#">
-                    <img alt="" style="background-image: url(/Public/Home/image/home-banner1.png)" src="image/alpha.png">
+                    <img alt="" style="background: url(__PUBLIC__/Home/image/home-banner1.png) no-repeat center;" src="__PUBLIC__/Home/image/home-banner1.png">
                 </a>
             </li>
             <li>
                 <a title="" href="#">
-                    <img alt="" style="background-image: url(/Public/Home/image/home-banner2.png)" src="image/alpha.png">
+                    <img alt="" style="background: url(__PUBLIC__/Home/image/home-banner2.png) no-repeat center;" src="__PUBLIC__/Home/image/home-banner2.png">
                 </a>
             </li>
             <li>
                 <a title="" href="#">
-                    <img alt="" style="background-image: url(/Public/Home/image/home-banner3.png)" src="image/alpha.png">
+                    <img alt="" style="background: url(__PUBLIC__/Home/image/home-banner3.png) no-repeat center;" src="__PUBLIC__/Home/image/home-banner3.png">
                 </a>
             </li>
             <li>
                 <a title="" href="#">
-                    <img alt="" style="background-image: url(/Public/Home/image/home-banner4.png)" src="image/alpha.png">
+                    <img alt="" style="background: url(__PUBLIC__/Home/image/home-banner4.png) no-repeat center;" src="__PUBLIC__/Home/image/home-banner4.png">
                 </a>
             </li>
         </ul>
@@ -170,66 +152,38 @@
     <!--资讯中心-->
     <div class="home-information common-middle">
         <div class="common-section-header float-clear">
-            <span>资讯中心</span><a href="service-center.html">更多资讯>></a>
+            <span>资讯中心</span><a href="{:U('Information/information')}">更多资讯>></a>
         </div>
         <div class="home-info-content float-clear">
             <div class="home-info-list" id="home-info-list">
-                <ul class="float-clear">
-                    <li><a href="#"><span>通知公告</span></a></li>
-                    <li><a href="#"><span>企业新闻</span></a></li>
-                    <li><a href="#"><span>申报快讯</span></a></li>
-                    <li><a href="#"><span>媒体报道</span></a></li>
-                    <li><a href="#"><span>政策法规</span></a></li>
+                <ul>
+                    <li><a href="{:U('Information/news?state=1')}"><span>通知公告</span></a></li>
+                    <li><a href="{:U('Information/news?state=2')}"><span>企业新闻</span></a></li>
+                    <li><a href="{:U('Information/news?state=3')}"><span>申报快讯</span></a></li>
+                    <li><a href="{:U('Information/news?state=4')}"><span>媒体报道</span></a></li>
+                    <li><a href="{:U('Information/news?state=4')}"><span>政策法规</span></a></li>
                 </ul>
             </div>
             <div class="home-info-detail" id="home-info-detail">
                 <ul>
                     <li>
                         <div class="home-info-matter float-clear">
-                            <a class="info-matter-left" href="service-new-detail.html">
-                                <img src="/Public/Home/image/jz1.png" alt="">
+                            <a class="info-matter-left" href="{:U('Information/content',array('state'=>$notice_state,'id'=>$notice_content[id]))}">
+                                <img src="{$notice_content.listimg}" alt="">
                                 <div class="info-matter-left-bot">
-                                    <h4>奎文区歌德创业园举办金秋大型人才招聘会</h4>
-                                    <p>9月23日上午，奎文区歌德创业园在万达广场举办歌德·智联2017金秋大型人才招聘会。本次招聘会由奎文区人社局主办，歌德创业园、奎文区工商联、北苑街办、东关街办、智联招聘、万达集团共同承办。</p>
+                                    <h4>{$notice_content.title}</h4>
+                                    <p>{$notice_content.description}</p>
                                 </div>
                             </a>
                             <div class="info-matter-right">
-                                <ul>
+                                <ul>                                    
+                                    <foreach name="notice_data" item="val"> 
                                     <li>
-                                        <a href="service-new-detail.html" class="float-clear">
-                                            <p>高新区创新创业工作再传捷报</p><span>2017-09-26</span>
+                                        <a href="{:U('Information/content',array('state'=>$notice_state,'id'=>$val['id']))}" class="float-clear">
+                                                    <p>{$val.title}</p><span>{$val.create_time}</span>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>搭建沟通平台，银企共话发展--北苑歌德创业园</p><span>2017-08-18</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>高新区创新创业工作再传捷报</p><span>2017-09-26</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>市调研小组来高新区调研创业孵化器及创业大学建</p><span>2017-08-15</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>高新区创新创业工作再传捷报</p><span>2017-09-26</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>搭建沟通平台，银企共话发展--北苑歌德创业园</p><span>2017-08-18</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>高新区创新创业工作再传捷报</p><span>2017-09-26</span>
-                                        </a>
-                                    </li>
+                                    </foreach>
                                 </ul>
                             </div>
                         </div>
@@ -237,49 +191,21 @@
                     <li>
                         <div class="home-info-matter float-clear">
                             <div class="info-matter-left">
-                                <img src="/Public/Home/image/jz2.png" alt="">
+                                <img src="{$enterprise_content.listimg}" alt="">
                                 <div class="info-matter-left-bot">
-                                    <h4>奎文区歌德创业园举办金秋大型人才招聘会</h4>
-                                    <p>9月23日上午，奎文区歌德创业园在万达广场举办歌德·智联2017金秋大型人才招聘会。本次招聘会由奎文区人社局主办，歌德创业园、奎文区工商联、北苑街办、东关街办、智联招聘、万达集团共同承办。</p>
+                                    <h4>{$enterprise_content.title}</h4>
+                                    <p>{$enterprise_content.description}</p>
                                 </div>
                             </div>
                             <div class="info-matter-right">
                                 <ul>
+                                    <foreach name="enterprise_data" item="va">
                                     <li>
-                                        <a href="#" class="float-clear">
-                                            <p>高新区创新创业工作再传捷报</p><span>2017-09-26</span>
+                                        <a href="{:U('Information/content',array('state'=>$enterprise_state,'id'=>$va['id']))}" class="float-clear">
+                                                    <p>{$va.title}</p><span>{$va.create_time}</span>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>搭建沟通平台，银企共话发展--北苑歌德创业园</p><span>2017-08-18</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>高新区创新创业工作再传捷报</p><span>2017-09-26</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>市调研小组来高新区调研创业孵化器及创业大学建</p><span>2017-08-15</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>高新区创新创业工作再传捷报</p><span>2017-09-26</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>搭建沟通平台，银企共话发展--北苑歌德创业园</p><span>2017-08-18</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>高新区创新创业工作再传捷报</p><span>2017-09-26</span>
-                                        </a>
-                                    </li>
+                                    </foreach>                                    
                                 </ul>
                             </div>
                         </div>
@@ -287,49 +213,21 @@
                     <li>
                         <div class="home-info-matter float-clear">
                             <div class="info-matter-left">
-                                <img src="/Public/Home/image/jz3.png" alt="">
+                                <img src="{$falsh_content.listimg}" alt="">
                                 <div class="info-matter-left-bot">
-                                    <h4>奎文区歌德创业园举办金秋大型人才招聘会</h4>
-                                    <p>9月23日上午，奎文区歌德创业园在万达广场举办歌德·智联2017金秋大型人才招聘会。本次招聘会由奎文区人社局主办，歌德创业园、奎文区工商联、北苑街办、东关街办、智联招聘、万达集团共同承办。</p>
+                                    <h4>{$falsh_content.title}</h4>
+                                    <p>{$falsh_content.title}</p>
                                 </div>
                             </div>
                             <div class="info-matter-right">
                                 <ul>
+                                    <foreach name="falsh_data" item="value">
                                     <li>
-                                        <a href="#" class="float-clear">
-                                            <p>高新区创新创业工作再传捷报</p><span>2017-09-26</span>
+                                        <a href="{:U('Information/content',array('state'=>$falsh_state,'id'=>$value['id']))}" class="float-clear">
+                                                    <p>{$value.title}</p><span>{$value.create_time}</span>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>搭建沟通平台，银企共话发展--北苑歌德创业园</p><span>2017-08-18</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>高新区创新创业工作再传捷报</p><span>2017-09-26</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>市调研小组来高新区调研创业孵化器及创业大学建</p><span>2017-08-15</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>高新区创新创业工作再传捷报</p><span>2017-09-26</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>搭建沟通平台，银企共话发展--北苑歌德创业园</p><span>2017-08-18</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>高新区创新创业工作再传捷报</p><span>2017-09-26</span>
-                                        </a>
-                                    </li>
+                                    </foreach>                                    
                                 </ul>
                             </div>
                         </div>
@@ -337,49 +235,21 @@
                     <li>
                         <div class="home-info-matter float-clear">
                             <div class="info-matter-left">
-                                <img src="/Public/Home/image/jz4.png" alt="">
+                                <img src="{$media_content.listimg}" alt="">
                                 <div class="info-matter-left-bot">
-                                    <h4>奎文区歌德创业园举办金秋大型人才招聘会</h4>
-                                    <p>9月23日上午，奎文区歌德创业园在万达广场举办歌德·智联2017金秋大型人才招聘会。本次招聘会由奎文区人社局主办，歌德创业园、奎文区工商联、北苑街办、东关街办、智联招聘、万达集团共同承办。</p>
+                                    <h4>{$media_content.title}</h4>
+                                    <p>{$media_content.title}</p>
                                 </div>
                             </div>
                             <div class="info-matter-right">
                                 <ul>
+                                    <foreach name="media_data" item="v">
                                     <li>
-                                        <a href="#" class="float-clear">
-                                            <p>高新区创新创业工作再传捷报</p><span>2017-09-26</span>
+                                        <a href="{:U('Information/content',array('state'=>$media_state,'id'=>$v['id']))}" class="float-clear">
+                                                    <p>{$v.title}</p><span>{$v.create_time}</span>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>搭建沟通平台，银企共话发展--北苑歌德创业园</p><span>2017-08-18</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>高新区创新创业工作再传捷报</p><span>2017-09-26</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>市调研小组来高新区调研创业孵化器及创业大学建</p><span>2017-08-15</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>高新区创新创业工作再传捷报</p><span>2017-09-26</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>搭建沟通平台，银企共话发展--北苑歌德创业园</p><span>2017-08-18</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>高新区创新创业工作再传捷报</p><span>2017-09-26</span>
-                                        </a>
-                                    </li>
+                                    </foreach>                                    
                                 </ul>
                             </div>
                         </div>
@@ -387,49 +257,21 @@
                     <li>
                         <div class="home-info-matter float-clear">
                             <div class="info-matter-left">
-                                <img src="/Public/Home/image/jz3.png" alt="">
+                                <img src="{$policy_content.listimg}" alt="">
                                 <div class="info-matter-left-bot">
-                                    <h4>奎文区歌德创业园举办金秋大型人才招聘会</h4>
-                                    <p>9月23日上午，奎文区歌德创业园在万达广场举办歌德·智联2017金秋大型人才招聘会。本次招聘会由奎文区人社局主办，歌德创业园、奎文区工商联、北苑街办、东关街办、智联招聘、万达集团共同承办。</p>
+                                    <h4>{$policy_content.title}</h4>
+                                    <p>{$policy_content.title}</p>
                                 </div>
                             </div>
                             <div class="info-matter-right">
                                 <ul>
+                                    <foreach name="policy_data" item="pol">
                                     <li>
-                                        <a href="#" class="float-clear">
-                                            <p>高新区创新创业工作再传捷报</p><span>2017-09-26</span>
+                                        <a href="{:U('Information/substance',array('state'=>$policy_state,'id'=>$pol['id']))}" class="float-clear">
+                                                    <p>{$pol.title}</p><span>{$pol.createtime}</span>
                                         </a>
                                     </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>搭建沟通平台，银企共话发展--北苑歌德创业园</p><span>2017-08-18</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>高新区创新创业工作再传捷报</p><span>2017-09-26</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>市调研小组来高新区调研创业孵化器及创业大学建</p><span>2017-08-15</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>高新区创新创业工作再传捷报</p><span>2017-09-26</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>搭建沟通平台，银企共话发展--北苑歌德创业园</p><span>2017-08-18</span>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="float-clear">
-                                            <p>高新区创新创业工作再传捷报</p><span>2017-09-26</span>
-                                        </a>
-                                    </li>
+                                    </foreach>                            
                                 </ul>
                             </div>
                         </div>
@@ -448,7 +290,7 @@
                 <li>
                     <div class="home-project-detail">
                         <div class="home-project-detail-top">
-                            <img src="/Public/Home/image/home-project1.png" alt="">
+                            <img src="__PUBLIC__/Home/image/home-project1.png" alt="">
                         </div>
                         <div class="home-project-detail-bot">
                             <h2>小帅影院</h2>
@@ -468,7 +310,7 @@
                             <h4>新型空气净化器</h4>
                             <span>联系人：</span><span>XXX</span>
                         </div>-->
-                        <img src="/Public/Home/image/home-project2.jpg" alt="">
+                        <img src="__PUBLIC__/Home/image/home-project2.jpg" alt="">
                     </div>
                     <div class="home-project-detail-bot">
                         <h2>端点科技</h2>
@@ -481,7 +323,7 @@
                 <li>
                     <div class="home-project-detail">
                         <div class="home-project-detail-top float-clear">
-                            <img src="/Public/Home/image/home-project3.png" alt="">
+                            <img src="__PUBLIC__/Home/image/home-project3.png" alt="">
                         </div>
                         <div class="home-project-detail-bot">
                             <h2>新能源</h2>
@@ -494,7 +336,7 @@
                 <li>
                     <div class="home-project-detail">
                         <div class="home-project-detail-top float-clear">
-                            <img src="/Public/Home/image/home-project4.png" alt="">
+                            <img src="__PUBLIC__/Home/image/home-project4.png" alt="">
                         </div>
                         <div class="home-project-detail-bot">
                             <h2>HOTOEM</h2>
@@ -522,7 +364,7 @@
                         <li>
                             <div class="home-teacher-lesson float-clear">
                                 <div class="home-teacher-lessonImg">
-                                    <img src="/Public/Home/image/jz1.png" alt="">
+                                    <img src="__PUBLIC__/Home/image/jz1.png" alt="">
                                 </div>
                                 <div class="home-teacher-lesson-detail">
                                     <h4>技术创新管理</h4>
@@ -533,7 +375,7 @@
                         <li>
                             <div class="home-teacher-lesson float-clear">
                                 <div class="home-teacher-lessonImg">
-                                    <img src="/Public/Home/image/jz1.png" alt="">
+                                    <img src="__PUBLIC__/Home/image/jz1.png" alt="">
                                 </div>
                                 <div class="home-teacher-lesson-detail">
                                     <h4>人力资源管理</h4>
@@ -544,7 +386,7 @@
                         <li>
                             <div class="home-teacher-lesson float-clear">
                                 <div class="home-teacher-lessonImg">
-                                    <img src="/Public/Home/image/jz4.png" alt="">
+                                    <img src="__PUBLIC__/Home/image/jz4.png" alt="">
                                 </div>
                                 <div class="home-teacher-lesson-detail">
                                     <h4>招商人才开发与管理</h4>
@@ -555,7 +397,7 @@
                         <li>
                             <div class="home-teacher-lesson float-clear">
                                 <div class="home-teacher-lessonImg">
-                                    <img src="/Public/Home/image/jz3.png" alt="">
+                                    <img src="__PUBLIC__/Home/image/jz3.png" alt="">
                                 </div>
                                 <div class="home-teacher-lesson-detail">
                                     <h4>技术创新管理</h4>
@@ -566,7 +408,7 @@
                         <li>
                             <div class="home-teacher-lesson float-clear">
                                 <div class="home-teacher-lessonImg">
-                                    <img src="/Public/Home/image/jz4.png" alt="">
+                                    <img src="__PUBLIC__/Home/image/jz4.png" alt="">
                                 </div>
                                 <div class="home-teacher-lesson-detail">
                                     <h4>经济安全研究</h4>
@@ -577,7 +419,7 @@
                         <li>
                             <div class="home-teacher-lesson float-clear">
                                 <div class="home-teacher-lessonImg">
-                                    <img src="/Public/Home/image/jz1.png" alt="">
+                                    <img src="__PUBLIC__/Home/image/jz1.png" alt="">
                                 </div>
                                 <div class="home-teacher-lesson-detail">
                                     <h4>创业投资管理</h4>
@@ -597,7 +439,7 @@
                         <li>
                             <div class="home-teacher-detail float-clear">
                                 <div class="home-teacher-detail-img">
-                                    <img src="/Public/Home/image/teacher.png" alt="">
+                                    <img src="__PUBLIC__/Home/image/teacher.png" alt="">
                                 </div>
                                 <div class="home-teacher-detail-con">
                                     <p><span>姓名：</span><span>XXX</span></p>
@@ -608,7 +450,7 @@
                         <li>
                         <div class="home-teacher-detail float-clear">
                             <div class="home-teacher-detail-img">
-                                <img src="/Public/Home/image/teacher.png" alt="">
+                                <img src="__PUBLIC__/Home/image/teacher.png" alt="">
                             </div>
                             <div class="home-teacher-detail-con">
                                 <p><span>姓名：</span><span>XXX</span></p>
@@ -619,7 +461,7 @@
                         <li>
                             <div class="home-teacher-detail float-clear">
                                 <div class="home-teacher-detail-img">
-                                    <img src="/Public/Home/image/teacher.png" alt="">
+                                    <img src="__PUBLIC__/Home/image/teacher.png" alt="">
                                 </div>
                                 <div class="home-teacher-detail-con">
                                     <p><span>姓名：</span><span>XXX</span></p>
@@ -630,7 +472,7 @@
                         <li>
                             <div class="home-teacher-detail float-clear">
                                 <div class="home-teacher-detail-img">
-                                    <img src="/Public/Home/image/teacher.png" alt="">
+                                    <img src="__PUBLIC__/Home/image/teacher.png" alt="">
                                 </div>
                                 <div class="home-teacher-detail-con">
                                     <p><span>姓名：</span><span>XXX</span></p>
@@ -651,23 +493,14 @@
         </div>
         <div class="home-hatcher-content float-clear">
             <a class="home-hatcher-con-left" href="#">
-                <img src="/Public/Home/image/hatcher1.jpg" alt="">
+                <img src="__PUBLIC__/Home/image/home-hatcher.png" alt="">
             </a>
             <div class="home-hatcher-con-right">
                 <h3>山东中凯兴业贸易广场创业孵化示范园区</h3>
-                <p class="float-clear"><img src="/Public/Home/image/hatcher-position.png" alt=""><span>山东省潍坊市寒亭区海港路45000号</span></p>
-                <p class="float-clear"><img src="/Public/Home/image/hatcher-space.png" alt=""><span>500m²</span></p>
-                <p class="float-clear"><img src="/Public/Home/image/hatcher-feel.png" alt=""><span>体验经济</span></p>
-                <button id="meet-show">申请入孵</button>
-                <div class="business-teacher-alert">
-                    <h3>入孵申请</h3>
-                    <div class="business-teacher-alert-con">
-                        <p class="float-clear"><span>项目名称：</span><input type="text"></p>
-                        <p class="float-clear"><span>联系人：</span><input type="text"></p>
-                        <p class="float-clear"><span>联系电话：</span><input type="text"></p>
-                        <button>提交预约</button><button id="meet-close">取消</button>
-                    </div>
-                </div>
+                <p class="float-clear"><i></i><span class="home-hatcher-position">山东省潍坊市寒亭区海港路45000号</span></p>
+                <span>•&nbsp;&nbsp;</span><span>基地类别：</span><span>众创空间</span><br>
+                <span>•&nbsp;&nbsp;</span><span>投资形式：</span><span>社会投资</span><br>
+                <button>申请入孵</button>
             </div>
 
         </div>
@@ -683,7 +516,7 @@
                     <span>创业大赛</span>
                 </div>
                 <a class="home-activity-con-left-detail" href="#">
-                    <img src="/Public/Home/image/home-activity.jpg" alt="">
+                    <img src="__PUBLIC__/Home/image/home-activity.jpg" alt="">
                 </a>
             </div>
             <div class="home-teacher-con-right">
@@ -737,7 +570,7 @@
             <li>
                 <span></span>
                 <div class="fixed-position float-clear">
-                    <img src="/Public/Home/image/codeDetail.jpg" alt="">
+                    <img src="__PUBLIC__/Home/image/codeDetail.jpg" alt="">
                     <div class="fixed-right">
                         <h3>关注我们</h3>
                         <p>山东理工职业学院创业<br>孵化平台公众号</p>
@@ -747,7 +580,7 @@
             <li>
                 <span></span>
                 <div class="fixed-position float-clear">
-                    <img src="/Public/Home/image/logoMini.png" alt="">
+                    <img src="__PUBLIC__/Home/image/logoMini.png" alt="">
                     <div class="fixed-right">
                         <h3>联系客服</h3>
                         <p>0536-xxxxxxxx</p>
@@ -762,7 +595,7 @@
     <div class="common-footer">
         <div class="common-middle float-clear">
             <div class="footer-left">
-                <img src="/Public/Home/image/danwei.png" alt="">
+                <img src="__PUBLIC__/Home/image/danwei.png" alt="">
             </div>
             <div class="footer-middle">
                 <p>版权所有：山东理工职业学院 鲁ICP备12031654 号 鲁公网安备37089902000008号</p>

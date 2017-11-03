@@ -81,22 +81,9 @@ button{
     background: #e2e2e2;
     padding:12px 0;
 }
-.header-top div > span{
+.header-top span{
     font-size:12px;
     color:#333333;
-    float:left;
-}
-.header-top  p{
-    float:right;
-    font-size:12px;
-}
-.header-top-name span:last-of-type{
-    color:#002772;
-    cursor: pointer;
-    text-decoration: underline;
-}
-.header-top-name span:first-of-type{
-    color:red;
 }
 .header-middle{
     padding:20px;
@@ -107,6 +94,9 @@ button{
 .header-middle-right{
     float:right;
     margin-top:20px;
+}
+.header-middle-left{
+    width:50%;
 }
 .header-middle-left img{
     width:80%;
@@ -196,6 +186,9 @@ button{
 }
 .footer-left,.footer-middle{
     float:left;
+}
+.footer-left{
+    width:10%;
 }
 .footer-left img{
     width:100%;
@@ -346,70 +339,6 @@ button{
         width:94%;
         margin:0 auto;
     }
-    .header-nav{
-        display:none;
-    }
-    .header-m-nav{
-        display:block;
-        float:right;
-        position:relative;
-    }
-    /*手机端登录*/
-    .header-top-name{
-        display:none;
-    }
-    .header-top-login{
-        display:block;
-    }
-    .header-top-login a{
-        font-size:12px;
-        color:#002772;
-    }
-    .header-middle-right{
-        display:none;
-    }
-    /*手机端导航*/
-    .header-middle-left {
-        width: 83%;
-    }
-    .header-m-nav > p{
-        border:2px solid #a9a9a9;
-        border-radius:5px;
-        padding:5px 4px 0 4px;
-        width:22px;
-        margin-top:5px;
-    }
-    .header-m-nav > p > span{
-        display:block;
-        height:2px;
-        background:#a9a9a9;
-        margin-bottom:5px;
-    }
-    /*手机端导航下拉菜单*/
-    .header-m-nav-pull{
-        position:absolute;
-        background:#fff;
-        border:1px solid #dddddd;
-        width:140px;
-        right:0;
-        z-index:5;
-        border-radius:3px;
-        display:none;
-    }
-    .header-m-nav-pull a{
-        display: block;
-        text-align:center;
-        border-bottom:1px solid #dddddd;
-        line-height:32px;
-        font-size:14px;
-    }
-    .footer-left{
-        width:26%;
-    }
-    .footer-middle{
-        margin:0;
-        width: 74%;
-    }
 }
 @media (min-width:767px) {
     .common-middle{
@@ -419,31 +348,6 @@ button{
     .common-middle-two{
         width:92%;
         margin:0 auto;
-    }
-    .header-top-name{
-        display:block;
-    }
-    .header-top-login{
-        display:none;
-    }
-    .header-middle-right{
-        display:block;
-    }
-    .header-nav{
-         display:block;
-     }
-    .header-m-nav{
-        display:none;
-    }
-    .header-middle-left{
-        width:50%;
-    }
-    .footer-left{
-        width:10%;
-    }
-    .footer-middle{
-        margin:25px 0 0 2%;
-        width: 74%;
     }
 }
 @media (min-width: 1200px) {

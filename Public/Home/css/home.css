@@ -2,6 +2,7 @@
     margin: 0px auto 20px;
     position: relative;
     width: 100%;
+    height: 482px;
     overflow: hidden;
     zoom: 1;
 }
@@ -84,7 +85,8 @@
 }
 
 .flexslider .slides a img {
-    width:100%;
+    width: 100%;
+    height: 482px;
     display: block;
 }
 /*资讯中心样式*/
@@ -106,10 +108,34 @@
 }
 
 .home-project-detail-top{
-
+    /*height:110px;*/
+    /*padding:30px 0 30px 5%;*/
+    /*background:url("../image/projectBg.png") no-repeat;*/
+    /*border-bottom:1px solid #e3e3e3;*/
 }
 
-
+/*.home-project-detail-img{
+    float:left;
+    width:30%;
+    text-align:center;
+}
+.home-project-detail-img img{
+    width:70px;
+    height:70px;
+}
+.home-project-detail-top-detail{
+    float:left;
+    width:60%;
+    margin-left:5%;
+}
+.home-project-detail-top h4{
+    font-size:18px;
+    padding:16px 0 5px 0;
+}
+.home-project-detail-top span{
+    font-size:14px;
+    line-height:24px;
+}*/
 
 /*创业辅导样式*/
 .home-teacher{
@@ -118,6 +144,9 @@
 }
 .home-teacher-con-left,.home-teacher-con-right{
     float:left;
+}
+.home-teacher-con-left{
+    width:65%;
 }
 .home-teacher-content{
     background: #f5f5f5;
@@ -173,6 +202,10 @@
     background:#002772;
     transition:background 0.8s;
 }
+.home-teacher-con-right{
+    margin-left:1%;
+    width:34%;
+}
 .home-teacher-con-right-list{
     margin-top:5px;
     background:#ffffff;
@@ -204,6 +237,7 @@
     padding:20px;
 }
 .home-hatcher-con-left{
+    width:74%;
     float:left;
     display:block;
 }
@@ -211,36 +245,39 @@
     width:100%;
 }
 .home-hatcher-con-right{
+    width:24%;
     float:left;
+    margin-left:2%;
 }
-.home-hatcher-con-right > h3{
+.home-hatcher-con-right h3{
     font-size:22px;
     font-weight:bold;
     color:#000000;
+    padding-top:30px;
     line-height:34px;
-    height: 68px;
-    overflow: hidden;
 }
 .home-hatcher-con-right p{
     padding:8px 0 8px 0;
 }
-.home-hatcher-con-right p img{
+.home-hatcher-con-right p i{
+    width:22px;
+    height:22px;
     display:block;
     float:left;
-    margin:3px 4px 0 0;
+    margin:3px 3px 0 0;
+    background:url("../image/home-hatcher-position.png") no-repeat;
 }
-.home-hatcher-con-right > p  > span{
+.home-hatcher-con-right p .home-hatcher-position{
     display:block;
     float:left;
     line-height:20px;
     width:91%;
-    font-size:14px;
 }
 .home-hatcher-con-right > span{
     line-height:24px;
     font-size:14px;
 }
-.home-hatcher-con-right > button{
+.home-hatcher-con-right button{
     background: #002772;
     padding:12px 40px;
     border:none;
@@ -269,75 +306,46 @@
 }
 @media (min-width:0){
     /*banner的高度*/
-    .flexslider{
-        height:260px;
+    .banner{
+        height:280px;
     }
-    .flexslider ul li img{
-        background-size:100% 260px;
+    .banner > ul{
+        height:280px;
     }
-    .home-teacher{
-        display:none;
+    .banner > ul > li{
+        height:280px;
     }
-    .home-hatcher-con-left {
-        width:98%;
-    }
-    .home-hatcher-con-right{
-        width:98%;
-        float:left;
-        margin-left:1%;
-    }
-
-    .home-teacher-con-left{
-        width:99%;
-    }
-
-    .home-teacher-con-right{
-        margin-left:0%;
-        width:98%;
+    .banner ul li a img{
+        height:280px;
     }
 }
 @media (min-width:767px){
     /*banner的高度*/
-    .flexslider{
-        height:482px;
+    .banner{
+        height:500px;
     }
-    .flexslider ul li img{
-        background-size:100% 478px;
+    .banner > ul{
+        height:500px;
     }
-    /*创业辅导*/
-    .home-teacher{
-        display:block;
+    .banner > ul > li{
+        height:500px;
     }
-    .home-teacher-con-left{
-        width:98%;
-    }
-    .home-teacher-con-right{
-        display:none;
-    }
-    .home-hatcher-con-left {
-        width: 53%;
-    }
-    .home-hatcher-con-right{
-        width:45%;
-        margin-left:2%;
-    }
-    .home-teacher-con-right{
-        margin-left:1%;
-        width:34%;
-    }
-    .home-hatcher-con-right h3{
-        padding-top:0;
+    .banner ul li a img{
+        height:500px;
     }
 }
 @media (min-width:1200px){
-    /*创业辅导*/
-    .home-teacher-con-left{
-        width:65%;
+    /*banner的高度*/
+    .banner{
+        height:540px;
     }
-    .home-teacher-con-right{
-        display:block;
+    .banner > ul{
+        height:540px;
     }
-    .home-hatcher-con-right > h3{
-        padding-top:30px;
+    .banner > ul > li{
+        height:540px;
+    }
+    .banner ul li a img{
+        height:540px;
     }
 }

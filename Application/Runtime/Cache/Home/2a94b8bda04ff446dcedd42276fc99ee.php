@@ -84,7 +84,7 @@
                                 </div>
                             </div>-->
                         </li>
-                        <li><a href="<?php echo U('Hatcher/hatcher');?>"><span>孵化空间</span></a>
+                        <li><a href="incubation-space.html"><span>孵化空间</span></a>
                             <!--<div class="header-nav-slide float-clear">
                                 <div class="header-nav-slide-left">
                                     <img src="image/nav-slide3.jpg" alt="">
@@ -300,7 +300,7 @@
                             <h4>新型空气净化器</h4>
                             <span>联系人：</span><span>XXX</span>
                         </div>-->
-                        <img src="/Public/Home/image/home-project2.png" alt="">
+                        <img src="/Public/Home/image/home-project2.jpg" alt="">
                     </div>
                     <div class="home-project-detail-bot">
                         <h2>端点科技</h2>

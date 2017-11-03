@@ -1,0 +1,32 @@
+.content{
+    padding:20px 0;
+    min-height:540px;
+}
+
+.common-new-con{
+    margin-top:20px;
+}
+.common-new-left{
+    width:20%;
+    float:left;
+    box-shadow:1px 1px 3px #dddddd;
+}
+.common-new-left .common-section-header{
+    margin:10px 0 0 10px;
+}
+.common-new-left .common-section-header span{
+    font-size:14px;
+    line-height:18px;
+}
+.common-new-left img{
+    width:80%;
+    margin:5px auto 10px auto;
+    display:block;
+}
+.common-new-left img:first-of-type{
+    margin-top:20px;
+}
+.common-new-right{
+    float:left;
+    width:70%;
+}

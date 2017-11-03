@@ -371,9 +371,7 @@ $(document).on('click','.y_clolor_yellow',function(){
 				  //skin: 'layui-layer-rim', //加上边框
 				  area: ['1330px', '750px'], //宽高
 				  content: data,
-				  end: function () {
-		                location.reload();
-		            }
+				  
 				});
 		});
     });

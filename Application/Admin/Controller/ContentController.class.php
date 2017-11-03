@@ -261,7 +261,6 @@ class ContentController extends BaseController{
             $media = M('New_media');
             $data = $media->where("id=$id")->find();
         }
-        $data['content'] = html_entity_decode($data['content']);
         $this->assign('content',$data);
         $this->display();
     }
@@ -269,7 +268,6 @@ class ContentController extends BaseController{
         $id = I('post.id');
         $activity = M('Activity');
         $data = $activity->where("id=$id")->find();
-        $data['content'] = html_entity_decode($data['content']);
         $this->assign('content',$data);
         $this->display();
     }
@@ -277,7 +275,6 @@ class ContentController extends BaseController{
         $id = I('post.id');
         $project = M('Project');
         $data = $project->where("id=$id")->find();
-        $data['content'] = html_entity_decode($data['content']);
         $this->assign('content',$data);
         $this->display();
     }
@@ -300,7 +297,6 @@ class ContentController extends BaseController{
             $support = M('Plat_support');
             $data = $support->where("id=$id")->find();
         }
-        $data['content'] = html_entity_decode($data['content']);
         $this->assign('content',$data);
         $this->display();
     }
@@ -328,7 +324,6 @@ class ContentController extends BaseController{
             $this->assign('name','媒体报道');
             $this->assign('actioned',"NewMedia");
         }
-        $data['content'] = html_entity_decode($data['content']);
         $this->assign('content',$data);
         $this->display();
     }
@@ -336,7 +331,6 @@ class ContentController extends BaseController{
         $id = I('post.id');
         $activity = M('Activity');
         $data = $activity->where("id=$id")->find();
-        $data['content'] = html_entity_decode($data['content']);
         $this->assign('content',$data);
         $this->display();
     }
@@ -352,24 +346,23 @@ class ContentController extends BaseController{
             $serve = M('Plat_serve');
             $data = $serve->where("id=$id")->find();
             $this->assign('actionname',"生活服务");
-            $this->assign('actioned',"PlatServe");
+         $this->assign('actioned',"PlatServe");
         }else if($state==9){
             $space = M('Plat_space');
             $data = $space->where("id=$id")->find();
             $this->assign('actionname',"共享空间");
-            $this->assign('actioned',"PlatSpace");
+         $this->assign('actioned',"PlatSpace");
         }else if($state==10){
             $policy = M('Plat_policy');
             $data = $policy->where("id=$id")->find();
             $this->assign('actionname',"政策法规");
-            $this->assign('actioned',"PlatPolicy");
+         $this->assign('actioned',"PlatPolicy");
         }else if($state==11){
             $support = M('Plat_support');
             $data = $support->where("id=$id")->find();
             $this->assign('actionname',"科技支撑");
-            $this->assign('actioned',"PlatSupport");
+         $this->assign('actioned',"PlatSupport");
         }
-        $data['content'] = html_entity_decode($data['content']);
         $this->assign('content',$data);
         $this->display();
     }
@@ -377,7 +370,6 @@ class ContentController extends BaseController{
         $id = I('post.id');
         $project = M('Project');
         $data = $project->where("id=$id")->find();
-        $data['content'] = html_entity_decode($data['content']);
         $this->assign('content',$data);
         $this->display();
     }
