@@ -1,0 +1,244 @@
+<script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+<script src="__PUBLIC__/layui/layui.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/layui/css/layui.css">
+        <!-- BEGIN PAGE CONTAINER-->
+        <div class="container-fluid">
+            <!-- 主要内容头部 开始-->
+            <div class="row-fluid">
+                <div class="span12">
+                    <!-- 皮肤设置部分 开始 -->
+                    <div class="color-panel hidden-phone">
+                        <div class="color-mode-icons icon-color"></div>
+                        <div class="color-mode-icons icon-color-close"></div>
+                        <div class="color-mode">
+                            <p>设置 皮肤</p>
+                            <ul class="inline">
+                                <li class="color-black current color-default" data-style="default"></li>
+                                <li class="color-blue" data-style="blue"></li>
+                                <li class="color-brown" data-style="brown"></li>
+                                <li class="color-purple" data-style="purple"></li>
+                                <li class="color-grey" data-style="grey"></li>
+                                <li class="color-white color-light" data-style="light"></li>
+                            </ul>
+                            <label>
+                                <span>布局</span>
+                                <select class="layout-option m-wrap small">
+                                    <option value="fluid" selected>流体</option>
+                                    <option value="boxed">盒子</option>
+                                </select>
+                            </label>
+                            <label>
+                                <span>头部</span>
+                                <select class="header-option m-wrap small">
+                                    <option value="fixed" selected>固定</option>
+                                    <option value="default">默认</option>
+                                </select>
+                            </label>
+                            <label>
+                                <span>侧边栏</span>
+                                <select class="sidebar-option m-wrap small">
+                                    <option value="fixed">固定</option>
+                                    <option value="default" selected>默认</option>
+                                </select>
+                            </label>
+                            <label>
+                                <span>底部</span>
+                                <select class="footer-option m-wrap small">
+                                    <option value="fixed">固定</option>
+                                    <option value="default" selected>默认</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- 皮肤设置部分 结束 -->
+                    <!-- BEGIN PAGE TITLE & BREADCRUMB-->
+                    <h3 class="page-title">
+                        公共平台管理
+                        <small>创业云孵化平台</small>
+                    </h3>
+                    <!-- END PAGE TITLE & BREADCRUMB-->
+                </div>
+            </div>
+            <!-- 主要内容头部 结束-->
+            <hr style="margin-top: 0px">
+            <input type="hidden" name="table" value="{$actioned}">
+            <div id="dashboard">
+                <!-- 主要内容 开始 -->
+                <div class="row-fluid">
+                    <div class="span12">
+                        <!-- BEGIN PAGE CONTENT-->
+                        <div class="row-fluid ">
+                            <div class="span12">
+                                <!-- BEGIN TAB PORTLET-->
+                                <div class="portlet box blue tabbable">
+                                    <div class="portlet-title">
+                                        <div class="caption"><i class="icon-reorder"></i>{$name}</div>
+                                    </div>
+                                    <div class="portlet-body">
+                                        <div class="tabbable portlet-tabs">
+                                            <ul class="nav nav-tabs">
+                                                <li class="active" style="height: 50px"></li>
+                                            </ul>
+                                            <div class="tab-content">
+                                                <div class="tab-pane active" id="portlet_tab1">
+                                                    <!-- BEGIN EXAMPLE TABLE PORTLET-->
+                                                    <div class="portlet">
+                                                        <div class="portlet-body">
+                                                            <div class="clearfix"></div>
+                                                            <div class="span6" style="margin-left:2px">
+                                                                <span id="y_span1">搜索：</span><input style="height: 25px;" type="text">
+                                                                <button class="y_btn">确认</button>
+                                                            </div>
+                                                            <table class="table table-striped table-hover table-bordered" id="sample_editable_1">
+                                                                <thead>
+                                                                <tr>
+                                                                    <th>标题</th>
+                                                                    <th>摘要</th>
+                                                                    <th>来源</th>
+                                                                    <th>操作</th>
+                                                                </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                <volist name="list" id="value">
+                                                                <tr class="">
+                                                                    <td><a href="javascript:;" class="contentAlert">{$value.title}</a></td>
+                                                                    <td>{$value.description}</td>
+                                                                    <td>{$value.from}</td>
+                                                                    <td>
+                                                                    	<input type="hidden" class="id" name="field＿name" value="{$value.id}"> 
+                                                                   		<input type="hidden" class="state" name="field＿name" value="{$state}">
+                                                                        <a class="y_clolor_blue" href="javascript:;" style="display: inline-block">查看</a>
+                                                                        <a class="y_clolor_red" href="javascript:;" style="display: inline-block">删除</a>
+                                                                        <a class="y_clolor_yellow" href="javascript:;" style="display: inline-block">修改</a>
+                                                                        <a class="y_clolor_green" href="javascript:;" style="display: inline-block">推送</a>
+                                                                    </td>
+                                                                </tr>
+                                                                </volist>
+                                                                </tbody>
+                                                            </table>
+                                                            <div>
+                                                                <div class="pages">  
+                                                                    <ul class="r_float pagelist">
+                                                                        {$str}
+                                                                        <div style="clear: both"></div>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- END EXAMPLE TABLE PORTLET-->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- END TAB PORTLET-->
+                            </div>
+                        </div>
+                        <!-- END PAGE CONTENT-->
+                    </div>
+                </div>
+                <!-- 主要内容 结束 -->
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <!-- END PAGE CONTAINER-->
+    </div>
+    <!-- END PAGE -->
+</div>
+<!-- END CONTAINER -->
+<script>
+$(document).on('click','.y_clolor_red',function del(){
+	var id = $(this).prev().prev().prev().val();
+	var state = $(this).prev().prev().val();
+	layui.use('layer', function(){
+		  var layer = layui.layer;
+		  layer.confirm('您确定要删除吗？？？',function(){
+			$.ajax({
+				'url':"{:U('Content/del')}",
+				'type':'post',
+				'dataType':'text',
+				'data':{'id':id,'state':state},
+				'success':function(msg){
+					if(msg==1){
+						window.location.reload();
+					}else{
+						layer.alert('删除失败，请联系管理员！！！');
+					}  					
+				}
+			});
+		  });
+		});	
+});
+$(document).on('click','.contentAlert',function(){
+	var id = $(this).parent().next().next().next().children('.id').val();
+	var state = $(this).parent().next().next().next().children('.state').val();
+	$.post("{:U('Content/platformAlert')}",{'id':id,'state':state}, function (data) {
+		layui.use('layer',function(){
+			var layer = layui.layer;
+			layer.open({
+				  type: 1,
+				  //skin: 'layui-layer-rim', //加上边框
+				  area: ['1000px', '780px'], //宽高
+				  content: data
+				});
+		});
+    });
+});
+$(document).on('click','.y_clolor_blue',function(){
+	var id = $(this).prev().prev().val();
+	var state = $(this).prev().val();
+	$.post("{:U('Content/platformAlert')}",{'id':id,'state':state}, function (data) {
+		layui.use('layer',function(){
+			var layer = layui.layer;
+			layer.open({
+				  type: 1,
+				  //skin: 'layui-layer-rim', //加上边框
+				  area: ['1000px', '750px'], //宽高
+				  content: data
+				});
+		});
+    });
+});
+$(document).on('click','.y_clolor_yellow',function(){
+	var id = $(this).prev().prev().prev().prev().val();
+	var state = $(this).prev().prev().prev().val();
+	$.post("{:U('Content/editPlatform')}",{'id':id,'state':state}, function (data) {
+		layui.use('layer',function(){
+			var layer = layui.layer;
+			layer.open({
+				  type: 1,
+				  //skin: 'layui-layer-rim', //加上边框
+				  area: ['1280px', '760px'], //宽高
+				  content: data,
+				  end: function () {
+		                location.reload();
+		            }
+				});
+		});
+    });
+});
+$(document).on('click','.y_clolor_green',function(){
+	var id = $(this).prev().prev().prev().prev().prev().val();
+	var table=$("[name='table']").val(); 
+	//alert(id);
+	$.post("{:U('Content/tuisong')}",{'id':id,'table':table}, function (data) {
+		layui.use('layer',function(){
+			var layer = layui.layer;
+			if(data){
+				layer.alert('推送成功');
+			}else{
+				layer.alert('推送失败');
+			}	
+		});
+    });
+});
+$(document).on('click','.y_btn',function(){
+	var title = $('#y_span1').next().val();
+	var table=$("[name='table']").val(); 
+	$.post("{:U('Content/serchAll')}",{'title':title,'table':table}, function (data) {
+		//alert(data);
+		$('.portlet-body').html(data);
+	});
+});
+</script>

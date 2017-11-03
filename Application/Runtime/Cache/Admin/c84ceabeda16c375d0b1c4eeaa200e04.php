@@ -51,6 +51,10 @@
     <link rel="stylesheet" type="text/css" href="/Public/Admin/css/multi-select-metro.css" />
     <link href="/Public/Admin/css/bootstrap-modal.css" rel="stylesheet" type="text/css"/>
     <!-- 引用textarea，设置文字字体样式  结束 --><?php endif; ?>
+<!--    我的css   开始-->
+<link rel="stylesheet" href="/Public/Admin/css/common.css">
+<link rel="stylesheet" href="/Public/Admin/css/content.css">
+<!--    我的css   结束-->
 
     <!-- END PAGE LEVEL STYLES -->
     <!-- END PAGE LEVEL STYLES -->
@@ -395,7 +399,11 @@
 </div>
 <!-- END FOOTER -->
 <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
+<<<<<<< HEAD
 <?php if((CONTROLLER_NAME == 'Index') OR (CONTROLLER_NAME == 'Audit') ): ?><script src="/Public/Admin/js/jquery-1.10.1.min.js" type="text/javascript"></script><?php endif; ?>
+=======
+<?php if((CONTROLLER_NAME == 'Index') OR (CONTROLLER_NAME == 'Audit') OR (CONTROLLER_NAME == 'Content')): ?><script src="/Public/Admin/js/jquery-1.10.1.min.js" type="text/javascript"></script><?php endif; ?>
+>>>>>>> 68e6606de51690103908c4200db8fcae8e7353b4
 <script src="/Public/Admin/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
 <!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
 <script src="/Public/Admin/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>

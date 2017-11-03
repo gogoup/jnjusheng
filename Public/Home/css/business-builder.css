@@ -2,19 +2,22 @@
     margin-top:20px;
 }
 /*创业课程专题讲座样式*/
-.career-course-select{
-    border:1px solid #dddddd;
-    padding:10px 0;
+.career-course-search p{
+    float:right;
+    margin-bottom:20px;
 }
-.career-course-select p{
-    float:left;
-    font-weight:bold;
-    padding:5px 30px;
+.career-course-search p input{
+    line-height:32px;
+    width:220px;
+    padding-left:10px;
 }
-.career-course-select a{
-    float:left;
-    padding:5px 8px;
-    font-size:14px;
+.career-course-search p button{
+    background:#002772;
+    color:#fff;
+    border:none;
+    line-height:36px;
+    width:60px;
+    text-align:center;
 }
 .career-course ul li{
     margin-top:20px;
@@ -210,7 +213,6 @@
     line-height:42px;
     text-align:center;
     border-left:1px solid #a3a3a3;
-    border-right:1px solid #a3a3a3;
 }
 .business-course-now{
     border-top:3px solid #002772!important;
@@ -283,5 +285,236 @@
 }
 .business-course ul li span:nth-of-type(3){
     width:20%;
+}
+/*导师推荐会面预约公用样式*/
+.business-teacher-left{
+    float:left;
+}
+.business-teacher-top{
+    margin-top:20px;
+    padding:1%;
+    width: 100%;
+    position:relative;
+    background:url("../image/teacher-rec-bg.png") no-repeat;
+}
+.business-teacher-top img{
+    float:left;
+}
+.business-teacher-top-intro{
+    color:#ffffff;
+    float:left;
+    margin-left:2%;
+}
+.business-teacher-top-intro h3{
+    font-size:18px;
+    font-weight:bold;
+    line-height:30px;
+}
+.business-teacher-top-intro p{
+    font-size:14px;
+    line-height:20px;
+    overflow:hidden;
+    letter-spacing: 0.2px;
+    height: 36px;
+}
+.business-teacher-top-intro button{
+    background:none;
+    border:1px solid #ffffff;
+    color:#ffffff;
+    border-radius:5px;
+    padding:5px 10px;
+    position:absolute;
+    bottom:15px;
+}
+.business-teacher-bottom{
+    margin-top:20px;
+    padding-bottom:20px;
+    min-height: 325px;
+}
+.business-teacher-bottom .business-course-bot-left{
+    width:100%;
+}
+.business-teacher-bottom .business-live-tutoring{
+    padding-top:20px;
+}
+.business-teacher-right{
+    width:23%;
+    margin-left:3%;
+    float:left;
+    padding-bottom:20px;
+}
+.business-teacher-right .business-live-tutoring{
+    background:#f2f2f2;
+    padding-bottom:20px;
+}
+.business-teacher-right .business-live-tutoring ul{
+    width:86%;
+    margin: 0 auto;
+}
+.business-teacher-right .business-live-tutoring ul li{
+    width:100%;
+    margin:20px 0 0 0;
+}
+
+/*时间选择插件样式*/
+.calendar{
+    width:400px;
+    text-align:center;
+    background:#fff;
+    border: 1px solid #ddd;
+}
+.calendar-header{
+    height:50px;
+    line-height: 50px;
+}
+.calendar-header input{
+    width:60px;
+    text-align:center;
+}
+.register-con-left form ul .calendar input{
+    width:60px;
+    height: 30px;
+    outline: none;
+    font-size: 18px;
+    border-radius:5px;
+    border-width:1px;
+    text-align:center;
+}
+.calendar .month{
+    width:30px;
+}
+.cale-left{
+    float:left;
+    width:50px;
+    cursor:pointer;
+}
+.cale-right{
+    float:right;
+    width:50px;
+    cursor:pointer;
+}
+.cale-que{
+    float:left;
+    width:50px;
+    cursor:pointer;
+}
+.cale-com{
+    float:right;
+    width:50px;
+    cursor:pointer;
+}
+.cale-nav{
+    height:30px;
+    line-height: 30px;
+    border-bottom:1px solid #999;
+}
+.cale-nav span{
+    box-sizing: border-box;
+    width:14.2857%;
+    float:left;
+    color:#aaa;
+}
+.calendar-ri span{
+    box-sizing: border-box;
+    width:14.2857%;
+    float:left;
+    height:36px;
+    line-height: 36px;
+    cursor:pointer;
+}
+.calendar-ri span.active{
+    border:1px solid #57DFF6;
+    border-radius:5px;
+}
+.calendar .amd{color:red;}
+/*创业测试样式*/
+.business-builder-test{
+    margin-top:20px;
+    min-height: 741px;
+    position:relative;
+}
+.business-builder-test h3{
+    text-align:center;
+    font-size:20px;
+    font-weight:bold;
+    line-height: 24px;
+}
+.business-builder-test > p{
+    text-align: center;
+    margin-top:15px;
+    font-size:14px;
+}
+.business-test-con{
+    padding-top:20px;
+
+}
+.business-test-que{
+    margin-top:15px;
+    font-size:16px;
+}
+.business-test-que span:last-of-type{
+    color:red;
+}
+.business-test-ans{
+    font-size:14px;
+}
+.business-test-ans span{
+    display:inline-block;
+    margin:10px 20% 0 0;
+}
+.business-test-con button{
+    position:absolute;
+    bottom:20px;
+    border:none;
+    background:#ffb80f;
+    color:#ffffff;
+    width:120px;
+    text-align:center;
+    line-height:34px;
+    font-size:16px;
+    border-radius:3px;
+}
+@media (min-width: 0) {
+    .business-teacher-left{
+        width:100% ;
+    }
+    .business-teacher-right{
+        display:none;
+    }
+    .business-teacher-top img{
+        width: 29%;
+    }
+    .business-teacher-top-intro{
+        width:69%;
+    }
+    .business-teacher-alert{
+        width:90%;
+        left:5%;
+    }
+}
+@media (min-width:767px) {
+    .business-teacher-top img{
+        width: 12%;
+    }
+    .business-teacher-top-intro{
+        width:83%;
+    }
+    .business-teacher-alert{
+        width:60%;
+        left:20%;
+    }
+}
+@media (min-width:1200px) {
+    .business-teacher-left{
+        width:70%; ;
+    }
+    .business-teacher-right{
+        width: 23%;
+        display:block;
+    }
+    .business-teacher-alert{
+        width:30%;
+        left:35%;
+    }
 }
 

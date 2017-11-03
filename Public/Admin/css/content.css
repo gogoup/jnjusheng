@@ -48,7 +48,11 @@ input[type="text"]:focus{
     margin-left: 5px;
     font-size: 12px;
     border-radius: 3px;
+<<<<<<< HEAD
     background: #cbcbcb;
+=======
+    background: #fff;
+>>>>>>> 68e6606de51690103908c4200db8fcae8e7353b4
     list-style: none;
 }
 .pagelist li a{

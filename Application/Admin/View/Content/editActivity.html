@@ -1,0 +1,185 @@
+{__NOLAYOUT__}
+
+	<script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
+    <script src="__PUBLIC__/layui/layui.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/layui/css/layui.css">
+    <!--    我的css   开始-->
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/common.css">
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/content.css">
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css/audit.css">
+    <link rel="stylesheet" type="text/css" href="__PUBLIC__/Admin/css/bootstrap-fileupload.css" />
+    <!--    我的css   结束-->
+        <!-- BEGIN PAGE CONTAINER-->
+            <div id="dashboard">
+                <!-- 主要内容 开始 -->
+                <div class="row-fluid">
+                    <div class="span12">
+                        <!-- BEGIN SAMPLE FORM PORTLET-->
+                        <div class="portlet box blue">
+                            <div class="portlet-title">
+                                <div class="caption">活动</div>
+                                <div class="tools">
+                                    <a href="javascript:;" class="reload"></a>
+                                </div>
+                            </div>
+                            <div class="portlet-body form">
+                                <!-- BEGIN FORM-->
+                        
+                                    <input type="hidden" name="id" value="{$content.id}">
+                                    <div class="control-group">
+                                        <label class="control-label">类型：</label>
+                                        <div class="controls">
+                                            <select class="large m-wrap" tabindex="1" name="type" id="thetype">
+                                                <option value="1" <if condition="$content[type] eq 1 ">selected = "selected"</if>>创业活动</option>
+                                                <option value="2" <if condition="$content[type] eq 2 ">selected = "selected"</if>>创业大赛</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">标题：</label>
+                                        <div class="controls">
+                                            <input type="text" class="span6 m-wrap" id="title" name="title" value="{$content.title}" />
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">主办：</label>
+                                        <div class="controls">
+                                            <input type="text" class="span6 m-wrap" id="zhuban" name="zhuban" value="{$content.sponsor}" />
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">人数：</label>
+                                        <div class="controls">
+                                            <input type="text" class="span6 m-wrap" id="number" value="{$content.number}"/>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">地点：</label>
+                                        <div class="controls">
+                                            <input type="text" class="span6 m-wrap" id="adderss" value="{$content.adderss}"/>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">报名起止时间：</label>
+                                        <div class="controls">
+                                            <!--<input type="text" class="span6 m-wrap" />-->
+                                            <input type="text" class="span2 m-wrap" placeholder="请选择日期" id="test1" value="{$content.join_start}">
+                                            <i style="color: gainsboro;">—</i>
+                                            <input type="text" class="span2 m-wrap" placeholder="请选择日期" id="test2" value="{$content.join_end}">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">活动起止时间：</label>
+                                        <div class="controls">
+                                            <input type="text" class="span2 m-wrap" placeholder="请选择日期" id="test3" value="{$content.act_start}">
+                                            <i style="color: gainsboro;">—</i>
+                                            <input type="text" class="span2 m-wrap" placeholder="请选择日期" id="test4" value="{$content.act_end}">
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">插入图片：</label>
+                                        <div class="controls y_controls">
+                                            <div class="fileupload fileupload-new" data-provides="fileupload">
+                                                <img src="{$content['list_img']}" alt=""  id="showimg" name="img" style="width: 150px"/>
+                                                <div>
+                                                    <iframe id="form_hidden" name="form_hidden" style="display:none"></iframe>
+                                                    <form id="formimg" action="{:U('Common/upimg')}" method="post" enctype="multipart/form-data" target="form_hidden">
+                                                        <span class="btn btn-file">
+                                                            <input type="file" class="default" name="theimg" onchange="upimg()"/><span>选择图片</span>
+                                                        </span>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">摘要：</label>
+                                        <div class="controls">
+                                            <textarea class="span6 m-wrap" rows="3" id="description" name="description" >{$content.description}</textarea>
+                                        </div>
+                                    </div>
+                                    <div class="control-group">
+                                        <label class="control-label">活动详情：</label>
+                                        <div class="controls y_controls">
+                                            <!--<textarea class="span12 wysihtml5 m-wrap" rows="10"></textarea>-->
+                                            <link href="__PUBLIC__/umeditor/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
+                                            <script type="text/javascript" src="__PUBLIC__/umeditor/third-party/jquery.min.js"></script>
+                                            <script type="text/javascript" src="__PUBLIC__/umeditor/third-party/template.min.js"></script>
+                                            <script type="text/javascript" charset="utf-8" src="__PUBLIC__/umeditor/umeditor.config.js"></script>
+                                            <script type="text/javascript" charset="utf-8" src="__PUBLIC__/umeditor/umeditor.min.js"></script>
+                                            <script type="text/javascript" src="__PUBLIC__/umeditor/lang/zh-cn/zh-cn.js"></script>
+                                            <script  type="text/plain" id="myEditor" name="content" style="width:100%;height:240px;"  >{$content.content}</script>
+                                            <div class="clear"></div>
+                                            <script type="text/javascript">
+                                                //实例化编辑器
+                                                var um = UM.getEditor('myEditor');
+                                                um.addListener('focus',function(){
+                                                    $('#focush2').html('')
+                                                });
+                                            </script>
+                                            <div class="clear"></div>
+                                        </div>
+                                    </div>
+                                    <div class="form-actions">
+                                        <button type="button" class="btn blue" onclick="editact()">发布</button>
+                                        <a href="#"><button type="button" class="btn">重置</button></a>
+                                    </div>
+                            	
+                                <!-- END FORM-->
+                            </div>
+                        </div>
+                        <!-- END SAMPLE FORM PORTLET-->
+                    </div>
+                </div>
+                <!-- 主要内容 结束 -->
+            </div>
+        <!-- END PAGE CONTAINER-->
+<script>
+
+function upimg()
+{
+	alert(111);
+    $("#formimg").submit();
+}
+function editact()
+{
+    var title=$('#title').val();
+    var content=UM.getEditor('myEditor').getContent();
+    var zhuban=$('#zhuban').val();
+    var number=$("#number").val();
+    var adderss=$('#adderss').val();
+    var join1=$("#test1").val();
+    var join2=$("#test2").val();
+    var join3=$("#test3").val();
+    var join4=$("#test4").val();
+    var img=$("#showimg").attr('src');
+    var description=$("#description").val();
+    var thetype=$('#thetype').val();
+    var id = $("[name='id']").val();
+    if(title=="")
+    {
+        alert('标题不能为空');
+    }
+    if(content=="")
+    {
+        alert('请填写内容');
+    }
+    var data={"table":"activity","1":{id:id,title:title,sponsor:zhuban,number:number,adderss:adderss,join_start:join1,join_end:join2,act_start:join3,act_end:join4,list_img:img,description:description,content:content,type:thetype}};
+    $.post("{:U('Content/edit')}",{data:data},function(msg){
+        alert(msg);
+        if(msg){
+            layui.use('layer', function(){
+ 	   			var layer = layui.layer;
+ 	   			layer.alert('操作成功!');
+ 			});
+            location.replace(location);
+        }else{
+           layui.use('layer', function(){
+ 	 	   		var layer = layui.layer;
+ 	  	   	    layer.alert('操作发生错误!');
+    		});
+        }
+    });
+}
+
+</script>
