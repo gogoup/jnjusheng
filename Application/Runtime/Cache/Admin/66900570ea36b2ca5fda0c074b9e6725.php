@@ -52,6 +52,11 @@
     <link href="/Public/Admin/css/bootstrap-modal.css" rel="stylesheet" type="text/css"/>
     <!-- 引用textarea，设置文字字体样式  结束 --><?php endif; ?>
 
+<!--    我的css   开始-->
+<link rel="stylesheet" href="/Public/Admin/css/common.css">
+<link rel="stylesheet" href="/Public/Admin/css/content.css">
+<!--    我的css   结束-->
+
     <!-- END PAGE LEVEL STYLES -->
     <!-- END PAGE LEVEL STYLES -->
 </head>
@@ -164,55 +169,10 @@
     <!-- 主要内容头部 开始-->
     <div class="row-fluid">
         <div class="span12">
-            <!-- 皮肤设置部分 开始 -->
-            <div class="color-panel hidden-phone">
-                <div class="color-mode-icons icon-color"></div>
-                <div class="color-mode-icons icon-color-close"></div>
-                <div class="color-mode">
-                    <p>设置 皮肤</p>
-                    <ul class="inline">
-                        <li class="color-black current color-default" data-style="default"></li>
-                        <li class="color-blue" data-style="blue"></li>
-                        <li class="color-brown" data-style="brown"></li>
-                        <li class="color-purple" data-style="purple"></li>
-                        <li class="color-grey" data-style="grey"></li>
-                        <li class="color-white color-light" data-style="light"></li>
-                    </ul>
-                    <label>
-                        <span>布局</span>
-                        <select class="layout-option m-wrap small">
-                            <option value="fluid" selected>流体</option>
-                            <option value="boxed">盒子</option>
-                        </select>
-                    </label>
-                    <label>
-                        <span>头部</span>
-                        <select class="header-option m-wrap small">
-                            <option value="fixed" selected>固定</option>
-                            <option value="default">默认</option>
-                        </select>
-                    </label>
-                    <label>
-                        <span>侧边栏</span>
-                        <select class="sidebar-option m-wrap small">
-                            <option value="fixed">固定</option>
-                            <option value="default" selected>默认</option>
-                        </select>
-                    </label>
-                    <label>
-                        <span>底部</span>
-                        <select class="footer-option m-wrap small">
-                            <option value="fixed">固定</option>
-                            <option value="default" selected>默认</option>
-                        </select>
-                    </label>
-                </div>
-            </div>
-            <!-- 皮肤设置部分 结束 -->
             <!-- BEGIN PAGE TITLE & BREADCRUMB-->
             <h3 class="page-title">
-                欢迎登陆
-                <small>创业云孵化平台</small>
+                入驻管理
+                <small>创业孵化平台</small>
             </h3>
         </div>
     </div>
@@ -242,8 +202,8 @@
                                                 <div class="portlet-body">
                                                     <div class="clearfix"></div>
                                                     <div class="span6" style="margin-left:2px">
-                                                        <span id="y_span1">搜索：</span><input style="height: 25px;" type="text">
-                                                        <button class="y_btn">确认</button>
+                                                        <span id="y_span1">搜索：</span><input style="height: 25px;" type="text" id="selenter">
+                                                        <button class="y_btn" type="button" id="sel">确认</button>
                                                     </div>
                                                     <table class="table table-striped table-hover table-bordered" id="sample_editable_1">
                                                         <thead>
@@ -302,7 +262,7 @@
 <script src="/Public/layer/layer.js" type="text/javascript"></script>
 <script type="text/javascript">
     $(function(){
-        $(".seeinfo").click(function(){
+        $("tbody").on("click",".seeinfo",function(){
             var id=$(this).attr('value');
             console.log(id);
             layer.open({
@@ -314,7 +274,7 @@
                 content: 'checkcom.html?id='+id //iframe的url
             });
         });
-        $(".editenter").click(function(){
+        $("tbody").on("click",".editenter",function(){
             var id=$(this).attr('value');
             console.log(id);
             var editen= layer.open({
@@ -324,6 +284,15 @@
                 shade: 0.8,
                 area: ['40%', '60%'],
                 content: 'editenter.html?id='+id //iframe的url
+            });
+        });
+
+        $("#sel").click(function(){
+            var val=$("#selenter").val();
+            $.post("selenter.html",{val:val},function(data){
+                console.log(data);
+                $("tbody").html('');
+                $('tbody').append(data);
             });
         });
 
@@ -351,7 +320,7 @@
 </div>
 <!-- END FOOTER -->
 <!-- BEGIN JAVASCRIPTS(Load javascripts at bottom, this will reduce page load time) -->
-<?php if((CONTROLLER_NAME == 'Index') OR (CONTROLLER_NAME == 'Audit') ): ?><script src="/Public/Admin/js/jquery-1.10.1.min.js" type="text/javascript"></script><?php endif; ?>
+<?php if((CONTROLLER_NAME == 'Index') OR (CONTROLLER_NAME == 'Audit') OR (CONTROLLER_NAME == 'Content')): ?><script src="/Public/Admin/js/jquery-1.10.1.min.js" type="text/javascript"></script><?php endif; ?>
 <script src="/Public/Admin/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
 <!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
 <script src="/Public/Admin/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>

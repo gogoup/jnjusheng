@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>物业管理-弹框页面</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="" name="description"/>
+    <meta content="" name="author"/>
+    <!--开始  全部的  强制的  样式-->
+    <link href="__PUBLIC__/Admin/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/Admin/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/Admin/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/Admin/css/style-metro.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/Admin/css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/Admin/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+    <link href="__PUBLIC__/Admin/css/default.css" rel="stylesheet" type="text/css" id="style_color"/>
+    <link href="__PUBLIC__/Admin/css/uniform.default.css" rel="stylesheet" type="text/css"/>
+    <!--结束  全部的  强制的  样式-->
+    <!--    我的css   开始-->
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css1/common.css">
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css1/content.css">
+    <link rel="stylesheet" href="__PUBLIC__/Admin/css1/audit.css">
+    <!--    我的css   结束-->
+</head>
+<body>
+<style>
+    p{ text-align: center}
+</style>
+<div style="background-color: white; width: 100%; text-align: center;">
+    <div>
+        <div class="span10 y_alert_out">
+            <div class="y_activity_top">
+                <p class="span2">物业详情</p>
+            </div>
+            <ul class="y_activity_ul">
+                <li>
+                    <div class="span2 y_activity_left">
+                        <p >编号：</p>
+                    </div>
+                    <div class="span7">
+                        <p class="y_activity_title">{$list['company_id']}</p>
+                    </div>
+                    <div style="clear: both"></div>
+                </li>
+                <li>
+                    <div class="span2 y_activity_left">
+                        <p >公司名称：</p>
+                    </div>
+                    <div class="span7">
+                        <p>{$list['company']}</p>
+                    </div>
+                    <div style="clear: both"></div>
+                </li>
+                <li>
+                    <div class="span2 y_activity_left">
+                        <p >应缴费用：</p>
+                    </div>
+                    <div class="span7">
+                        <p><input type="text" name="should"></p>
+                    </div>
+                    <div style="clear: both"></div>
+                </li>
+                <li>
+                    <div class="span2 y_activity_left">
+                        <p >本次收费：</p>
+                    </div>
+                    <div class="span7">
+                        <p><input type="text" name="paid"></p>
+                    </div>
+                    <div style="clear: both"></div>
+                </li>
+                <li>
+                    <div class="span2 y_activity_left">
+                        <p >状态：</p>
+                    </div>
+                    <div class="span7">
+                        <input type="radio" name="pay_state" checked >未付&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="pay_state" >已付
+                    </div>
+                    <div style="clear: both"></div>
+                </li>
+                <li>
+                    <div class="span2 y_activity_left">
+                        <p >上次缴费时间：</p>
+                    </div>
+                    <div class="span7">
+                        <p>{$lsit.last_time}</p>
+                    </div>
+                    <div style="clear: both"></div>
+                </li>
+                <li>
+                    <div class="span2 y_activity_left">
+                        <p >缴费周期：</p>
+                    </div>
+                    <div class="span7">
+                        <p>{$list.button}/月</p>
+                    </div>
+                    <div style="clear: both"></div>
+                </li>
+                <li>
+                    <div class="span2 y_activity_left">
+                        <p >单位地址：</p>
+                    </div>
+                    <div class="span7">
+                        <p>{$list.office}</p>
+                    </div>
+                    <div style="clear: both"></div>
+                </li>
+                <li>
+                    <div class="span2 y_activity_left">
+                        <p>备注：</p>
+                    </div>
+                    <div class="span7">
+                        <p><textarea name="remark"></textarea></p>
+                    </div>
+                    <div style="clear: both"></div>
+                </li>
+                <li class="last">
+                    <div class="span2 y_activity_left">
+                        <p></p>
+                    </div>
+                    <div class="span7">
+                        <div class="y_activity_bottom">
+                            <div><a href="" class="l_float btn_yes">确定</a></div>
+                            <div><a href="" class="l_float btn_no">取消</a></div>
+                        </div>
+                    </div>
+                    <div style="clear: both"></div>
+                </li>
+                <li>
+                    <div class="span2 y_activity_left">
+                        <p>记录：</p>
+                    </div>
+                    <div class="span7">
+                        <volist name="log" id="log">
+                        <p>{$log.createtime}------>付款{$log.getpay}元&nbsp;&nbsp;&nbsp;&nbsp;备注：{$log.remark}</p>
+                         </volist>
+                    </div>
+                    <div style="clear: both"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+</body>
+<!-- 开始  核心  插件-->
+<script src="__PUBLIC__/Admin/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/Admin/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+<!-- IMPORTANT! Load jquery-ui-1.10.1.custom.min.js before bootstrap.min.js to fix bootstrap tooltip conflict with jquery ui tooltip -->
+<script src="__PUBLIC__/Admin/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/Admin/js/bootstrap.min.js" type="text/javascript"></script>
+<!--[if lt IE 9]>
+<script src="__PUBLIC__/Admin/js/excanvas.min.js"></script>
+<script src="__PUBLIC__/Admin/js/respond.min.js"></script>
+<![endif]-->
+<script src="__PUBLIC__/Admin/js/jquery.slimscroll.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/Admin/js/jquery.blockui.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/Admin/js/jquery.cookie.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/Admin/js/jquery.uniform.min.js" type="text/javascript"></script>
+<!--   结束  核心  插件  -->
+</html>
