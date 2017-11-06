@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
     <meta http-equiv="X-UA-COMPATIBLE" content="ie=edge">
-    <title>创业服务</title>
+    <title>创业大赛</title>
     <link rel="stylesheet" href="__PUBLIC__/Home/css/common.css">
     <link rel="stylesheet" href="__PUBLIC__/Home/css/commonSection.css">
-    <link rel="stylesheet" href="__PUBLIC__/Home/css/business-service.css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/service-activity.css">
     <script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="__PUBLIC__/Home/js/common.js"></script>
+    <script src="__PUBLIC__/layui/layui.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/layui/css/layui.css">
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
     <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
@@ -29,8 +31,8 @@
                     <img src="__PUBLIC__/Home/image/logo.png" alt="">
                 </div>
                 <div class="header-middle-right">
-                    <button class="login"><a href="{:U('Login/login')}">登录</a></button>
-                    <button class="register"><a href="{:U('Register/register')}" target="_blank">注册</a></button>
+                    <button class="login"><a href="person/register.html">登录</a></button>
+                    <button class="register"><a href="person/register.html" target="_blank">注册</a></button>
                 </div>
             </div>
         </div>
@@ -111,81 +113,38 @@
             </div>
         </div>
     </div>
-    <div class="business-content">
-        <div class="common-middle">
-            <div class="common-section-header float-clear">
-                <span>创业服务</span>
+    <div class="service-activity-con common-middle">
+        <div class="common-section-header float-clear">
+            <if condition="$detail['type'] eq 2 ">
+            <span>大赛详情</span>
+            <else />
+            <span>活动详情</span>
+            </if>
+        </div>
+        <div class="service-activity-sub">
+            <div class="service-sub-top float-clear">
+                <img src="__PUBLIC__/Home/image/service-activity1.png" alt="">
+                <div class="service-sub-detail">
+                    <h2>{$detail.title}</h2>
+                    <h4>{$detail.sponsor}</h4>
+                    <p class="float-clear"><i></i><span>{$detail.adderss}</span></p>
+                    <p class="float-clear"><i></i><span>报名时间：&nbsp;</span><span>{$detail.join_start}至{$detail.join_end}</span></p>
+                    <p class="float-clear"><i></i><span>活动时间：&nbsp;&nbsp;</span><span>{$detail.act_start}至{$detail.act_end}</span></p>
+                    <p class="float-clear"><i></i><span>限报：&nbsp;</span><span>{$detail.number}人</span></p>
+                    <button class="enter">报名参加</button>
+                </div>
             </div>
-            <div class="business-con float-clear">
-                <div class="business-con-left">
-                    <ul>
-                        <li>
-                            <a href="{:U('Business/business')}">项目推荐</a>
-                        </li>
-                        <li>
-                            <a href="{:U('Business/business2')}">创业指导</a>
-                        </li>
-                        <li>
-                            <a href="{:U('Business/business3')}">跟踪扶持</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="business-con-right">
-                    <!--项目推荐-->
-                    <div class="business-con-right-tab">
-                        <div class="home-project-content">
-                            <ul class="float-clear">
-                            	<volist name="project_list" id="val">
-                                <li>
-                                    <div class="home-project-detail">
-                                        <div class="home-project-detail-top">
-                                            <img src="{$val.listimg}" alt="">
-                                        </div>
-                                        <div class="home-project-detail-bot">
-                                            <h2>{$val.title}</h2>
-                                            <p><span>联系人：</span><span>{$val.people}</span></p>
-                                            <p><span>所属行业：</span><span>{$val.type_name}</span></p>
-                                            <button><a href="{:U('Business/project?id='.$val[id])}">了解更多</a></button>
-                                        </div>
-                                    </div>
-                                </li>
-                                </volist>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="page-num float-clear">
-                        {$str}
-                    </div>
-                </div>
+            <div class="common-section-header float-clear">
+                <if condition="$detail['type'] eq 2 ">
+            	<span>大赛介绍</span>
+            	<else />
+            	<span>活动介绍</span>
+            	</if>
+            </div>
+            <div class="service-sub-bottom">
+                {$detail.content}
             </div>
         </div>
-    </div>
-    <div class="common-fixed">
-        <ul>
-            <li>
-                <span></span>
-                <div class="fixed-position float-clear">
-                    <img src="__PUBLIC__/Home/image/codeDetail.jpg" alt="">
-                    <div class="fixed-right">
-                        <h3>关注我们</h3>
-                        <p>山东理工职业学院创业<br>孵化平台公众号</p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <span></span>
-                <div class="fixed-position float-clear">
-                    <img src="__PUBLIC__/Home/image/logoMini.png" alt="">
-                    <div class="fixed-right">
-                        <h3>联系客服</h3>
-                        <p>0536-xxxxxxxx</p>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <span></span>
-            </li>
-        </ul>
     </div>
     <div class="common-footer">
         <div class="common-middle float-clear">
@@ -201,4 +160,36 @@
     </div>
 </div>
 </body>
+<script type="text/javascript">
+	var id = {$detail.id};
+	$('.enter').click(function(){
+		$.ajax({
+			'url':"{:U('Information/enter')}",
+			'type':'post',
+			'dataType':'text',
+			'data':{'id':id},
+			'success':function(msg){
+				if(msg==1){
+					layui.use('layer', function(){
+			    		  var layer = layui.layer;
+			    		  layer.confirm('用户尚未登录，请登入后再来报名！！！',function(){
+			    			  location.href="{:U('Login/login')}";
+			    		  });
+			    		});					
+				}else if(msg==3){
+					layui.use('layer', function(){
+			    		  var layer = layui.layer;
+			    		  layer.alert('该活动无法报名！！！');
+			    		});
+				}else{
+					layui.use('layer', function(){
+			    		  var layer = layui.layer;
+			    		  layer.alert('您已成功报名，请记得按时参加活动！！！');
+			    		});
+				}
+			}
+		});
+		
+	})
+</script>
 </html>

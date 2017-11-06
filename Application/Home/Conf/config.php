@@ -1,6 +1,8 @@
 <?php
 return array(
 	//数据库配置项
+    //'LAYOUT_ON'  =>true,
+    //'LAYOUT_NAME'=>'layout',
     'DB_TYPE'    =>  'mysql',     // 数据库类型
     'DB_HOST'    =>  'localhost', // 服务器地址
     'DB_NAME'    =>  'hatch',      // 数据库名

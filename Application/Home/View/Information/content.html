@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
     <meta http-equiv="X-UA-COMPATIBLE" content="ie=edge">
-    <title>创业服务</title>
+    <title>资讯详情</title>
     <link rel="stylesheet" href="__PUBLIC__/Home/css/common.css">
     <link rel="stylesheet" href="__PUBLIC__/Home/css/commonSection.css">
-    <link rel="stylesheet" href="__PUBLIC__/Home/css/business-service.css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/service.css">
     <script type="text/javascript" src="__PUBLIC__/Home/js/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="__PUBLIC__/Home/js/common.js"></script>
     <!--[if lt IE 9]>
@@ -17,6 +17,7 @@
 </head>
 <body>
 <div class="wrapper">
+    <!--公共头部-->
     <div class="common-header">
         <div class="header-top ">
             <div class="common-middle">
@@ -29,8 +30,8 @@
                     <img src="__PUBLIC__/Home/image/logo.png" alt="">
                 </div>
                 <div class="header-middle-right">
-                    <button class="login"><a href="{:U('Login/login')}">登录</a></button>
-                    <button class="register"><a href="{:U('Register/register')}" target="_blank">注册</a></button>
+                    <button class="login"><a href="person/register.html">登录</a></button>
+                    <button class="register"><a href="person/register.html" target="_blank">注册</a></button>
                 </div>
             </div>
         </div>
@@ -111,54 +112,38 @@
             </div>
         </div>
     </div>
-    <div class="business-content">
-        <div class="common-middle">
-            <div class="common-section-header float-clear">
-                <span>创业服务</span>
+    <div class="service-detail-content">
+        <div class="float-clear common-middle">
+            <div class="service-detail-left">
+                <div class="service-detail-left-top">
+                    <h2>{$content.title}</h2>
+                    <p>
+                        <span>发布时间：</span><span>{$content.create_time}</span>
+                    </p>
+                </div>
+                <div class="service-detail-left-detail">
+                    {$content.content}
+                </div>
             </div>
-            <div class="business-con float-clear">
-                <div class="business-con-left">
+            <div class="service-detail-right">
+                <div class="common-section-header-min">
+                    <span>通知公告</span>
+                </div>
+                <div class="info-matter-right">
                     <ul>
+                        <foreach name="data" item="val">
                         <li>
-                            <a href="{:U('Business/business')}">项目推荐</a>
+                            <a href="#" class="float-clear">
+                                <p>{$val.title}</p>
+                            </a>
                         </li>
-                        <li>
-                            <a href="{:U('Business/business2')}">创业指导</a>
-                        </li>
-                        <li>
-                            <a href="{:U('Business/business3')}">跟踪扶持</a>
-                        </li>
+                        </foreach>
                     </ul>
                 </div>
-                <div class="business-con-right">
-                    <!--项目推荐-->
-                    <div class="business-con-right-tab">
-                        <div class="home-project-content">
-                            <ul class="float-clear">
-                            	<volist name="project_list" id="val">
-                                <li>
-                                    <div class="home-project-detail">
-                                        <div class="home-project-detail-top">
-                                            <img src="{$val.listimg}" alt="">
-                                        </div>
-                                        <div class="home-project-detail-bot">
-                                            <h2>{$val.title}</h2>
-                                            <p><span>联系人：</span><span>{$val.people}</span></p>
-                                            <p><span>所属行业：</span><span>{$val.type_name}</span></p>
-                                            <button><a href="{:U('Business/project?id='.$val[id])}">了解更多</a></button>
-                                        </div>
-                                    </div>
-                                </li>
-                                </volist>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="page-num float-clear">
-                        {$str}
-                    </div>
-                </div>
+
             </div>
         </div>
+
     </div>
     <div class="common-fixed">
         <ul>
