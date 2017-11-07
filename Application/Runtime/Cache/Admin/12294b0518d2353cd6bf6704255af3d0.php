@@ -55,6 +55,7 @@
 <!--    我的css   开始-->
 <link rel="stylesheet" href="/Public/Admin/css/common.css">
 <link rel="stylesheet" href="/Public/Admin/css/content.css">
+<link rel="stylesheet" href="/Public/Admin/css1/audit.css">
 <!--    我的css   结束-->
 
     <!-- END PAGE LEVEL STYLES -->
@@ -180,56 +181,12 @@
     <!-- 主要内容头部 开始-->
     <div class="row-fluid">
         <div class="span12">
-            <!-- 皮肤设置部分 开始 -->
-            <div class="color-panel hidden-phone">
-                <div class="color-mode-icons icon-color"></div>
-                <div class="color-mode-icons icon-color-close"></div>
-                <div class="color-mode">
-                    <p>设置 皮肤</p>
-                    <ul class="inline">
-                        <li class="color-black current color-default" data-style="default"></li>
-                        <li class="color-blue" data-style="blue"></li>
-                        <li class="color-brown" data-style="brown"></li>
-                        <li class="color-purple" data-style="purple"></li>
-                        <li class="color-grey" data-style="grey"></li>
-                        <li class="color-white color-light" data-style="light"></li>
-                    </ul>
-                    <label>
-                        <span>布局</span>
-                        <select class="layout-option m-wrap small">
-                            <option value="fluid" selected>流体</option>
-                            <option value="boxed">盒子</option>
-                        </select>
-                    </label>
-                    <label>
-                        <span>头部</span>
-                        <select class="header-option m-wrap small">
-                            <option value="fixed" selected>固定</option>
-                            <option value="default">默认</option>
-                        </select>
-                    </label>
-                    <label>
-                        <span>侧边栏</span>
-                        <select class="sidebar-option m-wrap small">
-                            <option value="fixed">固定</option>
-                            <option value="default" selected>默认</option>
-                        </select>
-                    </label>
-                    <label>
-                        <span>底部</span>
-                        <select class="footer-option m-wrap small">
-                            <option value="fixed">固定</option>
-                            <option value="default" selected>默认</option>
-                        </select>
-                    </label>
-                </div>
-            </div>
-            <!-- 皮肤设置部分 结束 -->
             <!-- BEGIN PAGE TITLE & BREADCRUMB-->
             <h3 class="page-title">
                 欢迎登陆
                 <small>创业云孵化平台</small>
             </h3>
+            <!-- END PAGE TITLE & BREADCRUMB-->
         </div>
     </div>
     <!-- 主要内容头部 结束-->
@@ -244,7 +201,7 @@
                         <!-- BEGIN TAB PORTLET-->
                         <div class="portlet box blue tabbable">
                             <div class="portlet-title">
-                                <div class="caption"><i class="icon-reorder"></i>物业管理</div>
+                                <div class="caption"><i class="icon-reorder"></i>创业指导</div>
                             </div>
                             <div class="portlet-body">
                                 <div class="tabbable portlet-tabs">
@@ -257,43 +214,36 @@
                                             <div class="portlet">
                                                 <div class="portlet-body">
                                                     <div class="clearfix"></div>
-                                                    <div class="span12" style="margin-left:2px">
+                                                    <div class="span6" style="margin-left:2px">
                                                         <span id="y_span1">搜索：</span><input style="height: 25px;" id="selval" type="text">
-                                                        <button class="y_btn" id="sel">确认</button>&nbsp;&nbsp;
+                                                        <button class="y_btn" id="sel">确认</button>
+                                                        <button id="added" class="y_btn_new" style="    margin-left: 20px;    width: 100px;    height: 35px;    background-color: #00a500;    border: none;    color: white;   margin-top: -10px;" >+&nbsp;新增</button>
                                                     </div>
                                                     <table class="table table-striped table-hover table-bordered" id="sample_editable_1">
                                                         <thead>
                                                         <tr>
-                                                            <th>用户编号</th>
-                                                            <th>公司名称</th>
-                                                            <th>应缴费用<br /> 物业/房租</th>
-                                                            <th>上次缴费时间</th>
-                                                            <th>缴费周期</th>
-                                                            <th>单位地址</th>
-                                                            <th>备注</th>
+                                                            <th>ID</th>
+                                                            <th>企业</th>
+                                                            <th>标题</th>
                                                             <th>操作</th>
                                                         </tr>
                                                         </thead>
                                                         <tbody>
-                                                            <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?><tr class="">
-                                                                    <td><?php echo ($list["company_id"]); ?></td>
-                                                                    <td><?php echo ($list["company"]); ?></td>
-                                                                    <td><?php echo ($list["property_fee"]); ?>/<?php echo ($list["rent"]); ?></td>
-                                                                    <td><?php echo ($list["last_time"]); ?></td>
-                                                                    <td><?php echo ($list["button"]); ?>月</td>
-                                                                    <td><?php echo ($list["office"]); ?></td>
-                                                                    <td><?php echo ($list["remark"]); ?></td>
-                                                                    <td class="paypatent">
-                                                                        <span class="paypay" value="<?php echo ($list["company_id"]); ?>">缴费</span>
-                                                                    </td>
-                                                                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                                                        <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?><tr class="">
+                                                                <td><?php echo ($list["id"]); ?></td>
+                                                                <td><a href=""><?php echo ($list["company"]); ?></a></td>
+                                                                <td><?php echo ($list["title"]); ?></td>
+                                                                <td>
+                                                                    <button class="edit" value="<?php echo ($list["id"]); ?>">修改</button>
+                                                                    <button class="del" value="<?php echo ($list["id"]); ?>">删除</button>
+                                                                </td>
+                                                            </tr><?php endforeach; endif; else: echo "" ;endif; ?>
                                                         </tbody>
                                                     </table>
                                                     <div>
                                                         <div class="pages">
-
                                                             <ul class="r_float pagelist">
-
+                                                                <?php echo ($page); ?>
                                                                 <div style="clear: both"></div>
                                                             </ul>
                                                         </div>
@@ -319,32 +269,57 @@
 <script src="/Public/Admin/js/jquery-1.10.1.min.js" type="text/javascript"></script>
 <script src="/Public/layer/layer.js" type="text/javascript"></script>
 <script>
- $(function(){
-    $("#sel").click(function() {
-        var val = $("#selval").val();
-        $.get("selpay.html", {val: val}, function (data) {
-            console.log(data);
-            $("tbody").html('');
-            $('tbody').append(data);
-        });
+    $(function(){
+        $('#added').click(function(){
+            layer.open({
+                type: 2,
+                title: '新增创业指导',
+                shadeClose: true,
+                shade: 0.8,
+                area: ['80%', '90%'],
+                content: 'addedguidance.html'
+            });
+        })
+
+        $("tbody").on("click",".edit",function(){
+            var id=$(this).attr("value");
+            layer.open({
+                type: 2,
+                title: '创业指导修改',
+                shadeClose: true,
+                shade: 0.8,
+                area: ['80%', '90%'],
+                content: 'editguidance.html?id='+id,
+            });
+        })
+        $("tbody").on("click",".del",function(){
+            var id=$(this).attr("value");
+            layer.confirm('确定删除该数据', {
+                btn: ['是的','取消'] //按钮
+            }, function(){
+              $.get("delguidance.html",{id:id},function(msg){
+                  if(msg){
+                      layer.msg("YES");
+                      location.reload();
+                  }else{
+                      layer.msg("NO");
+                      location.reload();
+                  }
+              })
+            });
+        })
+
+        $("#sel").click(function() {
+            var val = $("#selval").val();
+            $.get("selguidance.html", {val: val}, function (data) {
+                console.log(data);
+                $("tbody").html('');
+                $('tbody').append(data);
+            });
+        })
     })
-
-    $('tbody').on('click','.paypay',function(){
-        var id=$(this).attr("value");
-
-        layer.open({
-            type: 2,
-            title: '缴费',
-            shadeClose: true,
-            shade: 0.8,
-            area: ['40%', '90%'],
-            content: 'editpay.html?id='+id
-        });
-
-    })
-
- })
 </script>
+
         <!-- END PAGE CONTAINER-->
     </div>
     <!-- END PAGE -->

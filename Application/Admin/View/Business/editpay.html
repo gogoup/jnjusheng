@@ -24,85 +24,61 @@
 </head>
 <body>
 <style>
-    p{ text-align: center}
+    p{ margin-left: 10%}
 </style>
-<div style="background-color: white; width: 100%; text-align: center;">
+<div style="background-color: white; width: 100%; ">
     <div>
+        <form action="editpaid" method="post" >
         <div class="span10 y_alert_out">
-            <div class="y_activity_top">
-                <p class="span2">物业详情</p>
-            </div>
             <ul class="y_activity_ul">
                 <li>
                     <div class="span2 y_activity_left">
-                        <p >编号：</p>
-                    </div>
-                    <div class="span7">
-                        <p class="y_activity_title">{$list['company_id']}</p>
+                        <p >公司编号：<input type="text"  name="company_id" value="{$list['company_id']}"  readonly  unselectable="on"></p>
                     </div>
                     <div style="clear: both"></div>
                 </li>
                 <li>
                     <div class="span2 y_activity_left">
-                        <p >公司名称：</p>
-                    </div>
-                    <div class="span7">
-                        <p>{$list['company']}</p>
+                        <p >公司名称：<input type="text" value="{$list['company']}"  readonly  unselectable="on"></p>
                     </div>
                     <div style="clear: both"></div>
                 </li>
                 <li>
                     <div class="span2 y_activity_left">
-                        <p >应缴费用：</p>
-                    </div>
-                    <div class="span7">
-                        <p><input type="text" name="should"></p>
+                        <p >应缴费用：<input type="text" name="should" value="物业：{$list['property_fee']}  || 房租：{$list['rent']}" readonly></p>
                     </div>
                     <div style="clear: both"></div>
                 </li>
                 <li>
                     <div class="span2 y_activity_left">
-                        <p >本次收费：</p>
-                    </div>
-                    <div class="span7">
-                        <p><input type="text" name="paid"></p>
+                        <p >本次收费：<input type="text" name="paid"></p>
                     </div>
                     <div style="clear: both"></div>
                 </li>
                 <li>
                     <div class="span2 y_activity_left">
-                        <p >状态：</p>
-                    </div>
-                    <div class="span7">
-                        <input type="radio" name="pay_state" checked >未付&nbsp;&nbsp;&nbsp;
-                        <input type="radio" name="pay_state" >已付
-                    </div>
-                    <div style="clear: both"></div>
-                </li>
-                <li>
-                    <div class="span2 y_activity_left">
-                        <p >上次缴费时间：</p>
-                    </div>
-                    <div class="span7">
-                        <p>{$lsit.last_time}</p>
+                        <p >状&nbsp;&nbsp;&nbsp;&nbsp;态：
+                        <input type="radio" name="pay_state" value="1" checked >未结清&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="pay_state" value="2">已结清
+                        </p>
                     </div>
                     <div style="clear: both"></div>
                 </li>
                 <li>
                     <div class="span2 y_activity_left">
-                        <p >缴费周期：</p>
-                    </div>
-                    <div class="span7">
-                        <p>{$list.button}/月</p>
+                        <p >上次缴费时间：<input type="text" value="{$list.last_time}"  readonly  unselectable="on"></p>
                     </div>
                     <div style="clear: both"></div>
                 </li>
                 <li>
                     <div class="span2 y_activity_left">
-                        <p >单位地址：</p>
+                        <p >缴费周期：<input type="text" value="{$list.button}/月"  readonly  unselectable="on"></p>
                     </div>
-                    <div class="span7">
-                        <p>{$list.office}</p>
+                    <div style="clear: both"></div>
+                </li>
+                <li>
+                    <div class="span2 y_activity_left">
+                        <p >单位地址：<input type="text" value="{$list.office}"  readonly  unselectable="on"></p>
                     </div>
                     <div style="clear: both"></div>
                 </li>
@@ -111,7 +87,7 @@
                         <p>备注：</p>
                     </div>
                     <div class="span7">
-                        <p><textarea name="remark"></textarea></p>
+                        <p><textarea name="remark" style="width: 90%"></textarea></p>
                     </div>
                     <div style="clear: both"></div>
                 </li>
@@ -119,10 +95,10 @@
                     <div class="span2 y_activity_left">
                         <p></p>
                     </div>
-                    <div class="span7">
-                        <div class="y_activity_bottom">
-                            <div><a href="" class="l_float btn_yes">确定</a></div>
-                            <div><a href="" class="l_float btn_no">取消</a></div>
+                    <div class="span7"  style="margin-left: 10%">
+                        <div class="y_activity_bottom" >
+                            <div><button type="submit" class="l_float btn_yes">确定</button></div>
+                            <div><button type="reset" class="l_float btn_no">取消</button></div>
                         </div>
                     </div>
                     <div style="clear: both"></div>
@@ -140,6 +116,7 @@
                 </li>
             </ul>
         </div>
+        </form>
     </div>
 
 </div>

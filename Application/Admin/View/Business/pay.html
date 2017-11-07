@@ -117,7 +117,7 @@
                                                                     <td>{$list.button}月</td>
                                                                     <td>{$list.office}</td>
                                                                     <td>{$list.remark}</td>
-                                                                    <td>
+                                                                    <td class="paypatent">
                                                                         <span class="paypay" value="{$list.company_id}">缴费</span>
                                                                     </td>
                                                                 </tr>
@@ -164,12 +164,12 @@
         });
     })
 
-    $(".paypay").click(function(){
+    $('tbody').on('click','.paypay',function(){
         var id=$(this).attr("value");
 
         layer.open({
             type: 2,
-            title: 'layer mobile页',
+            title: '缴费',
             shadeClose: true,
             shade: 0.8,
             area: ['40%', '90%'],

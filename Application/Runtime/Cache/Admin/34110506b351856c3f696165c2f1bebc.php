@@ -180,51 +180,6 @@
     <!-- 主要内容头部 开始-->
     <div class="row-fluid">
         <div class="span12">
-            <!-- 皮肤设置部分 开始 -->
-            <div class="color-panel hidden-phone">
-                <div class="color-mode-icons icon-color"></div>
-                <div class="color-mode-icons icon-color-close"></div>
-                <div class="color-mode">
-                    <p>设置 皮肤</p>
-                    <ul class="inline">
-                        <li class="color-black current color-default" data-style="default"></li>
-                        <li class="color-blue" data-style="blue"></li>
-                        <li class="color-brown" data-style="brown"></li>
-                        <li class="color-purple" data-style="purple"></li>
-                        <li class="color-grey" data-style="grey"></li>
-                        <li class="color-white color-light" data-style="light"></li>
-                    </ul>
-                    <label>
-                        <span>布局</span>
-                        <select class="layout-option m-wrap small">
-                            <option value="fluid" selected>流体</option>
-                            <option value="boxed">盒子</option>
-                        </select>
-                    </label>
-                    <label>
-                        <span>头部</span>
-                        <select class="header-option m-wrap small">
-                            <option value="fixed" selected>固定</option>
-                            <option value="default">默认</option>
-                        </select>
-                    </label>
-                    <label>
-                        <span>侧边栏</span>
-                        <select class="sidebar-option m-wrap small">
-                            <option value="fixed">固定</option>
-                            <option value="default" selected>默认</option>
-                        </select>
-                    </label>
-                    <label>
-                        <span>底部</span>
-                        <select class="footer-option m-wrap small">
-                            <option value="fixed">固定</option>
-                            <option value="default" selected>默认</option>
-                        </select>
-                    </label>
-                </div>
-            </div>
-            <!-- 皮肤设置部分 结束 -->
             <!-- BEGIN PAGE TITLE & BREADCRUMB-->
             <h3 class="page-title">
                 欢迎登陆
@@ -244,7 +199,7 @@
                         <!-- BEGIN TAB PORTLET-->
                         <div class="portlet box blue tabbable">
                             <div class="portlet-title">
-                                <div class="caption"><i class="icon-reorder"></i>物业管理</div>
+                                <div class="caption"><i class="icon-reorder"></i>统计管理</div>
                             </div>
                             <div class="portlet-body">
                                 <div class="tabbable portlet-tabs">
@@ -258,42 +213,66 @@
                                                 <div class="portlet-body">
                                                     <div class="clearfix"></div>
                                                     <div class="span12" style="margin-left:2px">
-                                                        <span id="y_span1">搜索：</span><input style="height: 25px;" id="selval" type="text">
-                                                        <button class="y_btn" id="sel">确认</button>&nbsp;&nbsp;
+                                                        <div class="span3">
+                                                            <span id="y_span1">搜索：</span><input style="height: 25px;" type="text">
+                                                            <button class="y_btn">确认</button>
+                                                        </div>
+                                                        <div class="span3">
+                                                            <span id="y_span2">选择类别：</span>
+                                                            <select style="height: 35px;" type="text">
+                                                                <option>全部</option>
+                                                                <option>教育</option>
+                                                                <option>软件</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="span3">
+                                                            <span id="y_span3">选择人数：</span>
+                                                            <select style="height: 35px;" type="text">
+                                                                <option>全部</option>
+                                                                <option>1~20</option>
+                                                                <option>20~50</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
                                                     <table class="table table-striped table-hover table-bordered" id="sample_editable_1">
                                                         <thead>
                                                         <tr>
                                                             <th>用户编号</th>
                                                             <th>公司名称</th>
-                                                            <th>应缴费用<br /> 物业/房租</th>
-                                                            <th>上次缴费时间</th>
-                                                            <th>缴费周期</th>
-                                                            <th>单位地址</th>
-                                                            <th>备注</th>
-                                                            <th>操作</th>
+                                                            <th>法人代表</th>
+                                                            <th>联系电话</th>
+                                                            <th>联系邮箱</th>
+                                                            <th>企业类别</th>
+                                                            <th>员工人数</th>
+                                                            <th>入驻地址</th>
                                                         </tr>
                                                         </thead>
                                                         <tbody>
-                                                            <?php if(is_array($list)): $i = 0; $__LIST__ = $list;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$list): $mod = ($i % 2 );++$i;?><tr class="">
-                                                                    <td><?php echo ($list["company_id"]); ?></td>
-                                                                    <td><?php echo ($list["company"]); ?></td>
-                                                                    <td><?php echo ($list["property_fee"]); ?>/<?php echo ($list["rent"]); ?></td>
-                                                                    <td><?php echo ($list["last_time"]); ?></td>
-                                                                    <td><?php echo ($list["button"]); ?>月</td>
-                                                                    <td><?php echo ($list["office"]); ?></td>
-                                                                    <td><?php echo ($list["remark"]); ?></td>
-                                                                    <td class="paypatent">
-                                                                        <span class="paypay" value="<?php echo ($list["company_id"]); ?>">缴费</span>
-                                                                    </td>
-                                                                </tr><?php endforeach; endif; else: echo "" ;endif; ?>
+                                                        <tr class="">
+                                                            <td><a href="">01</a></td>
+                                                            <td>山东一诺网络技术公司</td>
+                                                            <td>王老二</td>
+                                                            <td>16859744585</td>
+                                                            <td>1567895614@qq.com</td>
+                                                            <td>金融、融资</td>
+                                                            <td>1~20</td>
+                                                            <td>山东省济南市高新区舜泰广场八号楼-08C3</td>
+                                                        </tr>
+
                                                         </tbody>
                                                     </table>
                                                     <div>
                                                         <div class="pages">
-
                                                             <ul class="r_float pagelist">
-
+                                                                <li><a>首页</a></li>
+                                                                <li><a href="">上一页</a></li>
+                                                                <li  class="thisclass"><a href="">1</a></li>
+                                                                <li><a href="">2</a></li>
+                                                                <li><a href="">3</a></li>
+                                                                <li><a href="">4</a></li>
+                                                                <li><a href="">5</a></li>
+                                                                <li><a href="">下一页</a></li>
+                                                                <li><a href="">末页</a></li>
                                                                 <div style="clear: both"></div>
                                                             </ul>
                                                         </div>
@@ -316,35 +295,6 @@
         <div class="clearfix"></div>
     </div>
 </div>
-<script src="/Public/Admin/js/jquery-1.10.1.min.js" type="text/javascript"></script>
-<script src="/Public/layer/layer.js" type="text/javascript"></script>
-<script>
- $(function(){
-    $("#sel").click(function() {
-        var val = $("#selval").val();
-        $.get("selpay.html", {val: val}, function (data) {
-            console.log(data);
-            $("tbody").html('');
-            $('tbody').append(data);
-        });
-    })
-
-    $('tbody').on('click','.paypay',function(){
-        var id=$(this).attr("value");
-
-        layer.open({
-            type: 2,
-            title: '缴费',
-            shadeClose: true,
-            shade: 0.8,
-            area: ['40%', '90%'],
-            content: 'editpay.html?id='+id
-        });
-
-    })
-
- })
-</script>
         <!-- END PAGE CONTAINER-->
     </div>
     <!-- END PAGE -->

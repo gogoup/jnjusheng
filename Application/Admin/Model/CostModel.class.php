@@ -59,6 +59,11 @@ class CostModel extends Model
         return M("UserEstp")->where("id=".$id)->getField('company');
     }
 
+    public function getCostinfobyId($id)
+    {
+        return M("Cost")->where('company_id='.$id)->find();
+    }
+
 
 
 }

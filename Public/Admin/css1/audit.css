@@ -2,6 +2,7 @@
 /*--------------活动审核  弹框开始---------------*/
 .y_alert_out{
     box-shadow: 1px 1px 19px #afb0b0;
+    margin-top: 50px;
     padding-bottom: 30px;
 }
 .y_activity_top{
